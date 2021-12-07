@@ -32,6 +32,10 @@ Interactive dashboards are the most common use cases for data visualization and 
 
 {\bf Keywords:} Interactive Dashboards, Exploratory Data Analysis (EDA), Design Space(??)
 
+<<setup, include = F>>=
+# This is a code chunk
+@
+
 \section{Introduction}
 With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \cite{Fisher}. A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making. Stephen Few defines a dashboard as:
 \begin{quotation}
