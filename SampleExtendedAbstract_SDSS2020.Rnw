@@ -36,16 +36,22 @@ Interactive dashboards are the most common use cases for data visualization and 
 # This is a code chunk
 @
 
-\section{Introduction}
+\section{Research Problem}
 With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \cite{Fisher}. A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making. Stephen Few defines a dashboard as:
 \begin{quotation}
 \small A visual display of the most important information needed to achieve one or more objectives, consolidated and arranged on a single screen so the information can be monitored at a glance. \cite{Few}
 \end{quotation}
+Dashboards are used to improve performance, improve strategic decision making, track processes effectiveness, minimize data complexity and communicate organizations' data-driven decision making \cite{...}.
+Some communities continue to thrive as they lose population because they adapt and stay focused on quality of life, community services, and investing in the future. This is what we call rural smart shrinkage. Our research team is developing strategies and sharing examples of successful shrink-smart towns to help similar communities to improve quality of life for their residents\cite{SCC}. Our work focuses on developing and challenges novice analysts in advanced statistical concepts and data visualizations to help make decisions. Specifically, what data can be used to help make decisions, what strategies overcome the challenges of those analysts feel empowered to make data-driven decisions. Our ultimate aim is to help inform Iowa Rural Shrink Smart communities by using effective dashboards to help those towns build the Quality of Life (QoL) Measures.
 
-\section{Methods}
-Using an exploratory methodology, we derived a design space consisting of 3-4 visual and functional aspects of dashboards with statistical exploratory data analysis. see Section~\ref{info-on-sections}.
+\section{Data Description}
+Using an exploratory methodology, we collected open source data from the Iowa Data Gov website to understand the  
 
-\subsection{Purpose}
+we derived a design space consisting of 3-4 visual and functional aspects of dashboards with statistical exploratory data analysis. see Section~\ref{info-on-sections}.
+
+\subsection{Challenges}
+While data 
+
 The intended use of a dashboard for a novice user drives the choices in the visual and functional design allowances. The factors here capture the roles of each dashboard in the process of analysis and communication. We find that the purpose of a dashboard has been substantially expanded from the operational dashboard to capture decision-making at higher levels, and may not be supportive in decision-making.
 
 {\bf Decision Support} (Strategic, Tactical, Operational): The decision support dimension reflects on the sorts of actionable decisions that dashboards are designed to support.
