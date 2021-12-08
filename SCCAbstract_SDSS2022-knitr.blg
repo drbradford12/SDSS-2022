@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: SampleExtendedAbstract_SDSS2020.aux
+The top-level auxiliary file: SCCAbstract_SDSS2022-knitr.aux
 The style file: sdss2020.bst
 Database file #1: SampleReferencesForExtendedAbstract.bib
 Warning--I didn't find a database entry for "..."
@@ -19,7 +19,7 @@ Too many commas in name 1 of "A.Sarikaya, M.Correll, L.Bartram, M.Tory, and D.Fi
 while executing---line 1313 of file sdss2020.bst
 You've used 2 entries,
             2490 wiz_defined-function locations,
-            570 strings with 4830 characters,
+            570 strings with 4820 characters,
 and the built_in function-call counts, 704 in all, are:
 = -- 72
 > -- 20

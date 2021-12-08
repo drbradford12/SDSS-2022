@@ -1,0 +1,104 @@
+% File SDSS2020_SampleExtendedAbstract.tex
+\documentclass[10pt]{article}
+\usepackage{newtxtext, newtxmath, times}
+\usepackage{sdss2020} % Uses Times Roman font (either newtx or times package)
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{amsmath, amsthm, amsfonts}
+\usepackage{algorithm, algorithmic}  
+\usepackage{graphicx}
+
+%\title{Symposium on Data Science and Statistics (SDSS 2022) \\
+%Submission and Formatting Instructions for Extended Abstracts}
+
+\title{Exploring Rural Shrink Smart Through Guided Discovery Dashboards}
+
+\author{
+  Denise Bradford \\
+  University of Nebraska - Lincoln \\
+  Lincoln, Nebraska \\
+  {\tt denise.bradford@huskers.unl.edu} \\\And
+  Susan VanderPlas \\
+  University of Nebraska - Lincoln \\
+  Lincoln, Nebraska \\
+  {\tt susan.vanderplas@unl.edu} \\}
+  
+
+\date{}
+
+\usepackage{Sweave}
+\begin{document}
+\input{SCCAbstract_SDSS2022-knitr-concordance}
+
+\begin{Schunk}
+\begin{Sinput}
+> library(knitr)
+> opts_chunk$set(
++ concordance=TRUE
++ )
+\end{Sinput}
+\end{Schunk}
+
+
+\maketitle
+\begin{abstract}
+Interactive dashboards are the most common use cases for data visualization and context for exploratory data tools. In our paper, we will explore the specific scope of how dashboards are used in settings when the analysis is a novice to data. We will demonstrate the surrounding. Our framework will suggest a number of research directions to better support dashboard design, implementation and use for the every day analyst. 
+\end{abstract}
+
+{\bf Keywords:} Interactive Dashboards, Exploratory Data Analysis (EDA), Design Space, Guided Discovery
+
+\section{Research Problem}
+With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \cite{Fisher}. A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making. Stephen Few defines a dashboard as:
+\begin{quotation}
+\small A visual display of the most important information needed to achieve one or more objectives, consolidated and arranged on a single screen so the information can be monitored at a glance. \cite{Few}
+\end{quotation}
+Dashboards are used to improve performance, improve strategic decision making, track processes effectiveness, minimize data complexity and communicate organizations' data-driven decision making \cite{...}.
+Some communities continue to thrive as they lose population because they adapt and stay focused on quality of life, community services, and investing in the future. This is what we call rural smart shrinkage. Our research team is developing strategies and sharing examples of successful shrink-smart towns to help similar communities to improve quality of life for their residents\cite{SCC}. Our work focuses on developing and challenges novice analysts in advanced statistical concepts and data visualizations to help make decisions. Specifically, what data can be used to help make decisions, what strategies overcome the challenges of those analysts feel empowered to make data-driven decisions. Our ultimate aim is to help inform Iowa Rural Shrink Smart communities by using effective dashboards to help those towns build the Quality of Life (QoL) Measures.
+
+\section{Data Collection}
+Iowa Data Gov data were used to create the SCC dashboard. Iowa Data Gov is a public data website that collects and updates data on the state of Iowa, data are mostly on a town/city level that is not collected in National Data Collection Systems. Iowa Data Gov website is a unique and detailed database of information about residents, such as liquor sales and school building locations. For the purpose of the Rural Shrink Smart Dashboard, we will collect as much data as possible, such as obtaining fire department and hospital details. These data are collected on all towns that are available. We will use statistical clustering methods will be used to determine the town classifications to help improve the rural towns.
+
+\section{Data Challenges}
+Iowa Data Gov website has an exhaustive and detailed data, but that data collected has missing information. This information can be broken down into two separate types, in which we will call a true missing, a particular service that is missing because the town does not have or offer the service to the community. For example, many small towns do not have a hospital that will only cater to the community, but they will have access to a hospital in a neighboring town. The second type of missing data are when data should be available and are not currently being collected in the data but are available in a different data source. For example, our public school data does not actual represent public schools in bigger cities, suggesting that the closest Elementary school is 20 miles away, which we understood that to be untrue. This type of missing data is very typical in data collection, but could led our research in a poor direction.
+
+\section{Guiding Design Principles}
+Dashboards have a variety of challenges, our research will focus on users' challenges with understanding data and statistical relationships of dashboards. We investigate user interaction strategies that will not challenge the knowledge of the analyst in a variety of backgrounds. With little research on the adaptation of dashboards, we will particularly focus on the techniques that to solve interaction and information presentation challenges. In our research, we would like to use a guiding design principles to develop and design the following:
+\begin{itemize}
+\item Showing a town analyst with peers to help with changes that improved the QoL
+\item Dashboard design that will make the town the main focus without distracting the analysts with peer comparisons
+\item Creating a feedback loop that will, assist in the guided discovery from the analysts
+\end{itemize}
+
+
+\section{Current Work/ Future Work}
+
+We encourage the selective use of tables and/or figures as appropriate.
+
+
+
+\section{Discussion/Conclusions}
+
+\subsection{Appendices and acknowledgements}
+
+Please avoid the use of appendices and acknowledgements 
+as separate sections.  Any pertinent material should be included in the
+body of the extended abstract rather than in an appendix.  If 
+acknowledgements are necessary then they should be made using footnotes.
+
+If you wish to provide links to accompanying code, this is allowable because
+SDSS encourages best practices for reproducible research.  However, all
+conclusions and exposition relevant to the refereeing process should appear in
+the body of the extended abstract; furthermore, we cannot guarantee that 
+code will be checked or even consulted during the refereeing process.
+
+\subsection{Refereeing Decisions}
+It is expected that accepted papers will be presented in person at SDSS in Pittsburgh 
+from June 4 to 6, 2020.
+Accepted papers' authors will be notified in plenty of time to make registration and travel 
+arrangements and for papers not accepted to submit an e-poster to the 
+conference if they so choose.
+
+\bibliographystyle{sdss2020} % Please do not change the bibliography style
+\bibliography{SampleReferencesForExtendedAbstract}
+
+\end{document}
