@@ -4,7 +4,7 @@
 \usepackage{sdss2020} % Uses Times Roman font (either newtx or times package)
 \usepackage{url}
 \usepackage{latexsym}
-\usepackage{amsmath, amsthm, amsfonts}
+\usepackage{amsmath, amsfonts}
 \usepackage{algorithm, algorithmic}  
 \usepackage{graphicx}
 
@@ -27,7 +27,6 @@
 \date{}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 <<setup, include=FALSE, cache = FALSE>>=
 library(knitr)
@@ -53,8 +52,8 @@ With the amount of publicly open-source data, a proliferation of visualization d
 
 Some communities continue to thrive as they lose population because they adapt and stay focused on quality of life, community services, and investing in the future. This is what we call rural smart shrinkage. Our research team is developing strategies and sharing examples of successful shrink-smart towns to help similar communities to improve quality of life for their residents \cite{scc}. Our work focuses on developing and challenges novice analysts in advanced statistical concepts and data visualizations to help make decisions. Specifically, what data can be used to help make decisions, what strategies overcome the challenges of those analysts feel empowered to make data-driven decisions. Our ultimate aim is to help inform Iowa's Rural Shrink Smart communities by using effective dashboards to help those towns build the Quality of Life (QoL) Measures.
 
-\section{Data Collection}
-{\it Iowa Data} were used to create the SCC dashboard. {\it Iowa Data}is a public data website that collects and updates data on the State of Iowa Government, data are mostly on a town/city level that is not collected in National Data Collection Systems. {\it Iowa Data} website is a unique and detailed database of information about residents, such as liquor sales and school building locations. For the purpose of the Rural Shrink Smart Dashboard, we will collect as much data as possible, such as obtaining fire department and hospital details. These data are collected on all towns that are available. We will use statistical clustering methods will be used to determine the town classifications to help improve the rural towns.
+\section{Data Description}
+{\it Iowa Data} were used to create the SCC dashboard. {\it Iowa Data} is a public data website that collects and updates data on the State of Iowa Government, data are mostly on a town/city level that is not collected in National Data Collection Systems. {\it Iowa Data} website is a unique and detailed database of information about residents, such as liquor sales and school building locations. For the purpose of the Rural Shrink Smart Dashboard, we will collect as much data as possible, such as obtaining fire department and hospital details. These data are collected on all towns that are available. We will use statistical clustering methods will be used to determine the town classifications to help improve the rural towns.
 
 \section{Data Challenges}
 {\it Iowa Data} website has an exhaustive and detailed data, but that data collected has missing information. This information can be broken down into two separate types, in which we will call a true missing, a particular service that is missing because the town does not have or offer the service to the community. For example, many small towns do not have a hospital that will only cater to the community, but they will have access to a hospital in a neighboring town. The second type of missing data are when data should be available and are not currently being collected in the data but are available in a different data source. For example, our public school data does not actual represent public schools in bigger cities, suggesting that the closest Elementary school is 20 miles away, which we understood that to be untrue. This type of missing data is very typical in data collection, but could led our research in a poor direction.
@@ -69,11 +68,48 @@ Dashboards have a variety of challenges, our research will focus on users' chall
 
 
 \section{Current Progress and Future Work}
+Our current design work will be broken down into four categories that have been identified in the following:
+\begin{itemize}
+\item User Flexibility 
+\item Visual, Analytic, and Data Literacy
+\item Data Design
+\item Social Impact
+\end{itemize}
+
+In Figure 1, our dashboard will allow the user to select a town name, which will populate the  information in the maps related to necessary services, which include directions and distance to fire department, schools, post offices and hospitals. A table will be populated that will include information related to five other towns that have similar attributes, but the aspect of QoL will be included in the differences that help the town make a decision for the town. 
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=75mm]{SCC_Dashboard.png}
+\caption{Rural Smart EDA Dashboard Design}
+\end{figure}
+
 
 \subsection{Current Progress}
-Our research as stated above, we would like to produce and develop a guided discovery dashboard that will allow rural analysts the ability to access information that will help with the Quality of Life in their town. This dashboard will be used to help the analyst make data-driven decisions about making effective changes in their communities. Our dashboard will be used to 
-\subsection{Future Work}
+{\bf Statistical Techniques} Our research has incorporated statistical clustering methods, such as K-means and Hierarchical Clustering, to determine the similarities in the towns based on distances and services available. As a result, of our research partners we were actually able to use clustering methods to determine and identify missing data. We will continue to use clustering methods to identify the towns that will be best compare when the analyst interacts with our dashboard. 
 
+{\bf Data Science Techniques} Our team has been able to utilize direct API calls and web scraping tools to collect data necessary.  
+
+{\bf Dashboard Design Techniques} Our dashboard incorporates the following important dashboard techniques:
+{\it User Flexibility} The aspects of user flexibility are directly based on the detail data adjustments; Adaptability: User and Display; Comparison support and Storytelling. For example, we want our users to use the data collected on a mass scale that have and should be summarized in detail but without losing anything.
+
+{\it Visual, Analytic, and Data Literacy} The aspects in our dashboard development primary presents in our ability to ease of usage to the user with visual, data  and analytic literacy. We have little information on the users' adaptability to data-driven decisions. 
+
+{\it Data Design}. In our case, the challenges that arise in our dashboard will include data quality, data grouping, too much data, data sources, inaccurate data representation, and key performance indicators and metrics. For example, we have information from {\it Iowa Data} will have missing data can be pointed out by our users' that has not been captured by our data sources, this can be a recent closing of a school due to the pandemic.
+
+{\it Social Impact} This aspect will be about making sure that the users are flexible to the following: data-driven thinking, technology resistance, dashboard aversion, and data sharing, security, and privacy. For example, we will encounter town users that will have the urge to compare their town to all types of towns that aren't similar. In our research, we will use statistical clustering methods and cater dashboard to show only towns that have similar components.
+
+\subsection{Future Work}
+Our dashboard design has created challenges that promote 
+
+We have five towns that have agreed to partner with the project to help with identify the best practices that are useful in the Iowa small and rural towns. As a result to our dashboard development, we will develop a feedback loop from the analyst in these five towns that will help provide our team with useful notes that will be adaptive to all of the small towns in Iowa. As a contrast, we will researchers with an extensive understanding of the small towns to be used as a counter example of dashboard adaptability. Our research, should be a 
+
+So dashboard challenges,
+adaptation techniques, and user strategies are interconnected as
+Figure 1 shows. The rationale is that if we are able to establish
+a relationship between strategies to problems and we can detect
+the strategies in real-time, we can adapt the user interface in realtime or in the next iteration. Then we can say that the adaption
+techniques have a positive effect on the challenges.
 \section{Acknowledgements}
 We would like to thank our sponsors and grant provider NSF, LSAMP Inspire Program and Iowa League of Cities. We would like to thank our partners and team members at Iowa State University and University of Nebraska - Lincoln. We would like to thank the State of Iowa for providing Data along with our partners in the Rural Iowa communities.
 

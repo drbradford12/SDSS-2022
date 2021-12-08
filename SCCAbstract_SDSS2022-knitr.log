@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.7)  8 DEC 2021 12:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.7)  8 DEC 2021 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,6 +23,49 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip49
+\fb@frw=\dimen141
+\fb@frh=\dimen142
+\FrameRule=\dimen143
+\FrameSep=\dimen144
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/newtxtext.sty
 Package: newtxtext 2020/09/19 v1.630
 
@@ -41,17 +84,16 @@ LaTeX Info: Redefining \textsw on input line 47.
 LaTeX Info: Redefining \textssc on input line 48.
 LaTeX Info: Redefining \textulc on input line 49.
 )
-\ntx@fs=\dimen139
+\ntx@fs=\dimen145
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks15
-\XKV@tempa@toks=\toks16
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
 \XKV@depth=\count187
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
@@ -94,7 +136,7 @@ Package: newtxmath 2020/12/20 v1.640
 `newtxmath' v1.640, 2020/12/20 Math macros based originally on txfonts (msharpe
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip49
+\@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -102,12 +144,12 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen140
+\@emptytoks=\toks18
+\ex@=\dimen146
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen141
+\pmbraise@=\dimen147
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
@@ -124,7 +166,7 @@ LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box47
 \strutbox@=\box48
-\big@size=\dimen142
+\big@size=\dimen148
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count197
@@ -132,21 +174,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \dotsspace@=\muskip16
 \c@parentequation=\count199
 \dspbrk@lvl=\count266
-\tag@help=\toks18
+\tag@help=\toks19
 \row@=\count267
 \column@=\count268
 \maxfields@=\count269
-\andhelp@=\toks19
-\eqnshift@=\dimen143
-\alignsep@=\dimen144
-\tagshift@=\dimen145
-\tagwidth@=\dimen146
-\totwidth@=\dimen147
-\lineht@=\dimen148
-\@envbody=\toks20
-\multlinegap=\skip50
-\multlinetaggap=\skip51
-\mathdisplay@stack=\toks21
+\andhelp@=\toks20
+\eqnshift@=\dimen149
+\alignsep@=\dimen150
+\tagshift@=\dimen151
+\tagwidth@=\dimen152
+\totwidth@=\dimen153
+\lineht@=\dimen154
+\@envbody=\toks21
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
@@ -167,8 +209,8 @@ Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/kastrup/binhex.tex)
 \tx@Isdigit=\count271
 \tx@IsAlNum=\count272
-\tx@tA=\toks22
-\tx@tB=\toks23
+\tx@tA=\toks23
+\tx@tB=\toks24
 \tx@su=\read2
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 360.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -251,7 +293,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
 
 (Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 636.
-\tx@sbptoks=\toks24
+\tx@sbptoks=\toks25
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 858.
 LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 859.
 LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 860.
@@ -275,7 +317,7 @@ LaTeX Info: Redefining \not on input line 2929.
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 ) (./sdss2020.sty
 Extended Abstract Style for SDSS 2020 -- released December 4, 2019
-\titlebox=\skip52
+\titlebox=\skip53
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -286,34 +328,7 @@ Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-(/usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks25
-\thm@bodyfont=\toks26
-\thm@headfont=\toks27
-\thm@notefont=\toks28
-\thm@headpunct=\toks29
-\thm@preskip=\skip53
-\thm@postskip=\skip54
-\thm@headsep=\skip55
-\dth@everypar=\toks30
-
-
-! LaTeX Error: Command \openbox already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.426   \vrule\hfil}}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-LaTeX Info: Redefining \textsquare on input line 427.
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup9
 \symAMSb=\mathgroup10
@@ -331,12 +346,12 @@ nment
 (/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count273
-\float@exts=\toks31
+\float@exts=\toks26
 \float@box=\box49
-\@float@everytoks=\toks32
+\@float@everytoks=\toks27
 \@floatcapt=\box50
 )
-\@float@every@algorithm=\toks33
+\@float@every@algorithm=\toks28
 \c@algorithm=\count274
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
@@ -345,259 +360,180 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@line=\count276
 \c@ALC@rem=\count277
 \c@ALC@depth=\count278
-\ALC@tlm=\skip56
-\algorithmicindent=\skip57
+\ALC@tlm=\skip54
+\algorithmicindent=\skip55
 )
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
 )
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
-)
-(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Sweave.sty
-Package: Sweave 
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count279
-\FV@InFile=\read3
-\FV@TabBox=\box51
-\c@FancyVerbLine=\count280
-\FV@StepNumber=\count281
-\FV@OutFile=\write3
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
-2.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-))
-(/usr/local/texlive/2021/texmf-dist/tex/latex/ae/ae.sty
-Package: ae 2001/02/12 1.3 Almost European Computer Modern
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-)))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count282
-\l__pdf_internal_box=\box52
+\l__color_backend_stack_int=\count279
+\l__pdf_internal_box=\box51
 )
-No file SCCAbstract_SDSS2022-knitr.aux.
+(./SCCAbstract_SDSS2022-knitr.aux)
 \openout1 = `SCCAbstract_SDSS2022-knitr.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 30.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 79.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 30.
+ 79.
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 79.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-30.
+79.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 79.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 30.
+ 79.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 79.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 30.
+e 79.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 30.
-\c@mv@tabular=\count283
-\c@mv@boldtabular=\count284
-
-
-Package sdss2020 Warning: Package newtx not available, therefore
-(sdss2020)                using package times instead
-(sdss2020)                 on input line 30.
+LaTeX Font Info:    ... okay on input line 79.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count285
-\scratchdimen=\dimen151
-\scratchbox=\box53
-\nofMPsegments=\count286
-\nofMParguments=\count287
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count288
-\MPscratchDim=\dimen152
-\MPnumerator=\count289
-\makeMPintoPDFobject=\count290
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count280
+\scratchdimen=\dimen155
+\scratchbox=\box52
+\nofMPsegments=\count281
+\nofMParguments=\count282
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count283
+\MPscratchDim=\dimen156
+\MPnumerator=\count284
+\makeMPintoPDFobject=\count285
+\everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)) (/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-(/usr/local/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-(./SCCAbstract_SDSS2022-knitr-concordance.tex)
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 3
-4.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [1
+\c@mv@tabular=\count286
+\c@mv@boldtabular=\count287
 
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+Package sdss2020 Warning: Package newtx not available, therefore
+(sdss2020)                using package times instead
+(sdss2020)                 on input line 79.
 
-]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 43.
+(Font)              scaled to size 14.4pt on input line 84.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 43.
+(Font)              scaled to size 14.4pt on input line 84.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 43.
+(Font)              scaled to size 12.0pt on input line 84.
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 43.
-
+e 84.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 43.
+(Font)              scaled to size 12.0pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 43.
+(Font)              scaled to size 8.8pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 43.
+(Font)              scaled to size 6.6pt on input line 84.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-43.
+84.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-43.
+84.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-43.
+84.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 43
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 84
 .
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 43.
+(Font)              scaled to size 12.0pt on input line 84.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 84
+.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 48.
-
-
-LaTeX Warning: Citation `fisher' on page 2 undefined on input line 51.
-
+(Font)              scaled to size 10.0pt on input line 89.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 54.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.0pt on input line 54.
-
-LaTeX Warning: Citation `few' on page 2 undefined on input line 54.
-
-
-LaTeX Warning: Citation `scc' on page 2 undefined on input line 57.
-
+(Font)              scaled to size 9.0pt on input line 95.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 60.
+(Font)              scaled to size 10.0pt on input line 101.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 68.
+e 109.
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 68.
- [2
+(Font)              scaled to size 10.0pt on input line 109.
+ [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
 
 ]
+<SCC_Dashboard.png, id=11, 1674.255pt x 960.58875pt>
+File: SCC_Dashboard.png Graphic file (type png)
+<use SCC_Dashboard.png>
+Package pdftex.def Info: SCC_Dashboard.png  used on input line 128.
+(pdftex.def)             Requested size: 213.39566pt x 122.43314pt.
+
 (./SCCAbstract_SDSS2022-knitr.bbl
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 18.
@@ -610,38 +546,32 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 18.
 
-) [3
-
-] (./SCCAbstract_SDSS2022-knitr.aux)
+) [2 <./SCC_Dashboard.png>] (./SCCAbstract_SDSS2022-knitr.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 7095 strings out of 478994
- 94248 string characters out of 5858185
- 384346 words of memory out of 5000000
- 24389 multiletter control sequences out of 15000+600000
- 458422 words of font info for 111 fonts, out of 8000000 for 9000
+ 6289 strings out of 478994
+ 80378 string characters out of 5858185
+ 370021 words of memory out of 5000000
+ 23623 multiletter control sequences out of 15000+600000
+ 453035 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,9n,88p,991b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 82i,10n,88p,991b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/
-local/texlive/2021/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2021/texmf-dist/f
-onts/type1/public/newtx/ztmri.pfb>
-Output written on SCCAbstract_SDSS2022-knitr.pdf (3 pages, 182293 bytes).
+local/texlive/2021/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/
+texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2021/texmf-di
+st/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts
+/type1/public/newtx/ztmb.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
+blic/newtx/ztmr.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newt
+x/ztmri.pfb>
+Output written on SCCAbstract_SDSS2022-knitr.pdf (2 pages, 618012 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 42 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 5 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
