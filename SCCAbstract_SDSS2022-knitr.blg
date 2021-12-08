@@ -2,60 +2,61 @@ This is BibTeX, Version 0.99d (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: SCCAbstract_SDSS2022-knitr.aux
 The style file: sdss2020.bst
-Database file #1: SampleReferencesForExtendedAbstract.bib
-Warning--I didn't find a database entry for "..."
-Warning--I didn't find a database entry for "SCC"
-Name 1 in "A.Sarikaya, M.Correll, L.Bartram, M.Tory, and D.Fisher" has a comma at the end for entry Fisher
+Database file #1: SCCAbstract_SDSS2022.bib
+Name 1 in "A. Sarikaya, M. Correll, L. Bartram, M. Tory, and D. Fisher" has a comma at the end for entry fisher
 while executing---line 1244 of file sdss2020.bst
-Too many commas in name 1 of "A.Sarikaya, M.Correll, L.Bartram, M.Tory, and D.Fisher" for entry Fisher
+Too many commas in name 1 of "A. Sarikaya, M. Correll, L. Bartram, M. Tory, and D. Fisher" for entry fisher
 while executing---line 1244 of file sdss2020.bst
-Name 1 in "A.Sarikaya, M.Correll, L.Bartram, M.Tory, and D.Fisher" has a comma at the end for entry Fisher
+Name 1 in "A. Sarikaya, M. Correll, L. Bartram, M. Tory, and D. Fisher" has a comma at the end for entry fisher
 while executing---line 1244 of file sdss2020.bst
-Too many commas in name 1 of "A.Sarikaya, M.Correll, L.Bartram, M.Tory, and D.Fisher" for entry Fisher
+Too many commas in name 1 of "A. Sarikaya, M. Correll, L. Bartram, M. Tory, and D. Fisher" for entry fisher
 while executing---line 1244 of file sdss2020.bst
-Name 1 in "A.Sarikaya, M.Correll, L.Bartram, M.Tory, and D.Fisher" has a comma at the end for entry Fisher
+Warning--to sort, need author or key in scc
+Name 1 in "A. Sarikaya, M. Correll, L. Bartram, M. Tory, and D. Fisher" has a comma at the end for entry fisher
 while executing---line 1313 of file sdss2020.bst
-Too many commas in name 1 of "A.Sarikaya, M.Correll, L.Bartram, M.Tory, and D.Fisher" for entry Fisher
+Too many commas in name 1 of "A. Sarikaya, M. Correll, L. Bartram, M. Tory, and D. Fisher" for entry fisher
 while executing---line 1313 of file sdss2020.bst
-You've used 2 entries,
+`year' is a missing field, not a string, for entry scc
+while executing---line 1313 of file sdss2020.bst
+You've used 3 entries,
             2490 wiz_defined-function locations,
-            570 strings with 4820 characters,
-and the built_in function-call counts, 704 in all, are:
-= -- 72
-> -- 20
+            569 strings with 4863 characters,
+and the built_in function-call counts, 936 in all, are:
+= -- 97
+> -- 21
 < -- 0
 + -- 6
 - -- 6
-* -- 48
-:= -- 126
-add.period$ -- 8
-call.type$ -- 2
-change.case$ -- 10
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 31
-empty$ -- 57
+* -- 61
+:= -- 152
+add.period$ -- 11
+call.type$ -- 3
+change.case$ -- 14
+chr.to.int$ -- 3
+cite$ -- 5
+duplicate$ -- 42
+empty$ -- 85
 format.name$ -- 9
-if$ -- 141
+if$ -- 196
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 3
-newline$ -- 15
+newline$ -- 20
 num.names$ -- 6
-pop$ -- 12
+pop$ -- 25
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 18
 quote$ -- 0
-skip$ -- 22
+skip$ -- 30
 stack$ -- 0
-substring$ -- 35
-swap$ -- 4
+substring$ -- 41
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 0
+type$ -- 20
+warning$ -- 1
 while$ -- 6
-width$ -- 4
-write$ -- 30
-(There were 6 error messages)
+width$ -- 6
+write$ -- 41
+(There were 7 error messages)

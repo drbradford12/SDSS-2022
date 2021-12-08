@@ -1,16 +1,21 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citename{A.Sarikaya and D.Fisher}2019]{Fisher}
-L.Bartram~M.Tory A.Sarikaya, M.Correll and D.Fisher.
+\bibitem[\protect\citename{A.~Sarikaya and Fisher}2019]{fisher}
+L.~Bartram M.~Tory A.~Sarikaya, M.~Correll and D.~Fisher.
 \newblock 2019.
 \newblock What do we talk about when we talk about dashboards?
-\newblock {\em IEEE TVCG}, 25:682--692.
+\newblock {\em IEEE}, 25:682--692.
 
-\bibitem[\protect\citename{Few}2006]{Few}
+\bibitem[\protect\citename{Few}2006]{few}
 Stephen Few.
 \newblock 2006.
 \newblock {\em Information dashboard design: The effective visual communication
   of data}.
 \newblock O’Reilly Media, Inc., Newton, MA.
+
+\bibitem[\protect\citename{scc}]{scc}
+Rural shrink smart.
+\newblock \url{https://ruralshrinksmart.org/}.
+\newblock Accessed: 2021-12-01.
 
 \end{thebibliography}
