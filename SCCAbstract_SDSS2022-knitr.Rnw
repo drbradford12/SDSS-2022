@@ -7,6 +7,9 @@
 \usepackage{amsmath, amsfonts}
 \usepackage{algorithm, algorithmic}  
 \usepackage{graphicx}
+% Commands for editing
+\newcommand{\db}[1]{{\textcolor{orange}{#1}}}
+\newcommand{\svp}[1]{{\textcolor{blue}{#1}}}
 
 %\title{Symposium on Data Science and Statistics (SDSS 2022) \\
 %Submission and Formatting Instructions for Extended Abstracts}
@@ -46,11 +49,14 @@ Many small and rural places are shrinking. Interactive dashboards are the most c
 \section{Research Problem}
 With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \cite{fisher}. A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making. Stephen Few defines a dashboard as:
 
-\begin{quotation}
+\begin{quotation}% I don't know that we need this... dashboards are very common, so let's focus on the problem and the dashboard as an obvious solution.
 \small A visual display of the most important information needed to achieve one or more objectives, consolidated and arranged on a single screen so the information can be monitored at a glance. \cite{few}
 \end{quotation}
 
-Some communities continue to thrive as they lose population because they adapt and stay focused on quality of life, community services, and investing in the future. This is what we call rural smart shrinkage. Our research team is developing strategies and sharing examples of successful shrink-smart towns to help similar communities to improve quality of life for their residents \cite{scc}. Our work focuses on developing and challenges novice analysts in advanced statistical concepts and data visualizations to help make decisions. Specifically, what data can be used to help make decisions, what strategies overcome the challenges of those analysts feel empowered to make data-driven decisions. Our ultimate aim is to help inform Iowa's Rural Shrink Smart communities by using effective dashboards to help those towns build the Quality of Life (QoL) Measures.
+Some communities continue to thrive as they lose population because they adapt\svp{, maintaining quality of life and community services for residents while} investing in the future. % putting sentences on different lines helps with git merges and also makes it easier to figure out where {} match up :)
+\svp{This process,} \emph{smart shrinkage}\svp{, is important for rural areas who have experienced shrinking populations for decades.} 
+\svp{As small rural towns do not have access to data scientists or even the ability to easily leverage data collected locally to support decisions, our} research team \svp{will provide communities with data about services in small town Iowa in order to assist with} developing strategies to improve quality of life for their residents amid shrinking populations \cite{scc}. \svp{We hope to allow towns to discover their own data and compare to other similar towns, centering decision-making on data in the context of small-town Iowa life. In the process, we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.}
+% Our work focuses on developing and challenges novice analysts in advanced statistical concepts and data visualizations to help make decisions. Specifically, what data can be used to help make decisions, what strategies overcome the challenges of those analysts feel empowered to make data-driven decisions. Our ultimate aim is to help inform Iowa's Rural Shrink Smart communities by using effective dashboards to help those towns build the Quality of Life (QoL) Measures.
 
 \section{Data Description}
 {\it Iowa Data} were used to create the SCC dashboard. {\it Iowa Data} is a public data website that collects and updates data on the State of Iowa Government, data are mostly on a town/city level that is not collected in National Data Collection Systems. {\it Iowa Data} website is a unique and detailed database of information about residents, such as liquor sales and school building locations. For the purpose of the Rural Shrink Smart Dashboard, we will collect as much data as possible, such as obtaining fire department and hospital details. These data are collected on all towns that are available. We will use statistical clustering methods will be used to determine the town classifications to help improve the rural towns.
