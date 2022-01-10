@@ -18,45 +18,45 @@ Too many commas in name 1 of "A. Sarikaya, M. Correll, L. Bartram, M. Tory, and 
 while executing---line 1313 of file sdss2020.bst
 `year' is a missing field, not a string, for entry scc
 while executing---line 1313 of file sdss2020.bst
-You've used 3 entries,
+You've used 5 entries,
             2490 wiz_defined-function locations,
-            569 strings with 4863 characters,
-and the built_in function-call counts, 936 in all, are:
-= -- 97
-> -- 21
+            583 strings with 5154 characters,
+and the built_in function-call counts, 1620 in all, are:
+= -- 175
+> -- 35
 < -- 0
-+ -- 6
-- -- 6
-* -- 61
-:= -- 152
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 14
-chr.to.int$ -- 3
-cite$ -- 5
-duplicate$ -- 42
-empty$ -- 85
-format.name$ -- 9
-if$ -- 196
++ -- 11
+- -- 10
+* -- 109
+:= -- 266
+add.period$ -- 19
+call.type$ -- 5
+change.case$ -- 24
+chr.to.int$ -- 5
+cite$ -- 7
+duplicate$ -- 72
+empty$ -- 141
+format.name$ -- 15
+if$ -- 334
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 3
-newline$ -- 20
-num.names$ -- 6
-pop$ -- 25
+missing$ -- 5
+newline$ -- 32
+num.names$ -- 12
+pop$ -- 31
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 30
 quote$ -- 0
-skip$ -- 30
+skip$ -- 51
 stack$ -- 0
-substring$ -- 41
-swap$ -- 6
+substring$ -- 90
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
+type$ -- 36
 warning$ -- 1
-while$ -- 6
-width$ -- 6
-write$ -- 41
+while$ -- 14
+width$ -- 9
+write$ -- 69
 (There were 7 error messages)

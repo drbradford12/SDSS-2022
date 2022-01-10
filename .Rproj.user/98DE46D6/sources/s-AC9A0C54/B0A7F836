@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/SDSS-Abstract-2022/SCCAbstract_SDSS2022.bib",
     "project_path": "SCCAbstract_SDSS2022.bib",
     "type": "text",
-    "hash": "2851113117",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1641420435597.0,
@@ -12,8 +12,8 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "32,15",
-        "scrollLine": "3"
+        "cursorPosition": "11,45",
+        "scrollLine": "0"
     },
     "folds": "",
     "lastKnownWriteTime": 1641420771,

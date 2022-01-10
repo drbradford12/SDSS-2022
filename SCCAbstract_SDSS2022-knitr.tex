@@ -94,11 +94,13 @@ Many small and rural places are shrinking. Interactive dashboards are the most c
 {\bf Keywords:} Interactive Dashboards, Exploratory Data Analysis (EDA), Guided Discovery
 
 \section{Research Problem}
-With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \cite{fisher}. A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making. Stephen Few defines a dashboard as:
+With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \cite{fisher}. A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making. 
 
-\begin{quotation}% I don't know that we need this... dashboards are very common, so let's focus on the problem and the dashboard as an obvious solution.
-\small A visual display of the most important information needed to achieve one or more objectives, consolidated and arranged on a single screen so the information can be monitored at a glance. \cite{few}
-\end{quotation}
+% Stephen Few defines a dashboard as:
+% 
+% \begin{quotation}% I don't know that we need this... dashboards are very common, so let's focus on the problem and the dashboard as an obvious solution.
+% \small A visual display of the most important information needed to achieve one or more objectives, consolidated and arranged on a single screen so the information can be monitored at a glance. \cite{few}
+% \end{quotation}
 
 Some communities continue to thrive as they lose population because they adapt\svp{, maintaining quality of life and community services for residents while} investing in the future. % putting sentences on different lines helps with git merges and also makes it easier to figure out where {} match up :)
 \svp{This process,} \emph{smart shrinkage}\svp{, is important for rural areas who have experienced shrinking populations for decades.} 
@@ -124,15 +126,37 @@ Some communities continue to thrive as they lose population because they adapt\s
 
 
 \section{Current Progress and Future Work}
-Our current design work will be broken down into four categories that have been identified in the following:
+In our research, it is important to use visual orientation of dashboards along with the framework of Guided Discovery Learning (GDL), to make sure that the town analyst has the ability to understand the visual orientation easily as well as guided them to new discovery in the dashboard. 
+Stephen Few noted in \italize{Information Dashboard Design: The effective visual communication of data} the following:
+\begin{quotation}
+\smaller{The visual orientation of dashboards is important due to the speed of perception that’s usually required to monitor information. The faster you must assess what’s going on, the more you should rely on graphical means to display the information. \cite{few} }
+\end{quotation}
+
+Few outlined common mistakes that are made in \italize{Information Dashboard Design}, we will focus on making sure that the following three common mistakes are avoided to make sure that the town analyst have the best path to success:
 \begin{itemize}
-\item User Flexibility 
-\item Visual, Analytic, and Data Literacy
-\item Data Design
-\item Social Impact
+\item{Choosing inappropriate display media}
+\item{Ineffectively highlighting what’s important}
+\item{Misusing or overusing color}
 \end{itemize}
 
-In Figure 1, our dashboard will allow the user to select a town name, which will populate the  information in the maps related to necessary services, which include directions and distance to fire department, schools, post offices and hospitals. A table will be populated that will include information related to five other towns that have similar attributes, but the aspect of QoL will be included in the differences that help the town make a decision for the town. 
+This list will be the guiding list that can push our work in the direction that is far away from the work done in the workplace in the past. With a great deal of data, many organizations fall into the trap of over ineffectively highlighting what's important along with choosing inappropriate display media and misusing color. This is mostly done, in order to make sure that all of the information is given to the user. This could be a major hurdle when we are collecting a great deal of open-source data for the small towns of Iowa.
+
+A bit of background on Guided Discovery, which is defined as a environment where "students" are actively discovering knowledge. DeDonno stated:
+ \begin{quotation}
+\small In our daily lives, we may use a guided discovery process where learning is aided by hints, direction, feedback and other helpful information.  \cite{mayer} \cite{dedonno}
+ \end{quotation}
+
+
+Our current work will incorporate the ideas of GDL, in which dashboard design will be used to display a panel with vital statistics making sure that the town's analyst small town is the center of focus. The vital statistics will show and highlight the town's financial health, shortest distances from city center to critical resources, such as the fire department, hospital, post offices and public schools. The dashboard will include Quality of Life (QoL) Metrics and the financial health of the small town. Based on the number of variables that are used in making sure that the dashboard is extensive and useful, we will use parallel coordinate plots to show comparisons between the focus small town with the five similar towns. 
+
+In the work of the data visualization portion of our research work, a parallel (coordinates) plot allows to compare the feature of several individual observations (series) on a set of numeric variables. Each vertical bar represents a variable and often has its own scale. (The units can even be different). Values are then plotted as series of lines connected across each axis.
+A parallel coordinate plot is used traditionally in air traffic control to help with collision avoidance algorithms, but has been adapted in the statistical data visualization space with an emphasis on three important considerations: the order, the rotation, and the scaling of the axes. 
+
+Using parallel (coordinates) plot will allow 
+
+To determine the five similar towns, we will implement unsupervised statistical methods, such as K-means, Principal Component Analysis (PCA), and Hierarchical Clustering, based on distances and services available. We will continue to use clustering methods to identify the towns that will be best compare when the analyst interacts with our dashboard. Using GDL,  our dashboard will make sure that the focus small town is compared to other towns to find ways to improve their town using data-driven decisions. Our research partners found out that the small towns do not want to be told what to do but would like to make decisions that are of those who have been apart of the community for generations. Our dashboard will hopefully make sure that the town's analyst are guided in the direction that will help the town's population shrink smart.
+
+In Figure 1, our dashboard will allow the user to select a town name, which will populate the information in the maps related to necessary services, which include directions and distance to fire department, schools, post offices and hospitals. A table will be populated that will include information related to five other towns that have similar attributes, but the aspect of QoL will be included in the differences that help the town make a decision for the town. 
 
 \begin{figure}[ht!]
 \centering
@@ -141,31 +165,10 @@ In Figure 1, our dashboard will allow the user to select a town name, which will
 \end{figure}
 
 
-\subsection{Current Progress}
-{\bf Statistical Techniques} Our research has incorporated statistical clustering methods, such as K-means and Hierarchical Clustering, to determine the similarities in the towns based on distances and services available. As a result, of our research partners we were actually able to use clustering methods to determine and identify missing data. We will continue to use clustering methods to identify the towns that will be best compare when the analyst interacts with our dashboard. 
-
-{\bf Data Science Techniques} Our team has been able to utilize direct API calls and web scraping tools to collect data necessary.  
-
-{\bf Dashboard Design Techniques} Our dashboard incorporates the following important dashboard techniques:
-{\it User Flexibility} The aspects of user flexibility are directly based on the detail data adjustments; Adaptability: User and Display; Comparison support and Storytelling. For example, we want our users to use the data collected on a mass scale that have and should be summarized in detail but without losing anything.
-
-{\it Visual, Analytic, and Data Literacy} The aspects in our dashboard development primary presents in our ability to ease of usage to the user with visual, data  and analytic literacy. We have little information on the users' adaptability to data-driven decisions. 
-
-{\it Data Design}. In our case, the challenges that arise in our dashboard will include data quality, data grouping, too much data, data sources, inaccurate data representation, and key performance indicators and metrics. For example, we have information from {\it Iowa Data} will have missing data can be pointed out by our users' that has not been captured by our data sources, this can be a recent closing of a school due to the pandemic.
-
-{\it Social Impact} This aspect will be about making sure that the users are flexible to the following: data-driven thinking, technology resistance, dashboard aversion, and data sharing, security, and privacy. For example, we will encounter town users that will have the urge to compare their town to all types of towns that aren't similar. In our research, we will use statistical clustering methods and cater dashboard to show only towns that have similar components.
-
 \subsection{Future Work}
-Our dashboard design has created challenges that promote 
+We have five towns that have agreed to partner with the project to help with identify the best practices that are useful in the Iowa small and rural towns. As a result to our dashboard development, we will develop a continual feedback loop from the town analyst in these five towns that will help provide our team with useful notes that will be adaptive to all of the small towns in Iowa. Our team plans to capture useful metrics on the use of the product allowing the quantitative and qualitative data collection to allow for a better user experience. This can promote challenges in the event of towns feeling "studied" by people in cities outside of their own. 
 
-We have five towns that have agreed to partner with the project to help with identify the best practices that are useful in the Iowa small and rural towns. As a result to our dashboard development, we will develop a feedback loop from the analyst in these five towns that will help provide our team with useful notes that will be adaptive to all of the small towns in Iowa. As a contrast, we will researchers with an extensive understanding of the small towns to be used as a counter example of dashboard adaptability. Our research, should be a 
 
-So dashboard challenges,
-adaptation techniques, and user strategies are interconnected as
-Figure 1 shows. The rationale is that if we are able to establish
-a relationship between strategies to problems and we can detect
-the strategies in real-time, we can adapt the user interface in realtime or in the next iteration. Then we can say that the adaption
-techniques have a positive effect on the challenges.
 \section{Acknowledgements}
 We would like to thank our sponsors and grant provider NSF, LSAMP Inspire Program and Iowa League of Cities. We would like to thank our partners and team members at Iowa State University and University of Nebraska - Lincoln. We would like to thank the State of Iowa for providing Data along with our partners in the Rural Iowa communities.
 
