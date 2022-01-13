@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.7)  13 JAN 2022 10:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.7)  13 JAN 2022 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,8 +574,11 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: Citation `few' on page 2 undefined on input line 130.
 
+
+LaTeX Warning: Citation `dedonno' on page 2 undefined on input line 138.
+
 ! Undefined control sequence.
-l.136 ...common mistakes that are made in \italize
+l.142 ...common mistakes that are made in \italize
                                                   {Information Dashboard Des...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -583,17 +586,41 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+! Undefined control sequence.
+l.144 \item{\br
+               {Choosing inappropriate display media} - Our work has minimiz...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Citation `dedonno' on page 2 undefined on input line 147.
+! Undefined control sequence.
+l.145 \item{\br
+               {Ineffectively highlighting what’s important} - We wanted t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.146 \item{\br
+               {Misusing or overusing color} - Our dashboard uses color to h...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 <SCC_Dashboard.png, id=11, 1674.255pt x 960.58875pt>
 File: SCC_Dashboard.png Graphic file (type png)
 <use SCC_Dashboard.png>
-Package pdftex.def Info: SCC_Dashboard.png  used on input line 162.
+Package pdftex.def Info: SCC_Dashboard.png  used on input line 166.
 (pdftex.def)             Requested size: 213.39566pt x 122.43314pt.
-(./SCCAbstract_SDSS2022-knitr.bbl [2 <./SCC_Dashboard.png>]) [3
+(./SCCAbstract_SDSS2022-knitr.bbl [2]) [3
 
-]
+ <./SCC_Dashboard.png>]
 (./SCCAbstract_SDSS2022-knitr.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -604,10 +631,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 6799 strings out of 478994
- 86534 string characters out of 5858185
- 383280 words of memory out of 5000000
- 24126 multiletter control sequences out of 15000+600000
+ 6798 strings out of 478994
+ 86527 string characters out of 5858185
+ 386280 words of memory out of 5000000
+ 24125 multiletter control sequences out of 15000+600000
  450230 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,10n,88p,1333b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -619,7 +646,7 @@ st/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts
 /type1/public/newtx/ztmb.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
 blic/newtx/ztmr.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newt
 x/ztmri.pfb>
-Output written on SCCAbstract_SDSS2022-knitr.pdf (3 pages, 618101 bytes).
+Output written on SCCAbstract_SDSS2022-knitr.pdf (3 pages, 617719 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream

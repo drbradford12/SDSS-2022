@@ -88,23 +88,27 @@ Stephen Few noted in \italize{Information Dashboard Design: The effective visual
 %\smaller{The visual orientation of dashboards is important due to the speed of perception that’s usually required to monitor information. The faster you must assess what’s going on, the more you should rely on graphical means to display the information. \cite{few} }
 %\end{quotation}
 
-Few outlined common mistakes that are made in \italize{Information Dashboard Design}, we will focus on making sure that the following three common mistakes on workplace dashboard development are avoided to make sure that the town analyst have the best path to success:
-\begin{itemize}
-\item{Choosing inappropriate display media}
-\item{Ineffectively highlighting what’s important}
-\item{Misusing or overusing color}
-\end{itemize}
-
-The outlined list has been used as the guiding light to avoid pitfalls in developing dashboards in the workplace. With the amount of data, our analyst fall into the trap of over ineffectively highlighting what's important along with choosing inappropriate display media and misusing color. This is mostly done, in order to make sure that all of the information is given to the user. This has been a major hurdle when displaying the amount data collected from open-source data for the small towns of Iowa.
-
 %Continue to cite this in the documentation but remove the quotation.
 
 A bit of background on Guided Discovery, which is defined as a environment where "students" are actively discovering knowledge, DeDonno states that we use GDL in our daily lives to make decisions by hints, feedback, and helpful information \cite{dedonno}.
 %\begin{quotation}
 %\small In our daily lives, we may use a guided discovery process where learning is aided by hints, direction, feedback and other helpful information.  \cite{mayer} \cite{dedonno}
 %\end{quotation}
+Few outlined common mistakes that are made in \italize{Information Dashboard Design}, we have focused on making sure that the following three common mistakes on workplace dashboard development are avoided to best assist the town analyst to the best path of success with our solutions to those common mistakes:
+\begin{itemize}
+\item{\br{Choosing inappropriate display media} - Our work has minimized the number of tables and charts that could come from huge open-source data to incorporate highlighted key metrics and visualizing data of five towns in parallel coordinate plots. }
+\item{\br{Ineffectively highlighting what’s important} - We wanted the town to be the center of focus for the user, as such we added their information in the focal point in their center of the page. The comparison towns are only in the parallel coordinate plots, to remind the user that their town is most important items in the dashboard.}
+\item{\br{Misusing or overusing color} - Our dashboard uses color to highlight the town in the parallel coordinate plot along with the leaflet maps that will be used in the theme of the Rural Shrink Smart Project}
+\end{itemize}
+
+The outlined list has been used as the guiding light to avoid pitfalls in developing dashboards in the workplace. With the amount of data, our analyst fall into the trap of over ineffectively highlighting what's important along with choosing inappropriate display media and misusing color. This is mostly done, in order to make sure that all of the information is given to the user. This has been a major hurdle when displaying the amount data collected from open-source data for the small towns of Iowa.
+
 
 Our current work incorporates the ideas of GDL, in which dashboard design have been used to display a panel with vital statistics making sure that the town's analyst small town is the center of focus. The vital statistics show and highlight the town's financial health, shortest distances from city center to critical resources, such as the fire department, hospital, post offices and public schools. The dashboard includes Quality of Life (QoL) Metrics and the financial health of the small town. Based on the number of variables that are used in making sure that the dashboard is extensive and useful, we implemented the use of parallel coordinate plots to show comparisons between the focus small town with the five similar towns. A parallel (coordinates) plot allowed our town analyst to compare the important features of several individual towns on a set of numeric and categorical variables collected. Historically, parallel coordinate plots have been used in air traffic control to help with collision avoidance algorithms, but has been adapted in the statistical data visualization space with an emphasis on three important considerations: the order, the rotation, and the scaling of the axes. Our coordinate plots, will display variables in categorically and numerically by scaling the data.
+
+
+
+
 
 To determine the five similar towns, we have implemented unsupervised statistical methods, such as K-means, Principal Component Analysis (PCA), and Hierarchical Clustering, based on distances and services available. We continue to use clustering methods to identify the towns that will be best compare when the analyst interacts with our dashboard. Using GDL, our dashboard make sure that the focus small town is compared to other towns to find ways to improve their town using data-driven decisions. Our research partners have worked with five towns directly, who have agreed to partner with the project to help with identify the best practices that are useful in the Iowa small and rural towns.As a a result, we found out that the small towns do not want to be told what to do but would like to make decisions that are of those who have been apart of the community for generations. Our dashboard will hopefully make sure that the town's analyst are guided in the direction that will help the town's population shrink smart. 
 
@@ -117,6 +121,9 @@ In Figure 1, our dashboard allows the user to select a town name, which will pop
 \includegraphics[width=75mm]{SCC_Dashboard.png}
 \caption{Rural Smart EDA Dashboard Design}
 \end{figure}
+
+In conclusion, 
+
 
 %To-Do: Write this in the way that we have done this because by the time that we present this will be done. 
 %\subsection{Future Work}
