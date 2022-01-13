@@ -80,38 +80,37 @@ Some communities continue to thrive as they lose population because they adapt\s
 \end{itemize}
 
 
-\section{Current Progress and Future Work}
+\section{Current Progress}
 In our research, it is important to use visual orientation of dashboards along with the framework of Guided Discovery Learning (GDL), to make sure that the town analyst has the ability to understand the visual orientation easily as well as guided them to new discovery in the dashboard. 
-Stephen Few noted in \italize{Information Dashboard Design: The effective visual communication of data} the following:
-\begin{quotation}
-\smaller{The visual orientation of dashboards is important due to the speed of perception that’s usually required to monitor information. The faster you must assess what’s going on, the more you should rely on graphical means to display the information. \cite{few} }
-\end{quotation}
+Stephen Few noted in \italize{Information Dashboard Design: The effective visual communication of data} stated that visual orientation of dashboards is important due to the speed at which perception \cite{few}.
 
-Few outlined common mistakes that are made in \italize{Information Dashboard Design}, we will focus on making sure that the following three common mistakes are avoided to make sure that the town analyst have the best path to success:
+%\begin{quotation}
+%\smaller{The visual orientation of dashboards is important due to the speed of perception that’s usually required to monitor information. The faster you must assess what’s going on, the more you should rely on graphical means to display the information. \cite{few} }
+%\end{quotation}
+
+Few outlined common mistakes that are made in \italize{Information Dashboard Design}, we will focus on making sure that the following three common mistakes on workplace dashboard development are avoided to make sure that the town analyst have the best path to success:
 \begin{itemize}
 \item{Choosing inappropriate display media}
 \item{Ineffectively highlighting what’s important}
 \item{Misusing or overusing color}
 \end{itemize}
 
-This list will be the guiding list that can push our work in the direction that is far away from the work done in the workplace in the past. With a great deal of data, many organizations fall into the trap of over ineffectively highlighting what's important along with choosing inappropriate display media and misusing color. This is mostly done, in order to make sure that all of the information is given to the user. This could be a major hurdle when we are collecting a great deal of open-source data for the small towns of Iowa.
+The outlined list has been used as the guiding light to avoid pitfalls in developing dashboards in the workplace. With the amount of data, our analyst fall into the trap of over ineffectively highlighting what's important along with choosing inappropriate display media and misusing color. This is mostly done, in order to make sure that all of the information is given to the user. This has been a major hurdle when displaying the amount data collected from open-source data for the small towns of Iowa.
 
-A bit of background on Guided Discovery, which is defined as a environment where "students" are actively discovering knowledge. DeDonno stated:
- \begin{quotation}
-\small In our daily lives, we may use a guided discovery process where learning is aided by hints, direction, feedback and other helpful information.  \cite{mayer} \cite{dedonno}
- \end{quotation}
+%Continue to cite this in the documentation but remove the quotation.
 
+A bit of background on Guided Discovery, which is defined as a environment where "students" are actively discovering knowledge, DeDonno states that we use GDL in our daily lives to make decisions by hints, feedback, and helpful information \cite{dedonno}.
+%\begin{quotation}
+%\small In our daily lives, we may use a guided discovery process where learning is aided by hints, direction, feedback and other helpful information.  \cite{mayer} \cite{dedonno}
+%\end{quotation}
 
-Our current work will incorporate the ideas of GDL, in which dashboard design will be used to display a panel with vital statistics making sure that the town's analyst small town is the center of focus. The vital statistics will show and highlight the town's financial health, shortest distances from city center to critical resources, such as the fire department, hospital, post offices and public schools. The dashboard will include Quality of Life (QoL) Metrics and the financial health of the small town. Based on the number of variables that are used in making sure that the dashboard is extensive and useful, we will use parallel coordinate plots to show comparisons between the focus small town with the five similar towns. 
+Our current work incorporates the ideas of GDL, in which dashboard design have been used to display a panel with vital statistics making sure that the town's analyst small town is the center of focus. The vital statistics show and highlight the town's financial health, shortest distances from city center to critical resources, such as the fire department, hospital, post offices and public schools. The dashboard includes Quality of Life (QoL) Metrics and the financial health of the small town. Based on the number of variables that are used in making sure that the dashboard is extensive and useful, we implemented the use of parallel coordinate plots to show comparisons between the focus small town with the five similar towns. A parallel (coordinates) plot allowed our town analyst to compare the important features of several individual towns on a set of numeric and categorical variables collected. Historically, parallel coordinate plots have been used in air traffic control to help with collision avoidance algorithms, but has been adapted in the statistical data visualization space with an emphasis on three important considerations: the order, the rotation, and the scaling of the axes. Our coordinate plots, will display variables in categorically and numerically by scaling the data.
 
-In the work of the data visualization portion of our research work, a parallel (coordinates) plot allows to compare the feature of several individual observations (series) on a set of numeric variables. Each vertical bar represents a variable and often has its own scale. (The units can even be different). Values are then plotted as series of lines connected across each axis.
-A parallel coordinate plot is used traditionally in air traffic control to help with collision avoidance algorithms, but has been adapted in the statistical data visualization space with an emphasis on three important considerations: the order, the rotation, and the scaling of the axes. 
+To determine the five similar towns, we have implemented unsupervised statistical methods, such as K-means, Principal Component Analysis (PCA), and Hierarchical Clustering, based on distances and services available. We continue to use clustering methods to identify the towns that will be best compare when the analyst interacts with our dashboard. Using GDL, our dashboard make sure that the focus small town is compared to other towns to find ways to improve their town using data-driven decisions. Our research partners have worked with five towns directly, who have agreed to partner with the project to help with identify the best practices that are useful in the Iowa small and rural towns.As a a result, we found out that the small towns do not want to be told what to do but would like to make decisions that are of those who have been apart of the community for generations. Our dashboard will hopefully make sure that the town's analyst are guided in the direction that will help the town's population shrink smart. 
 
-Using parallel (coordinates) plot will allow 
+Our dashboard development has become more focus on the GDL such that a continual feedback loop from the town analyst in these five towns has helped provide our team with useful notes that will be adaptive to all of the small towns in Iowa. Our team has captured useful metrics on the use of the product allowing the quantitative and qualitative data collection to better user experience. This can promote challenges in the event of towns feeling "studied" by people in cities outside of their own. 
 
-To determine the five similar towns, we will implement unsupervised statistical methods, such as K-means, Principal Component Analysis (PCA), and Hierarchical Clustering, based on distances and services available. We will continue to use clustering methods to identify the towns that will be best compare when the analyst interacts with our dashboard. Using GDL,  our dashboard will make sure that the focus small town is compared to other towns to find ways to improve their town using data-driven decisions. Our research partners found out that the small towns do not want to be told what to do but would like to make decisions that are of those who have been apart of the community for generations. Our dashboard will hopefully make sure that the town's analyst are guided in the direction that will help the town's population shrink smart.
-
-In Figure 1, our dashboard will allow the user to select a town name, which will populate the information in the maps related to necessary services, which include directions and distance to fire department, schools, post offices and hospitals. A table will be populated that will include information related to five other towns that have similar attributes, but the aspect of QoL will be included in the differences that help the town make a decision for the town. 
+In Figure 1, our dashboard allows the user to select a town name, which will populate the information in the maps related to necessary services, which include directions and distance to fire department, schools, post offices and hospitals. A table populates in the vital statistics sections that has information about the town's QoL Metrics and financial metrics, followed by a parallel coordinate plot that allows the town to see five towns that are similar based in the most common variables in the towns, such as the distance of fire department. 
 
 \begin{figure}[ht!]
 \centering
@@ -119,10 +118,8 @@ In Figure 1, our dashboard will allow the user to select a town name, which will
 \caption{Rural Smart EDA Dashboard Design}
 \end{figure}
 
-
-\subsection{Future Work}
-We have five towns that have agreed to partner with the project to help with identify the best practices that are useful in the Iowa small and rural towns. As a result to our dashboard development, we will develop a continual feedback loop from the town analyst in these five towns that will help provide our team with useful notes that will be adaptive to all of the small towns in Iowa. Our team plans to capture useful metrics on the use of the product allowing the quantitative and qualitative data collection to allow for a better user experience. This can promote challenges in the event of towns feeling "studied" by people in cities outside of their own. 
-
+%To-Do: Write this in the way that we have done this because by the time that we present this will be done. 
+%\subsection{Future Work}
 
 \section{Acknowledgements}
 We would like to thank our sponsors and grant provider NSF, LSAMP Inspire Program and Iowa League of Cities. We would like to thank our partners and team members at Iowa State University and University of Nebraska - Lincoln. We would like to thank the State of Iowa for providing Data along with our partners in the Rural Iowa communities.
