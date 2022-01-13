@@ -122,8 +122,6 @@ In Figure 1, our dashboard allows the user to select a town name, which will pop
 \caption{Rural Smart EDA Dashboard Design}
 \end{figure}
 
-In conclusion, 
-
 
 %To-Do: Write this in the way that we have done this because by the time that we present this will be done. 
 %\subsection{Future Work}
