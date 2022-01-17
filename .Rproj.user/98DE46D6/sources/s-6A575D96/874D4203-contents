@@ -1,0 +1,44 @@
+@article{fisher,
+  author={Sarikaya, Alper and Correll, Michael and Bartram, Lyn and Tory, Melanie and Fisher, Danyel},
+  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+  title={What Do We Talk About When We Talk About Dashboards?}, 
+  year={2019},
+  volume={25},
+  number={1},
+  pages={682-692},
+  doi={10.1109/TVCG.2018.2864903}}
+
+
+@BOOK{few,
+  author    = {Stephen Few},
+  title     = {Information dashboard design: The effective visual communication of data},
+  year      = {2006},
+  publisher = {O’Reilly Media, Inc.},
+  address   = {Newton, MA},
+}
+
+@misc{scc,
+  title = {Rural Shrink Smart},
+  howpublished = {\url{https://ruralshrinksmart.org/}},
+  year = {2022},
+  author = {{Rural Shrink Smart Team}},
+  note = {Accessed: 2021-12-01}
+}
+
+@article{dedonno,
+author= {Michael A. DeDonno},
+year = {2016},
+title = {The influence of IQ on pure discovery and guided discovery learning of a complex real-world task},
+journal = {Learning and Individual Differences},
+volume={49},
+pages={11--16}
+}
+
+@article{mayer,
+author= {Richard E. Mayer},
+year = {2004},
+title = {Should There Be a Three-Strikes Rule Against Pure Discovery Learning?},
+journal = {American Psychologist},
+volume={59},
+pages={14--19}
+}
