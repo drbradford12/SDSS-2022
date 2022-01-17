@@ -137,8 +137,8 @@ Some communities continue to thrive as they lose population because they adapt\s
 
 
 \section{Current Progress}
-In our research, it was necessary to use the visual orientation of dashboards and the framework of Guided Discovery Learning (GDL) to make sure that the town analyst can understand the visual orientation easily and guide them to a discovery about possible changes in the dashboard. 
-Stephen Few noted in {\it Information Dashboard Design: The effective visual communication of data} stated that visual orientation of dashboards is essential due to the speed at which perception \cite{few}.
+\svp{We leverage} the framework of Guided Discovery Learning (GDL) to guide \svp{the town leaders} to \svp{make discoveries using our interactive visualization}. \svp{This framework leverages hints, feedback, and other helpful information to guide users in interactive exploration}\cite{dedonno}.
+% Stephen Few noted in {\it Information Dashboard Design: The effective visual communication of data} stated that visual orientation of dashboards is essential due to the speed at which perception \cite{few}.
 
 %\begin{quotation}
 %\smaller{The visual orientation of dashboards is important due to the speed of perception that’s usually required to monitor information. The faster you must assess what’s going on, the more you should rely on graphical means to display the information. \cite{few} }
@@ -146,18 +146,22 @@ Stephen Few noted in {\it Information Dashboard Design: The effective visual com
 
 %Continue to cite this in the documentation but remove the quotation.
 
-A bit of background on Guided Discovery, which is defined as an environment where "students" are actively discovering knowledge, DeDonno states that we use GDL in our daily lives to make decisions by hints, feedback, and helpful information \cite{dedonno}.
+% A bit of background on Guided Discovery, which is defined as an environment where "students" are actively discovering knowledge, DeDonno states that we use GDL in our daily lives to make decisions by hints, feedback, and helpful information .
 %\begin{quotation}
 %\small In our daily lives, we may use a guided discovery process where learning is aided by hints, direction, feedback and other helpful information.  \cite{mayer} \cite{dedonno}
 %\end{quotation}
-Few outlined common mistakes that are made in {\it Information Dashboard Design}, we have focused on making sure that the following three common mistakes on workplace dashboard development are avoided to best assist the town analyst to the best path of success with our solutions to those common mistakes:
-\begin{itemize}
-\item{ {\bf Choosing inappropriate display media} - Our work has minimized the number of tables and charts that could come from huge open-source data to incorporate highlighted key metrics and visualize data of five towns in parallel coordinate plots.}
-\item{ {\bf Ineffectively highlighting what’s important} - We wanted the town to be the center of focus for the user; as such, we added their information in the focal point in the center of the page. The comparison towns are only in the parallel coordinate plots to remind users that their town is the most important item in the dashboard.}
-\item{ {\bf Misusing or overusing color} - Our dashboard uses color to highlight the town in the parallel coordinate plot along with the leaflet maps that will be used in the theme of the Rural Shrink Smart Project}
-\end{itemize}
+% Few outlined common mistakes that are made in {\it Information Dashboard Design}, we have focused on making sure that the following three common mistakes on workplace dashboard development are avoided to best assist the town analyst to the best path of success with our solutions to those common mistakes:
+% \begin{itemize}
+% \item{ {\bf Choosing inappropriate display media} - Our work has minimized the number of tables and charts that could come from huge open-source data to incorporate highlighted key metrics and visualize data of five towns in parallel coordinate plots.}
+% \item{ {\bf Ineffectively highlighting what’s important} - We wanted the town to be the center of focus for the user; as such, we added their information in the focal point in the center of the page. The comparison towns are only in the parallel coordinate plots to remind users that their town is the most important item in the dashboard.}
+% \item{ {\bf Misusing or overusing color} - Our dashboard uses color to highlight the town in the parallel coordinate plot along with the leaflet maps that will be used in the theme of the Rural Shrink Smart Project}
+% \end{itemize}
 
-The outlined list has been used as the guiding light to avoid pitfalls in developing dashboards in the workplace. With the amount of data, our dashboard could fall into the trap of over ineffectively highlighting what's important and choosing inappropriate display media and misusing color to ensure that the analyst's attention and all of the information is given to the user. This has been a significant hurdle when displaying the amount of data collected from open-source data for the small towns of Iowa.
+\svp{We provide users with a town-centric approach: their town is at the center of our application, and comparisons to other, similar towns are secondary. As it can be extremely difficult to predict which towns are optimal for comparison purposes (similar may involve population, region, economic indicators, sports rivalries, and any number of other variables), we allow users to modify a set of suggested comparison towns to indicate other towns of interest.}
+
+\svp{As part of this project, we have assembled a large set of publicly available data (primarily from \url{data.iowa.gov}), but we are careful with how we present this data because it would be easy to overwhelm the user with small details that mask the bigger picture. We select a small subset of towns (out of the 999 towns in Iowa) and a small subset of variables of interest to start with, and then allow the user to increase the complexity of the display in accordance with their interest. This avoids some of the pitfalls of dashboard design that can easily lead to user overload \cite{few}.}
+
+% The outlined list has been used as the guiding light to avoid pitfalls in developing dashboards in the workplace. With the amount of data, our dashboard could fall into the trap of over ineffectively highlighting what's important and choosing inappropriate display media and misusing color to ensure that the analyst's attention and all of the information is given to the user. This has been a significant hurdle when displaying the amount of data collected from open-source data for the small towns of Iowa.
 
 
 Our current work incorporates the ideas of GDL, in which dashboard design has been used to display a panel with vital statistics, ensuring that the town's analyst small town is the center of focus. The vital statistics highlight the town's financial health and the shortest distances from the city center to critical resources, such as the fire department, hospital, post offices, and public schools. The dashboard includes Quality of Life (QoL) Metrics and the financial health of the small town. Based on the number of variables used to ensure that the dashboard is extensive and valuable, we implemented parallel coordinate plots to show comparisons between the focus small town with the five similar towns. A parallel (coordinates) plot allowed our town analyst to compare the essential features of several individual towns on a set of numeric and categorical variables collected. Historically, parallel coordinate plots have been used in air traffic control to help with collision avoidance algorithms but have been adapted in the statistical data visualization space, emphasizing three critical considerations: the order, the rotation, and the scaling of the axes. Our coordinate plots will display variables categorically and numerically by scaling the data.

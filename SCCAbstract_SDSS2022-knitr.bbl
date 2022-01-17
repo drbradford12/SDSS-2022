@@ -1,11 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citename{A.~Sarikaya and Fisher}2019]{fisher}
-L.~Bartram M.~Tory A.~Sarikaya, M.~Correll and D.~Fisher.
-\newblock 2019.
-\newblock What do we talk about when we talk about dashboards?
-\newblock {\em IEEE}, 25:682--692.
-
 \bibitem[\protect\citename{DeDonno}2016]{dedonno}
 Michael~A. DeDonno.
 \newblock 2016.
@@ -20,9 +14,18 @@ Stephen Few.
   of data}.
 \newblock O’Reilly Media, Inc., Newton, MA.
 
-\bibitem[\protect\citename{scc}]{scc}
-Rural shrink smart.
+\bibitem[\protect\citename{{Rural Shrink Smart Team}}2022]{scc}
+{Rural Shrink Smart Team}.
+\newblock 2022.
+\newblock Rural shrink smart.
 \newblock \url{https://ruralshrinksmart.org/}.
 \newblock Accessed: 2021-12-01.
+
+\bibitem[\protect\citename{Sarikaya \bgroup et al.\egroup }2019]{fisher}
+Alper Sarikaya, Michael Correll, Lyn Bartram, Melanie Tory, and Danyel Fisher.
+\newblock 2019.
+\newblock What do we talk about when we talk about dashboards?
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  25(1):682--692.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.7)  17 JAN 2022 10:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.7)  17 JAN 2022 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -393,12 +393,13 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count279
 \l__pdf_internal_box=\box51
 )
-No file SCCAbstract_SDSS2022-knitr.aux.
+(./SCCAbstract_SDSS2022-knitr.aux)
 \openout1 = `SCCAbstract_SDSS2022-knitr.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 95.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
  95.
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
@@ -531,21 +532,15 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 105.
-
-
-LaTeX Warning: Citation `fisher' on page 1 undefined on input line 108.
-
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 117.
-
-LaTeX Warning: Citation `scc' on page 1 undefined on input line 118.
-
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 122.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.3pt on input line 122.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 122.
+
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 122.
@@ -562,36 +557,30 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 
 
 ]
-
-LaTeX Warning: Citation `few' on page 2 undefined on input line 141.
-
-
-LaTeX Warning: Citation `dedonno' on page 2 undefined on input line 149.
-
 <SCC_Dashboard.png, id=11, 1674.255pt x 960.58875pt>
 File: SCC_Dashboard.png Graphic file (type png)
 <use SCC_Dashboard.png>
-Package pdftex.def Info: SCC_Dashboard.png  used on input line 174.
+Package pdftex.def Info: SCC_Dashboard.png  used on input line 178.
 (pdftex.def)             Requested size: 213.39566pt x 122.43314pt.
+
 (./SCCAbstract_SDSS2022-knitr.bbl
-Underfull \vbox (badness 3780) has occurred while \output is active []
+Underfull \hbox (badness 1675) in paragraph at lines 18--23
+\T1/pcr/m/n/10 https : / / ruralshrinksmart . org/$\T1/ntxtlf/m/n/10 .  Ac-cess
+ed:
+ []
 
- [2])
-[3
+[2 <./SCC_Dashboard.png>]) [3
 
- <./SCC_Dashboard.png>] (./SCCAbstract_SDSS2022-knitr.aux)
+] (./SCCAbstract_SDSS2022-knitr.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 6804 strings out of 478994
- 86741 string characters out of 5858185
- 386471 words of memory out of 5000000
+ 6806 strings out of 478994
+ 86803 string characters out of 5858185
+ 384550 words of memory out of 5000000
  24131 multiletter control sequences out of 15000+600000
  450230 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -604,7 +593,7 @@ st/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts
 /type1/public/newtx/ztmb.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
 blic/newtx/ztmr.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newt
 x/ztmri.pfb>
-Output written on SCCAbstract_SDSS2022-knitr.pdf (3 pages, 620937 bytes).
+Output written on SCCAbstract_SDSS2022-knitr.pdf (3 pages, 617813 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
