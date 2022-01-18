@@ -163,28 +163,37 @@ Some communities continue to thrive as they lose population because they adapt\s
 
 % The outlined list has been used as the guiding light to avoid pitfalls in developing dashboards in the workplace. With the amount of data, our dashboard could fall into the trap of over ineffectively highlighting what's important and choosing inappropriate display media and misusing color to ensure that the analyst's attention and all of the information is given to the user. This has been a significant hurdle when displaying the amount of data collected from open-source data for the small towns of Iowa.
 
+\db{The Rural Shrink Smart EDA dashboard incorporates two major components: 
+  \begin{enumerate}
+  \item{Data Visualization Interface component with GDL principles.} 
+  \item{Exploratory Data Analysis component utilizing statistical clustering methods.}
+  \end{enumerate} }
 
-Our current work incorporates the ideas of GDL, in which our dashboard design has been used to display a panel with vital statistics, ensuring that the town leaders of a small town is the center of focus on the dashboard. The vital statistics highlight the town's financial health and the shortest distances from the city center to critical resources, such as the fire department, hospital, post offices, and public schools. To complement the Rural Shrink Smart NSF Grant, our dashboard includes Quality of Life (QoL) Metrics, to help identify communities social networks along with financial health data collected to ensure a robust identification of our small towns. 
+\db{ The Data Visualization component with GDL principles is a single page which populates the information in maps related to necessary services, including directions and distance to the fire department, schools, post offices, and hospitals. Value Boxes populate vital statistics sections that have information about the town's QoL Metrics and financial metrics, followed by a parallel coordinate plot that allows the town to see five towns that are similarly based on the most common variables in the towns, such as similar economy or population size. The graphical representations including a parallel coordinate plot and geographic maps.[Figure 1]. The Rural Smart EDA Dashboard map visuals were built using osrm route functions in R to amplify the accuracy of the distances from necessary services in town-centric point.}
 
-To restate, our dashboard incorporates an extensive number of variables used to ensure a valuable tool to town leaders, we implemented parallel coordinate plots to show comparisons between the user's small town with the five similar towns. The user has an option to select similarities, such as economy, location and size, allowing the town leaders the flexibility to guided their interests in the small town. As stated by DeDonno \cite{dedonno}, our dashboard leverages hints for the town leaders to learn through feedback on the next steps to take in their towns. 
+\db{The Exploratory Data Analysis component utilizing statistical clustering methods enables the town leaders to interact with the parallel coordinate plots at various levels of granularities of the data, with constraints, to similar towns. The Rural Smart EDA Dashboard features offer geospatial and  structural data to assist town leaders in gaining a comprehensive understanding of the town in which they support. }
 
-A parallel (coordinates) plot allowed our town analyst to compare the essential features of several individual towns on a set of numeric and categorical variables collected. Historically, parallel coordinate plots have been used in air traffic control to help with collision avoidance algorithms but have been adapted in the statistical data visualization space, emphasizing three critical considerations: the order, the rotation, and the scaling of the axes. Our coordinate plots will display variables categorically and numerically by scaling the data.
-
-
-We have implemented unsupervised statistical methods, such as K-means, Principal Component Analysis (PCA), and Hierarchical Clustering, to determine the five similar towns, based on distances and services available. We continue to use clustering methods to identify the towns that will be best compared when the analyst interacts with our dashboard. Using GDL, our dashboard makes sure that the focus small town is compared to other towns to find ways to improve their town using data-driven decisions. Our research partners have worked with five towns directly, who have agreed to partner with the project to help identify the best practices that are useful in the small and rural Iowa towns. As a result, we found out that the small towns do not want to be told what to do but would like to make decisions for those who have been a part of the community for generations. Our dashboard will hopefully make sure that the town's analysts are guided in the direction that will help the town's population shrink smart. 
-
-Our dashboard development has become more focused on the GDL such that a continual feedback loop from the town analyst in these five towns has helped provide our team with valuable notes that will be adaptive to all of the small towns in Iowa. Our team has captured valuable metrics on using the product allowing the quantitative and qualitative data collection to better user experience. This can promote challenges in towns feeling "studied" by people in cities outside of their own. 
-
-In Figure 1, our dashboard allows the user to select a town name, which will populate the information in the maps related to necessary services, including directions and distance to the fire department, schools, post offices, and hospitals. A table populates in the vital statistics sections that have information about the town's QoL Metrics and financial metrics, followed by a parallel coordinate plot that allows the town to see five towns that are similarly based on the most common variables in the towns, such as the distance of fire department. 
+\db{ Each component provides the town leaders with analytical aspects related to the performance of their town. As town leaders interact with the tool more helps build the knowledge and understanding different dimensions and measures related to the shrinkage of the town to a particular indicator.}
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=75mm]{SCC_Dashboard_pcp2.png}
-\caption{Rural Smart EDA Dashboard Design}
+\caption{Figure 1: Rural Smart EDA Dashboard Design}
 \end{figure}
 
+\subsection{Statistical Methods}
+We have implemented unsupervised statistical methods, such as K-means, Principal Component Analysis (PCA), and Hierarchical Clustering, to determine the five similar towns, based on distances and services available. We continue to use clustering methods to identify the towns that will be best compared when the analyst interacts with our dashboard. Using GDL, our dashboard makes sure that the focus small town is compared to other towns to find ways to improve their town using data-driven decisions. Our research partners have worked with five towns directly, who have agreed to partner with the project to help identify the best practices that are useful in the small and rural Iowa towns. As a result, we found out that the small towns do not want to be told what to do but would like to make decisions for those who have been a part of the community for generations. Our dashboard will hopefully make sure that the town's analysts are guided in the direction that will help the town's population shrink smart. 
 
-%To-Do: Write this in the way that we have done this because by the time that we present this will be done. 
+%, in which our dashboard design has been used to display a panel with vital statistics, ensuring that the town leaders of a small town is the center of focus on the dashboard. The vital statistics highlight the town's financial health and the shortest distances from the city center to critical resources, such as the fire department, hospital, post offices, and public schools. To complement the Rural Shrink Smart NSF Grant, our dashboard includes Quality of Life (QoL) Metrics, to help identify communities social networks along with financial health data collected to ensure a robust identification of our small towns.
+
+\db{ To restate, our dashboard incorporates an extensive number of variables used to ensure a valuable tool to town leaders, we implemented parallel coordinate plots to show comparisons between the user's small town with the five similar towns. The user has an option to select similarities, such as economy, location and size, allowing the town leaders the flexibility to guided their interests in the small town. As stated by DeDonno \cite{dedonno}, our dashboard leverages hints for the town leaders to learn through feedback on the next steps to take in their towns. }
+
+A parallel (coordinates) plot allowed our town analyst to compare the essential features of several individual towns on a set of numeric and categorical variables collected. Historically, parallel coordinate plots have been used in air traffic control to help with collision avoidance algorithms but have been adapted in the statistical data visualization space, emphasizing three critical considerations: the order, the rotation, and the scaling of the axes. Our coordinate plots will display variables categorically and numerically by scaling the data.
+
+
+Our dashboard development has become more focused on the GDL such that a continual feedback loop from the town analyst in these five towns has helped provide our team with valuable notes that will be adaptive to all of the small towns in Iowa. Our team has captured valuable metrics on using the product allowing the quantitative and qualitative data collection to better user experience. This can promote challenges in towns feeling "studied" by people in cities outside of their own. 
+
+
 %\subsection{Future Work}
 
 \section{Acknowledgements}

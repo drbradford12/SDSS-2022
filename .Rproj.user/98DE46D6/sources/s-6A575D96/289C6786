@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/SDSS-Abstract-2022/SCCAbstract_SDSS2022-knitr.Rnw",
     "project_path": "SCCAbstract_SDSS2022-knitr.Rnw",
     "type": "sweave",
-    "hash": "3345353388",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1640907970420.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "117,208",
-        "scrollLine": "108"
+        "cursorPosition": "139,0",
+        "scrollLine": "124"
     },
     "folds": "",
-    "lastKnownWriteTime": 1642461219,
+    "lastKnownWriteTime": 1642465275,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1642461219801,
+    "last_content_update": 1642465275008,
     "read_only": false,
     "read_only_alternatives": []
 }
