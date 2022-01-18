@@ -144,7 +144,7 @@ Each component provides the town leaders with analytical aspects related to the 
 %\subsection{Future Work}
 
 \section{Acknowledgements}
-We would like to thank our sponsors and grant provider NSF, LSAMP Inspire Program and Iowa League of Cities. We would like to thank our partners and team members at Iowa State University and University of Nebraska - Lincoln. We would like to thank the State of Iowa for providing Data along with our partners in the Rural Iowa communities.
+This material is based upon work supported by the National Science Foundation under Grant No. 1952007. We would also like to thank our collaborators at Iowa State, the Iowa League of Cities, and the various Iowa government organizations which publish their data at \url{data.iowa.gov}.
 
 
 \bibliographystyle{sdss2020} % Please do not change the bibliography style
