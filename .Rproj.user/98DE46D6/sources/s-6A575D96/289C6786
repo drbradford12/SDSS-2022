@@ -12,15 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "139,0",
-        "scrollLine": "124"
+        "cursorPosition": "128,445",
+        "scrollLine": "123",
+        "ignored_words": "SampleExtendedAbstract,newtx,VanderPlas,QoL,datasets,dataset,generalizable,DeDonno,centric,osrm,granularities,geospatial,analytical\n"
     },
     "folds": "",
-    "lastKnownWriteTime": 1642465275,
+    "lastKnownWriteTime": 1642517895,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1642465275008,
+    "last_content_update": 1642517895472,
     "read_only": false,
     "read_only_alternatives": []
 }
