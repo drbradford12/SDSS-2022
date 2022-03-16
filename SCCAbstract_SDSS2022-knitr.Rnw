@@ -117,14 +117,14 @@ Each component provides the town leaders with analytical aspects related to the 
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=60mm]{SCC_Dashboard_pcp2.png}
+\includegraphics[width=55mm]{SCC_Dashboard_pcp2.png}
 \caption{Rural Smart EDA Dashboard Design}
 \end{figure}
 
 \section{User Testing}
-\svp{In this paper, we present the results from testing this application with users, and examine the implications for the feedback we received on our application design and on the more general design of dashboards for statistical novices. We examine which aspects of dashboard design ``common knowledge'' hold up in practice, and assess why these principles may not hold in our use-case.} 
+In this paper, we present the results from testing this application with users, and examine the implications for the feedback we received on our application design and on the more general design of dashboards for statistical novices. We examine which aspects of dashboard design ``common knowledge'' hold up in practice, and assess why these principles may not hold in our use-case. 
 
-\svp{Complex visualizations are difficult to assess in vivo: it is fairly easy to design an experiment to test a single graphic, but much harder to test the interactive dashboards which consist of systems of displays and user interactions. As a result, it is important to continuously assess which ``common knowledge'' design principles stemming from more controlled experiments hold up in real-world situations. }
+Complex visualizations are difficult to assess in vivo: it is fairly easy to design an experiment to test a single graphic, but much harder to test the interactive dashboards which consist of systems of displays and user interactions. As a result, it is important to continuously assess which ``common knowledge'' design principles stemming from more controlled experiments hold up in real-world situations.
 
 
 % \subsection{Statistical Methods}
@@ -135,9 +135,6 @@ Each component provides the town leaders with analytical aspects related to the 
 % \db{ To restate, our dashboard incorporates an extensive number of variables used to ensure a valuable tool to town leaders, we implemented parallel coordinate plots to show comparisons between the user's small town with the five similar towns. The user has an option to select similarities, such as economy, location and size, allowing the town leaders the flexibility to guided their interests in the small town. As stated by DeDonno \cite{dedonno}, our dashboard leverages hints for the town leaders to learn through feedback on the next steps to take in their towns. }
 % 
 % A parallel (coordinates) plot allowed our town analyst to compare the essential features of several individual towns on a set of numeric and categorical variables collected. Historically, parallel coordinate plots have been used in air traffic control to help with collision avoidance algorithms but have been adapted in the statistical data visualization space, emphasizing three critical considerations: the order, the rotation, and the scaling of the axes. Our coordinate plots will display variables categorically and numerically by scaling the data.
-
-
-
 
 % Our dashboard development final stages incorporates GDL allowing a continual feedback loop from town leaders in our small subset of towns has helped provide our team with valuable notes that will be adaptive to all of the greater 999 small towns in Iowa. Our team has captured valuable metrics, related to traditional design techniques, on product usage allowing a combination of quantitative and qualitative data to better the user experience. %This can promote challenges in towns feeling "studied" by people in cities outside of their own. 
 
