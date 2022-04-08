@@ -1,0 +1,242 @@
+\documentclass[letterpaper,inpress]{jdsart}
+
+\setcounter{page}{1}
+\pubmonth{July}
+\pubyear{2020}
+\volume{xx}
+\issue{xx}
+\doi{0000}
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+
+\usepackage[utf8]{inputenc}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+\usepackage{amsfonts,amsmath,amssymb,amsthm} \usepackage{booktabs} \usepackage{lipsum}
+
+\begin{document}
+\begin{frontmatter}
+
+\title{My Paper Title}
+\runtitle{My Paper Running Title}
+
+\author[1,2]{
+  \inits{A.}
+  \fnms{Adam}
+  \snm{Ahen}  \thanksref{1}  \ead{foo@bar.com}}
+\author[2]{
+  \inits{B.}
+  \fnms{Brett}
+  \snm{Berger}  \thanksref{2}}
+\author[3]{
+  \inits{C.}
+  \fnms{Carl}
+  \snm{Camp}}
+\author[3]{
+  \inits{D.}
+  \fnms{David}
+  \snm{Dodge}}
+
+\thankstext[type=corresp,id=1]{Corresponding author}\thankstext[id=2]{Another footnote.}
+\address[1]{Department A, 
+  \institution{University of Achievement}, \cny{Country A}}
+\address[2]{
+  \institution{Institution B}, \cny{Country B}}
+\address[3]{
+  \institution{Institution C}, \cny{Country C}}
+
+\begin{abstract}
+This article presents a classification of disease severity for patients with cystic fibrosis (CF). CF is a genetic disease that dramatically decreases life expectancy and quality.
+\end{abstract}
+
+\begin{keywords}
+\kwd{conditional distribution}\kwd{cystic fibrosis}\kwd{Kullback--Leibler divergence}\kwd{MCMC}\kwd{quantiles}.
+\end{keywords}
+
+\end{frontmatter}
+
+\hypertarget{equations}{%
+\section{Equations}\label{equations}}
+
+Weibull distribution has the virtue of being a mathematically tractable model
+and is versatile in terms of its applications in reliability, life data
+analysis, actuarial science and others. Apart from being a potential model in
+survival analysis and reliability engineering, it has a vast domain of other
+applications.
+
+Equations are always parts of sentences, so they need to have
+appropriate punctuations. To evaluate the distribution of a normal
+variable, one use
+\begin{equation}
+  \label{eq:cdf}
+  \Pr(Z \le t) = \Phi\left(\frac{Z - \mu}{\sigma} \right),
+\end{equation}
+where \(Z\) follows a \(N(\mu, \sigma^2)\) distribution.
+Equations can be referenced by \texttt{$\backslash$eqref}.
+When \(\mu = 0\) and \(\sigma = 1\), the \(Z\) in Equation\textasciitilde{}\eqref{eq:cdf}
+becomes a standard normal variable.
+
+Multiline equations can be presented with the \texttt{align}
+environment. For example,
+\begin{align*}
+  g_{\mu}(\phi) = 0,\\
+  g_{\mu}(X) = 1.
+\end{align*}
+
+An equation that is not referenced should not be labeled. The starred
+version of the \texttt{equation} and \texttt{align} are for this purpose.
+
+\hypertarget{tables}{%
+\section{Tables}\label{tables}}
+
+We recommend \LaTeX~package \texttt{booktabs} for professional
+looking tables. Its toprule and bottomrule are thicker than midrule.
+
+A professional table contains no vertical lines.
+
+\hypertarget{figures}{%
+\section{Figures}\label{figures}}
+
+Vector graphics do not lose clarity when being scaled. Make your
+figure in pdf format when you first generate it and keep in mind its
+sizes in the article to avoid over-scaling. Do not simply convert a
+jpeg or png image to a pdf.
+
+\hypertarget{code}{%
+\section{Code}\label{code}}
+
+The document class \texttt{jds} provides several commands to decorate
+
+\begin{itemize}
+\item inline code, such as \code{print("Hello world!")};
+\item programming language, such as \proglang{R}, \proglang{Python}, and
+  \proglang{C++};
+\item software package, such as \pkg{stats}, \pkg{utils}.
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\# Dobson (1990) Page 93: Randomized Controlled Trial :}
+\NormalTok{counts }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{18}\NormalTok{, }\DecValTok{17}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{25}\NormalTok{, }\DecValTok{13}\NormalTok{, }\DecValTok{12}\NormalTok{)}
+\NormalTok{outcome }\OtherTok{\textless{}{-}} \FunctionTok{gl}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{9}\NormalTok{)}
+\NormalTok{treatment }\OtherTok{\textless{}{-}} \FunctionTok{gl}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{3}\NormalTok{)}
+\NormalTok{glm.D93 }\OtherTok{\textless{}{-}} \FunctionTok{glm}\NormalTok{(counts }\SpecialCharTok{\textasciitilde{}}\NormalTok{ outcome }\SpecialCharTok{+}\NormalTok{ treatment, }\AttributeTok{family =} \FunctionTok{poisson}\NormalTok{())}
+\FunctionTok{summary}\NormalTok{(glm.D93)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Call:
+glm(formula = counts ~ outcome + treatment, family = poisson())
+
+Deviance Residuals: 
+       1         2         3         4         5         6         7         8         9  
+-0.67125   0.96272  -0.16965  -0.21999  -0.95552   1.04939   0.84715  -0.09167  -0.96656  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.045e+00  1.709e-01  17.815   <2e-16 ***
+outcome2    -4.543e-01  2.022e-01  -2.247   0.0246 *  
+outcome3    -2.930e-01  1.927e-01  -1.520   0.1285    
+treatment2   1.338e-15  2.000e-01   0.000   1.0000    
+treatment3   1.421e-15  2.000e-01   0.000   1.0000    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 10.5814  on 8  degrees of freedom
+Residual deviance:  5.1291  on 4  degrees of freedom
+AIC: 56.761
+
+Number of Fisher Scoring iterations: 4
+\end{verbatim}
+
+\hypertarget{guide-for-authors}{%
+\section{Guide for Authors}\label{guide-for-authors}}
+
+The following requirements must be followed as closely as possible. A
+technically acceptable manuscript that fails to follow these requirements may be
+returned for retyping, leading to delay in publication.We only accept
+submissions in PDF format. The Latex file must be provided after the manuscript
+is accepted.
+
+\hypertarget{submission-of-papers}{%
+\subsection{Submission of Papers}\label{submission-of-papers}}
+
+Submission of a manuscript must be the original work of the author(s) and have
+not been published elsewhere or under consideration for another publication, or
+a substantially similar form in any language.
+
+Authors are encouraged to recommend three to five individuals (including their
+research fields, e-mail, phone numbers and addresses) who are qualified to serve
+as referees for their paper.
+
+\hypertarget{a-placeholder-section}{%
+\section{A Placeholder Section}\label{a-placeholder-section}}
+
+\lipsum[4-7]
+
+\hypertarget{citing-references}{%
+\section{Citing References}\label{citing-references}}
+
+The citations are in the author-year format with the
+\texttt{jds} bibstyle.
+
+Citations can be in either text or parenthesis format style with
+\texttt{$\backslash$citet} or \texttt{$\backslash$citep},
+respectively. For example, \citet{KoenkerBassett1978} is a seminal
+work on quantile regression; The Laplace distribution has applications
+in many fields \citep{Kotz2001}.
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\lipsum[1-3]
+
+\bibliography{jdsart-sample.bib}
+\bibliographystyle{jds}
+
+
+\end{document}
