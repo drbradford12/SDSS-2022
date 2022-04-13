@@ -58,90 +58,113 @@
 \begin{document}
 \begin{frontmatter}
 
-\title{My Paper Title}
-\runtitle{My Paper Running Title}
+\title{Exploring Rural Shrink Smart Through Guided Discovery Dashboards}
 
-\author[1,2]{
-  \inits{A.}
-  \fnms{Adam}
-  \snm{Ahen}  \thanksref{1}  \ead{foo@bar.com}}
-\author[2]{
-  \inits{B.}
-  \fnms{Brett}
-  \snm{Berger}  \thanksref{2}}
-\author[3]{
-  \inits{C.}
-  \fnms{Carl}
-  \snm{Camp}}
-\author[3]{
+
+\author[1]{
   \inits{D.}
-  \fnms{David}
-  \snm{Dodge}}
+  \fnms{Denise}
+  \snm{Bradford}  \thanksref{1}  \ead{denise.bradford@huskers.unl.edu}}
+\author[1]{
+  \inits{S.}
+  \fnms{Susan}
+  \snm{VanderPlas}  \thanksref{1}}
 
-\thankstext[type=corresp,id=1]{Corresponding author}\thankstext[id=2]{Another footnote.}
-\address[1]{Department A, 
-  \institution{University of Achievement}, \cny{Country A}}
-\address[2]{
-  \institution{Institution B}, \cny{Country B}}
-\address[3]{
-  \institution{Institution C}, \cny{Country C}}
+\thankstext[type=corresp,id=1]{Corresponding author}
+\address[1]{Department of Statistics, 
+  \institution{University of Nebraska - Lincoln}, \cny{United States of America}}
 
 \begin{abstract}
-This article presents a classification of disease severity for patients with cystic fibrosis (CF). CF is a genetic disease that dramatically decreases life expectancy and quality.
+Many small and rural places are shrinking. Interactive dashboards are the most common use cases for data visualization and context for exploratory data tools. In our paper, we will explore the specific scope of how dashboards are used in small and rural area to empower novice analysts to make data-driven decisions. Our framework will suggest a number of research directions to better support small and rural places from shrinking using an interactive dashboard design, implementation and use for the every day analyst.
 \end{abstract}
 
 \begin{keywords}
-\kwd{conditional distribution}\kwd{cystic fibrosis}\kwd{Kullback--Leibler divergence}\kwd{MCMC}\kwd{quantiles}.
+\kwd{Interactive Dashboards}\kwd{Exploratory Data Analysis (EDA)}\kwd{Parallel Coordinate Plots (PCP)}\kwd{Guided Discovery Learning (GDL)}.
 \end{keywords}
 
 \end{frontmatter}
 
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
 
-Weibull distribution has the virtue of being a mathematically tractable model
-and is versatile in terms of its applications in reliability, life data
-analysis, actuarial science and others. Apart from being a potential model in
-survival analysis and reliability engineering, it has a vast domain of other
-applications.
+Many small and rural places are shrinking. Interactive dashboards are the most common use cases for data visualization and context for exploratory data tools. In our paper, we will explore the specific scope of how dashboards are used in small and rural area to empower novice analysts to make data-driven decisions. Our framework will suggest a number of research directions to better support small and rural places from shrinking using an interactive dashboard design, implementation and use for the every day analyst.
 
-Equations are always parts of sentences, so they need to have
-appropriate punctuations. To evaluate the distribution of a normal
-variable, one use
-\begin{equation}
-  \label{eq:cdf}
-  \Pr(Z \le t) = \Phi\left(\frac{Z - \mu}{\sigma} \right),
-\end{equation}
-where \(Z\) follows a \(N(\mu, \sigma^2)\) distribution.
-Equations can be referenced by \texttt{$\backslash$eqref}.
-When \(\mu = 0\) and \(\sigma = 1\), the \(Z\) in Equation\textasciitilde{}\eqref{eq:cdf}
-becomes a standard normal variable.
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
-Multiline equations can be presented with the \texttt{align}
-environment. For example,
-\begin{align*}
-  g_{\mu}(\phi) = 0,\\
-  g_{\mu}(X) = 1.
-\end{align*}
+With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \cite{fisher}.
+A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making. An important area of dashboard design and usage is to vizualize
 
-An equation that is not referenced should not be labeled. The starred
-version of the \texttt{equation} and \texttt{align} are for this purpose.
+Some communities continue to thrive as they lose population because they adapt, maintaining quality of life and community services for residents while investing in the future.
+This process, \emph{smart shrinkage}, is important for rural areas who have experienced shrinking populations for decades. As small rural towns do not have access to data scientists or even the ability to easily leverage data collected locally to support decisions, our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations \cite{scc}. We hope to allow towns to discover their own data and compare to other similar towns, centering decision-making on data in the context of small-town Iowa life. In the process, we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
 
-\hypertarget{tables}{%
-\section{Tables}\label{tables}}
+\section{Data Description}
 
-We recommend \LaTeX~package \texttt{booktabs} for professional
-looking tables. Its toprule and bottomrule are thicker than midrule.
+Data collected from \url{data.iowa.gov} were used to create the SCC dashboard. Most of these datasets are collected on a town/city or county level, requiring us to carefully join data accounting for differences in spatial resolution. \url{data.iowa.gov} contains unique information about residents, including local liquor sales, school building locations, town budgets and expenditures, hospital beds, Medicaid reimbursements, and other details that may provide information about local quality of life.
 
-A professional table contains no vertical lines.
+Data collected from ELSI from \url{https://nces.ed.gov} were used to show the distance to any private or public school. The National Center for Education Statistics (NCES) is the primary federal entity for collecting and analyzing data related to education. These data are used for details are a town level, that will provide information about the quality of life.
 
-\hypertarget{figures}{%
-\section{Figures}\label{figures}}
+Data collected from the \url{https://purr.purdue.edu/publications/2960/1} were used in the SCC dashboard to help classify the towns. The Index of Relative Rurality (IRR) is a continuous, threshold-free, and unit-free measure of rurality. It is an alternative to the traditional discrete threshold-based classifications.The IRR ranges between 0 (low level of rurality, i.e., urban) and 1 (most rural). Four steps are involved in its design:
 
-Vector graphics do not lose clarity when being scaled. Make your
-figure in pdf format when you first generate it and keep in mind its
-sizes in the article to avoid over-scaling. Do not simply convert a
-jpeg or png image to a pdf.
+\begin{enumerate}
+\item Identifying the dimensions of rurality: population size, density, remoteness, and built-up area.
+\item Selecting measureable variables to adequately represent each dimension:
+    \begin{itemize}
+        \item Size: logarithm of population size
+        \item Density: logarithm of population density.
+        \item Remoteness: network distance.
+        \item Built-up area: urban area (as defined by the US Census Bureau) as a percentage of total land area.
+    \end{itemize}
+\item Re-scaling the variables onto bounded scales that range from 0 to 1.
+\item Selecting a link function: unweighted average of the four re-scaled variable.
+\end{enumerate}
+
+Data collected from Rural Urban Commuting Area Codes \cite{usda} were used to help identify towns with commuting behaviors in our rural areas. The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. This data is on a zipcode-level that will help identify those communites that commute to more urban areas. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006-10 American Community Survey. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.
+
+\hypertarget{we-need-to-add-words-for-the-data-that-we-will-include-from-the-census-that-will-tell-ise-the-age-of-towns-are-they-aging}{%
+\section{We need to add words for the data that we will include from the Census that will tell ise the age of towns (Are they aging?)}\label{we-need-to-add-words-for-the-data-that-we-will-include-from-the-census-that-will-tell-ise-the-age-of-towns-are-they-aging}}
+
+Using this data, we created a dashboard which allows communities to explore these data and compare and contrast their local community to other communities of similar size and location. In addition to manual comparisons created by the user, we will use statistical clustering methods to identify groups of towns which employ similar strategies to maintain resident quality of life.
+
+One of the interesting features of this assembled dataset is that missing data can be missing for multiple reasons: not all state data is complete, but data about certain services may also be missing because towns do not offer that service.
+Thus, in addition to the usual challenges of working with real-world data that is ``messy'' in a variety of ways, we also have to contend with missing data that is missing due to the size of the community or the lack of services. This makes both visualization and statistical analysis more complicated.
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\subsection{Guiding Dashboard Design Principles}
+
+An additional challenge is that research on dashboard creation and interactive visualization tends to be very task-specific and not generalizable. That is, it is relatively easy to create a dashboard that works for a particular task, but it is hard to generalize from that process what will work for the next dashboard. With this in mind, we have clearly documented our intentions at each stage of the design and evaluation process, with the goal of gathering some useful information about general dashboard design from the process of creating this specific dashboard.
+Thus, our initial set of dashboard design principles is as follows:
+
+\begin{itemize}
+\item The town leaders are the focus audience; thus, the town itself should be the central focus of the app.
+\item Facilitate comparisons with other towns in order to allow the user to explore other potential solutions to offering services that enhance resident quality of life.
+\item Present the user with peer comparisons in order to widen the scope of exploration beyond the initial set of obvious peers in the local region.
+\item Allow for more detailed data and feature requests to improve the dashboard design over time.
+\end{itemize}
+
+\subsection{Guided Discovery Learning (GDL)}
+
+We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. This framework leverages hints, feedback, and other helpful information to guide users in interactive exploration \cite{dedonno}.
+
+We provide users with a town-centric approach: their town is at the center of our application, and comparisons to other, similar towns are secondary. As it can be extremely difficult to predict which towns are optimal for comparison purposes (similar may involve population, region, economic indicators, sports rivalries, and any number of other variables), we allow users to modify a set of suggested comparison towns to indicate other towns of interest. The suggested comparison towns are generated using unsupervised clustering methods on different sets of variables, but as we acknowledge that the problem of what towns should be used for comparisons is a tough one even for humans, we still want to allow for user input in this space.
+
+The large set of publicly available data (primarily from \url{data.iowa.gov}) we have assembled is useful, but we must be careful with how we present this data because it would be easy to overwhelm the user with small details that mask the bigger picture. We select a small subset of towns (out of the 999 towns in Iowa) and a small subset of variables of interest to start with, and then allow the user to increase the complexity of the display in accordance with their interest. This avoids some of the pitfalls of dashboard design that can easily lead to user overload \cite{few}.
+
+The Rural Shrink Smart EDA dashboard incorporates two major components: Data Visualization Interface component with GDL principles; and Exploratory Data Analysis component utilizing statistical clustering methods.
+
+The Data Visualization component with GDL principles is a single page which populates the information in maps related to necessary services, including directions and distance to the fire department, schools, post offices, and hospitals. Value Boxes populate vital statistics sections that have information about the town's QoL Metrics and financial metrics, followed by a parallel coordinate plot that allows the town to see five towns that are similarly based on the most common variables in the towns, such as similar economy or population size. The graphical representations including a parallel coordinate plot and geographic maps {[}Figure 1{]}. The Rural Smart EDA Dashboard map visuals were built using OSRM route functions in R to amplify the accuracy of the distances from necessary services in town-centric point.
+
+The Exploratory Data Analysis component utilizing statistical clustering methods enables the town leaders to interact with the parallel coordinate plots at various levels of granularities of data, with constraints, to similar towns. The Rural Smart EDA Dashboard features offer geospatial and structural data to assist town leaders in gaining a comprehensive understanding of the town in which they support.
+
+Each component provides the town leaders with analytical aspects related to the performance of their town. As town leaders interact with the tool more helps build the knowledge and understanding different dimensions and measures related to the shrinkage of the town to a particular indicator.
+
+\subsection{User Testing}
+
+In this paper, we present the results from testing this application with users, and examine the implications for the feedback we received on our application design and on the more general design of dashboards for statistical novices. We examine which aspects of dashboard design ``common knowledge'\,' hold up in practice, and assess why these principles may not hold in our use-case.
+
+Complex visualizations are difficult to assess in vivo: it is fairly easy to design an experiment to test a single graphic, but much harder to test the interactive dashboards which consist of systems of displays and user interactions. As a result, it is important to continuously assess which ``common knowledge'\,' design principles stemming from more controlled experiments hold up in real-world situations.
 
 \hypertarget{code}{%
 \section{Code}\label{code}}
@@ -171,8 +194,10 @@ Call:
 glm(formula = counts ~ outcome + treatment, family = poisson())
 
 Deviance Residuals: 
-       1         2         3         4         5         6         7         8         9  
--0.67125   0.96272  -0.16965  -0.21999  -0.95552   1.04939   0.84715  -0.09167  -0.96656  
+       1         2         3         4         5         6         7         8  
+-0.67125   0.96272  -0.16965  -0.21999  -0.95552   1.04939   0.84715  -0.09167  
+       9  
+-0.96656  
 
 Coefficients:
               Estimate Std. Error z value Pr(>|z|)    
@@ -192,26 +217,6 @@ AIC: 56.761
 
 Number of Fisher Scoring iterations: 4
 \end{verbatim}
-
-\hypertarget{guide-for-authors}{%
-\section{Guide for Authors}\label{guide-for-authors}}
-
-The following requirements must be followed as closely as possible. A
-technically acceptable manuscript that fails to follow these requirements may be
-returned for retyping, leading to delay in publication.We only accept
-submissions in PDF format. The Latex file must be provided after the manuscript
-is accepted.
-
-\hypertarget{submission-of-papers}{%
-\subsection{Submission of Papers}\label{submission-of-papers}}
-
-Submission of a manuscript must be the original work of the author(s) and have
-not been published elsewhere or under consideration for another publication, or
-a substantially similar form in any language.
-
-Authors are encouraged to recommend three to five individuals (including their
-research fields, e-mail, phone numbers and addresses) who are qualified to serve
-as referees for their paper.
 
 \hypertarget{a-placeholder-section}{%
 \section{A Placeholder Section}\label{a-placeholder-section}}
