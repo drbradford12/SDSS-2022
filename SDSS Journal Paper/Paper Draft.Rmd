@@ -77,7 +77,7 @@ Data collected from the Index of Relative Rurality (IRR) \url{irr} were used in 
 \item Selecting a link function: unweighted average of the four re-scaled variable.
 \end{enumerate}
 
-Data collected from Rural Urban Commuting Area Codes \cite{usda} were used to help identify towns with commuting behaviors in our rural areas. The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. This data is on a zipcode-level that will help identify those communites that commute to more urban areas. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006-10 American Community Survey. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.
+Data collected from Rural Urban Commuting Area Codes \cite{usda} were used to help identify towns with commuting behaviors in our rural areas. The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. This data is on a zipcode-level that will help identify those communities that commute to more urban areas. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006-10 American Community Survey. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.
 
 
 # We need to add words for the data that we will include from the Census that will tell ise the age of towns (Are they aging?)
@@ -92,6 +92,7 @@ Thus, in addition to the usual challenges of working with real-world data that i
 \subsection{Guiding Dashboard Design Principles}
 
 An additional challenge is that research on dashboard creation and interactive visualization tends to be very task-specific and not generalizable. That is, it is relatively easy to create a dashboard that works for a particular task, but it is hard to generalize from that process what will work for the next dashboard. With this in mind, we have clearly documented our intentions at each stage of the design and evaluation process, with the goal of gathering some useful information about general dashboard design from the process of creating this specific dashboard.
+# To-Do - make sure that this is formatted into a table instead of the list. Add 
 Thus, our initial set of dashboard design principles is as follows: 
 \begin{itemize}
 \item The town leaders are the focus audience; thus, the town itself should be the central focus of the app.
