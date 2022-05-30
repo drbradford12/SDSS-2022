@@ -6,6 +6,7 @@ output:
   xaringan::moon_reader:
     seal: false
     includes:
+      in_footer: footer.html
       after_body:
         "js-addins.html"
     mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
@@ -104,9 +105,13 @@ write("", file = "js-addins.html")
 #### Denise Bradford
 #### Department of Statistics, University of Nebraska - Lincoln 
 ##### `r fa("envelope", fill = "black")` [denise.bradford@huskers.unl.edu](denise.bradford@huskers.unl.edu) 
-##### `r fa("home", fill = "black")` [www.deniserbradford.com](https://www.deniserbradford.com/) 
+<!-- ##### `r fa("home", fill = "black")` [www.deniserbradford.com](https://www.deniserbradford.com/)  -->
 ##### `r fa("github", fill = "black")` [drbradford12](https://github.com/drbradford12)
 
+<br><br><br>
+.medium.emph[
+Theme designed by Emily A. Robinson [www.emilyarobinson.com](https://www.emilyarobinson.com/)
+]
 ???
 Thank you for inviting me for a visit today and for attending my talk.
 
@@ -114,7 +119,7 @@ Thank you for inviting me for a visit today and for attending my talk.
 class:primary
 # Outline
 
-+ Introduction to Rural Shrink Smart Project with Iowa State
++ Introduction to Rural Shrink Smart Project with Iowa State University
 
 + Why Dashboards?
 
@@ -131,9 +136,13 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
 
 ---
 
-## Rural Smart Shrinkage
-
-<!-- Insert the shrink smart Logo -->
+# Rural Shrink Smart Project
+.center[
+![](Shrink_Smart_logo.png)
+]
+.center[
+(https://ruralshrinksmart.org/)
+]
 
 - Rural towns are losing population steadily
 
@@ -141,13 +150,25 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
   - Shrinking population may shrink social interaction opportunities
   - Schools, businesses, etc. may move to nearby towns
 
---
+---
+# Rural Shrink Smart Project
+.center[
+![](Shrink_Smart_logo.png)
+]
+.center[
+(https://ruralshrinksmart.org/)
+]
+
 
 - .red[Project Question:] How do some cities manage to maintain quality of life for residents amid shrinking populations?
   - Can this be taught?
+  
+.medium.emph[
+This material is based upon work supported by the National Science Foundation under Grant No. 1952007. We would also like to thank our collaborators at Iowa State, the Iowa League of Cities, and the various Iowa government organizations which publish their data at (https://data.iowa.gov).
+]
 
 ---
-## Complications
+# Complications
 
 - Quality of Life is a subjective assessment
   - Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
@@ -164,7 +185,7 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
 ]
 
 ---
-## Complications
+# Complications
 
 - Quality of Life is a subjective assessment
   - Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
@@ -177,7 +198,7 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
     - Can we focus on estimating only things that objective measurements don't capture?
   
 ---
-## Basic Idea
+# Basic Idea
 
 - Assemble publicly available data sets
     - Available over lots of different geographic measurements    
@@ -185,27 +206,42 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
     - May not be complete for small towns    
     (ACS estimates aren't useful in these areas - not enough people surveyed)
 
-- Assess usability, intelligibility and adaptability to new statistical methodology. 
+- Assess usability, interpretability and adaptability to new statistical methodology. 
 
-- .emph.cerulean[Exploratory Data Analysis (EDA)]: 
-    - Incorporate this information into an exploratory dashboard
-    - Change up design of the dashboard to manage the easy of adaptability across our rural towns
+- .emph.cerulean[The Rural Shrink Smart EDA dashboard incorporates two major components]: 
+    - Data Visualization Interface component with Guided Discovery Learning (GDL) principles
+    - Exploratory Data Analysis component utilizing statistical clustering methods.
 
 ---
-## Guiding Dashboard Design Principles
+# 
 
-- The town leaders are the focus audience; thus, the town itself should be the central focus of the app.
-- Facilitate comparisons with other towns in order to allow the user to explore other potential solutions to offering services that enhance resident quality of life.
+---
+# Guiding Design Principles
+
+Our initial set of dashboard design principles are: 
+
+- The town leaders are the focus audience (central focus of the app)
+
+- Facilitate comparisons with other towns in order to allow the user to explore other potential solutions
+
 - Present the user with peer comparisons in order to widen the scope of exploration beyond the initial set of obvious peers in the local region.
+
 - Allow for more detailed data and feature requests to improve the dashboard design over time.
 
---
+---
+# Guided Discovery Learning with Dashboard Design
 
-We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. This framework leverages hints, feedback, and other helpful information to guide users in interactive exploration
+We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. By leveraging:
 
+- hints
+
+- feedback
+
+- other helpful information to guide users in interactive exploration
+    e.g. user ignoring the radio buttons to compare similar cities, etc.
 
 ---
-## Statistical Analysis
+# Dashboard Design Workflow
 
 - Compile a single data set
     - rows: Each town
@@ -214,12 +250,15 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
 
 - Unsupervised analysis
     - Which towns are most similar based only on the public data?
-    
-- Supervised analysis
-    - Which variables are most associated with subjectively reported quality of life (in the 99 towns in the ISTP)?
+ 
+- Dashboard layout
+    - Which layout will allow the user to engage the most without overwhelming their curiosity?
+   
+- Dashboard Feedback
+    - What elements on the dashboard are useful, confusing, misleading or incorrect from town leaders?
     
 ---
-## Visualization
+# Visualization
 
 - Create a town-focused dashboard that lets leaders see how their town compares to other similar towns (geographically and as measured by the unsupervised statistical analysis)
 
@@ -232,3 +271,17 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
 - How do we best design charts/graphs/UI to make people feel empowered and help them explore the data with an open mind?
     - How do we incorporate statistical analyses into this? Much of the data will provide qualitative differences but not statistically significant differences.
     
+---
+# Dashboard Visual Iterations
+
+- Version 1: An idea without limitations of the actual implementation pieces.
+
+- Version 2: After implementation has been completed and the team notes limitations, we change the interface.
+
+- Version 3: Now incorporate more literature on dashboard design and user experience, which removes some of the "cool" implementations 
+
+- Version 4: Finally incorporate a collective feedback from team-leaders that suggests lack of understanding of information
+
+---
+
+# 

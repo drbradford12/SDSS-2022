@@ -185,4 +185,36 @@ body {
 <!--   max-width: 50%; -->
 <!-- } -->
 
+
+<!--------------FOOTER--------- -->
+
+<!-- Divider line above footer -->
+.footer hr{
+  width: 100%;
+}
+
+.footer {
+  font-size: 14px;
+  color: #808080;
+  text-align: center;
+  width: 90%;
+  margin: 3rem auto;
+  font-weight: 300;
+}
+
+.footer.logo {
+  width: 25px;
+  margin: 0px !important;
+}
+
+.rstudio4edu-footer {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.tocify-extend-page {
+  height: 0px !important;
+}
+
+
 </style>

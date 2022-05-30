@@ -205,6 +205,38 @@ body {
 &lt;!--   max-width: 50%; --&gt;
 &lt;!-- } --&gt;
 
+
+&lt;!--------------FOOTER--------- --&gt;
+
+&lt;!-- Divider line above footer --&gt;
+.footer hr{
+  width: 100%;
+}
+
+.footer {
+  font-size: 14px;
+  color: #808080;
+  text-align: center;
+  width: 90%;
+  margin: 3rem auto;
+  font-weight: 300;
+}
+
+.footer.logo {
+  width: 25px;
+  margin: 0px !important;
+}
+
+.rstudio4edu-footer {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.tocify-extend-page {
+  height: 0px !important;
+}
+
+
 &lt;/style&gt;
 
 
@@ -218,9 +250,13 @@ body {
 #### Denise Bradford
 #### Department of Statistics, University of Nebraska - Lincoln 
 ##### <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg> [denise.bradford@huskers.unl.edu](denise.bradford@huskers.unl.edu) 
-##### <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg> [www.deniserbradford.com](https://www.deniserbradford.com/) 
+&lt;!-- ##### <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg> [www.deniserbradford.com](https://www.deniserbradford.com/)  --&gt;
 ##### <svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> [drbradford12](https://github.com/drbradford12)
 
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+.medium.emph[
+Theme designed by Emily A. Robinson [www.emilyarobinson.com](https://www.emilyarobinson.com/)
+]
 ???
 Thank you for inviting me for a visit today and for attending my talk.
 
@@ -228,7 +264,7 @@ Thank you for inviting me for a visit today and for attending my talk.
 class:primary
 # Outline
 
-+ Introduction to Rural Shrink Smart Project with Iowa State
++ Introduction to Rural Shrink Smart Project with Iowa State University
 
 + Why Dashboards?
 
@@ -245,9 +281,13 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
 
 ---
 
-## Rural Smart Shrinkage
-
-&lt;!-- Insert the shrink smart Logo --&gt;
+# Rural Shrink Smart Project
+.center[
+![](Shrink_Smart_logo.png)
+]
+.center[
+(https://ruralshrinksmart.org/)
+]
 
 - Rural towns are losing population steadily
 
@@ -255,13 +295,25 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
   - Shrinking population may shrink social interaction opportunities
   - Schools, businesses, etc. may move to nearby towns
 
---
+---
+# Rural Shrink Smart Project
+.center[
+![](Shrink_Smart_logo.png)
+]
+.center[
+(https://ruralshrinksmart.org/)
+]
+
 
 - .red[Project Question:] How do some cities manage to maintain quality of life for residents amid shrinking populations?
   - Can this be taught?
+  
+.medium.emph[
+This material is based upon work supported by the National Science Foundation under Grant No. 1952007. We would also like to thank our collaborators at Iowa State, the Iowa League of Cities, and the various Iowa government organizations which publish their data at (https://data.iowa.gov).
+]
 
 ---
-## Complications
+# Complications
 
 - Quality of Life is a subjective assessment
   - Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
@@ -278,7 +330,7 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
 ]
 
 ---
-## Complications
+# Complications
 
 - Quality of Life is a subjective assessment
   - Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
@@ -291,7 +343,7 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
     - Can we focus on estimating only things that objective measurements don't capture?
   
 ---
-## Basic Idea
+# Basic Idea
 
 - Assemble publicly available data sets
     - Available over lots of different geographic measurements    
@@ -299,27 +351,42 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
     - May not be complete for small towns    
     (ACS estimates aren't useful in these areas - not enough people surveyed)
 
-- Assess usability, intelligibility and adaptability to new statistical methodology. 
+- Assess usability, interpretability and adaptability to new statistical methodology. 
 
-- .emph.cerulean[Exploratory Data Analysis (EDA)]: 
-    - Incorporate this information into an exploratory dashboard
-    - Change up design of the dashboard to manage the easy of adaptability across our rural towns
+- .emph.cerulean[The Rural Shrink Smart EDA dashboard incorporates two major components]: 
+    - Data Visualization Interface component with Guided Discovery Learning (GDL) principles
+    - Exploratory Data Analysis component utilizing statistical clustering methods.
 
 ---
-## Guiding Dashboard Design Principles
+# 
 
-- The town leaders are the focus audience; thus, the town itself should be the central focus of the app.
-- Facilitate comparisons with other towns in order to allow the user to explore other potential solutions to offering services that enhance resident quality of life.
+---
+# Guiding Design Principles
+
+Our initial set of dashboard design principles are: 
+
+- The town leaders are the focus audience (central focus of the app)
+
+- Facilitate comparisons with other towns in order to allow the user to explore other potential solutions
+
 - Present the user with peer comparisons in order to widen the scope of exploration beyond the initial set of obvious peers in the local region.
+
 - Allow for more detailed data and feature requests to improve the dashboard design over time.
 
---
+---
+# Guided Discovery Learning with Dashboard Design
 
-We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. This framework leverages hints, feedback, and other helpful information to guide users in interactive exploration
+We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. By leveraging:
 
+- hints
+
+- feedback
+
+- other helpful information to guide users in interactive exploration
+    e.g. user ignoring the radio buttons to compare similar cities, etc.
 
 ---
-## Statistical Analysis
+# Dashboard Design Workflow
 
 - Compile a single data set
     - rows: Each town
@@ -328,12 +395,15 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
 
 - Unsupervised analysis
     - Which towns are most similar based only on the public data?
-    
-- Supervised analysis
-    - Which variables are most associated with subjectively reported quality of life (in the 99 towns in the ISTP)?
+ 
+- Dashboard layout
+    - Which layout will allow the user to engage the most without overwhelming their curiosity?
+   
+- Dashboard Feedback
+    - What elements on the dashboard are useful, confusing, misleading or incorrect from town leaders?
     
 ---
-## Visualization
+# Visualization
 
 - Create a town-focused dashboard that lets leaders see how their town compares to other similar towns (geographically and as measured by the unsupervised statistical analysis)
 
@@ -346,6 +416,20 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
 - How do we best design charts/graphs/UI to make people feel empowered and help them explore the data with an open mind?
     - How do we incorporate statistical analyses into this? Much of the data will provide qualitative differences but not statistically significant differences.
     
+---
+# Dashboard Visual Iterations
+
+- Version 1: An idea without limitations of the actual implementation pieces.
+
+- Version 2: After implementation has been completed and the team notes limitations, we change the interface.
+
+- Version 3: Now incorporate more literature on dashboard design and user experience, which removes some of the "cool" implementations 
+
+- Version 4: Finally incorporate a collective feedback from team-leaders that suggests lack of understanding of information
+
+---
+
+# 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
