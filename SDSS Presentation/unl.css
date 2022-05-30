@@ -1,0 +1,195 @@
+
+   
+.remark-slide-content {
+  background-image: url(N.svg);
+  background-position: left 10px bottom 10px;
+  background-size: 10%;
+	font-size: 20px;
+	text-shadow: 0 0 0 #333;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+h1 { 
+	color: #d00000;
+  font-size: 3.5em;
+  font-family: 'Roboto', sans-serif; 
+  /*background: rgba(.9961, .9922, .9804, .3);*/
+  padding:20px;
+}
+h2 { 
+	color: #001226;
+  font-size: 2.5em;
+  font-family: 'Roboto', sans-serif; 
+}
+h3 { 
+	color: #249ab5;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif; 
+}
+h4 { 
+  font-size: 1.25em; 
+  font-family: 'Montserrat', sans-serif; 
+}
+
+body{
+  left: 12%;
+  font-size: 1em;
+  font-weight:400;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+
+.title-slide.inverse {
+	background-color: #fefdfa;
+  background-image:  url(libs/UNL.svg), url(libs/N.svg);
+	background-position: 10px 10px, right 10px 10px;
+	background-attachment: fixed, fixed;
+	background-size: 25%, 10%;
+	border-bottom: 0;
+}
+
+.title-slide.inverse h1 {
+	color: #d00000 !important;
+	margin-top: -130px;
+}
+
+.title-slide.inverse h2{
+	color: #001226 !important; 
+  margin-bottom:50px;
+}
+
+.title-slide.inverse h3{
+  font-family: 'Handlee', cursive; 
+	color: #249ab5 !important; 
+}
+
+.inverse {
+  background-color: #001226;
+  border-bottom: 0;
+  color: #fefdfa;
+}
+
+.inverse h2 {
+	color: #fefdfa;
+}
+
+.inverse h3 {
+	color: #d00000;
+}
+
+/* Other font formatting stuff */
+.emph { font-family: 'Handlee', cursive; }
+.cerulean { color: #249ab5 !important; }
+.red { color: #d00000 !important;}
+.navy { color: #001226 !important;}
+.gray { color: #c7c8ca !important;}
+
+/* Slide Number */
+.remark-slide-number {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #c7c8ca;
+}
+.title-slide .remark-slide-number { display: none;}
+
+/* add a simple bottom border */ 
+div.remark-slide {
+  border-bottom: 3px solid  #C8102E;
+  box-shadow:  0 5px 0 #7C2529 ;
+}
+
+/* other handy classes */
+.pull-left{
+  float: left;
+  width: 47%;
+}
+.pull-right{
+  float: right;
+  width: 47%;
+}
+
+.huge {font-size: 150%}
+.large {font-size: 130%}
+.largish{font-size:110%;}
+.reg{font-size:100%;}
+.slightly-small {font-size: 80%}
+.smaller {font-size: 75%}
+.small {font-size: 70%}
+.tiny {font-size: 50%}
+
+.remark-slide table.blank, .remark-slide table.blank tr, .remark-slide table tr.blank {
+  margin:0;
+  border-top:0;
+  border-bottom:0;
+  background-color:#FFFFFF;
+}
+
+.underline {
+  border-bottom:1px solid;display:inline-block;
+}
+
+.hidden{
+  visibility:hidden;
+}
+
+.move-up { margin-top:-50px !important;}
+.nudge-up { margin-top:-20px !important;}
+
+.move-left { margin-left:-50px !important;}
+.nudge-left { margin-left:-20px !important;}
+
+.move-right { margin-left:50px !important;}
+.nudge-right { margin-left:20px !important;}
+
+.move-down {margin-top:50px !important;}
+.nudge-down { margin-top:20px !important;}
+
+.inline-left{
+  margin-right:auto;
+  width:47%;
+  display:inline-block;
+}
+
+.inline-right{
+  margin-left: auto;
+  width:47%;
+  display:inline-block;
+}
+
+.toprightfig{
+  position:absolute;
+  top:-10px;
+  right: 10px;
+  max-height: 150px;
+  max-width: 150px;
+  height:auto;
+  width: auto;
+}
+
+.bottomleftfig{
+  position:absolute;
+  bottom:0;
+  left: 0;
+  max-height: 100%;
+  max-width: 70%;
+  height:auto;
+  width: auto;
+}
+
+.bottom {
+  left: 12%;
+  position: absolute;
+  bottom: 5px;
+  font-size: 50%;
+  /*width: 100%;*/
+}
+
+.cover{
+  width:100%;
+  height:100%;
+}

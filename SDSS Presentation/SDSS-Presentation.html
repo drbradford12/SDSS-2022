@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Exploring Rural Shrink Smart Through Guided Discovery Dashboards</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Denise R. Bradford and Susan R. Vanderplas, PhD" />
+    <meta name="date" content="2022-06-08" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,500;1,500&display=swap');
+    </style>
+    <link rel="stylesheet" href="unl.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Exploring Rural Shrink Smart Through Guided Discovery Dashboards
+]
+.author[
+### Denise R. Bradford and Susan R. Vanderplas, PhD
+]
+.date[
+### June 8, 2022
+]
+
+---
+
+
+
+
+class:inverse
+## About Me
+
+- PhD student in Statistics at University of Nebraska - Lincoln
+- MS/BS in Applied Statistics from Purdue University
+
+- Research Areas
+  - Data Science - automation, data pipelines, tools
+  - Visualization - perception, design, and implementation
+  - Sports Analytics - deploying useful statistical methods for sports-related problems
+---
+
+## Rural Smart Shrinkage
+
+&lt;!-- Insert the shrink smart Logo --&gt;
+
+- Rural towns are losing population steadily
+
+  - Shrinking tax bases lead to fewer services
+  - Shrinking population may shrink social interaction opportunities
+  - Schools, businesses, etc. may move to nearby towns
+
+--
+
+- .red[Project Question:] How do some cities manage to maintain quality of life for residents amid shrinking populations?
+  - Can this be taught?
+
+---
+## Complications
+
+- Quality of Life is a subjective assessment
+  - Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
+  - Survey response rates keep decreasing over time
+
+- There are objective measures of things that contribute to QOL available in public datasets
+.small.emph[
+- School ratings
+- Town budgets for services
+- Access to medical care, shopping, etc.
+- Transportation trends
+- Demographic shifts
+- City level cooperative agreements with other government entities and NGOs
+]
+
+---
+## Complications
+
+- Quality of Life is a subjective assessment
+  - Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
+  - Survey response rates keep decreasing over time
+
+- There are objective measures of things that contribute to QOL available in public datasets
+
+- .red[Project Question:] How do we leverage .emph.cerulean[data science] and .emph.cerulean[survey design] to reduce the length of the survey and maintain reliability?
+    - Can objective measures of QOL contributors be incorporated into the survey design?
+    - Can we focus on estimating only things that objective measurements don't capture?
+  
+---
+## Basic Idea
+
+- Assemble publicly available data sets
+    - Available over lots of different geographic measurements    
+    Lat/Long, Zip code (5 or 9 digit, changes over time), Address, City, Census units, School District, County
+    - May not be complete for small towns    
+    (ACS estimates aren't useful in these areas - not enough people surveyed)
+
+- Assess correlation between public data and Iowa Small Town Poll QOL estimates on different dimensions
+
+- .emph.cerulean[Survey Stats problems]: 
+    - Incorporate this information into survey designs
+    - Change up design of the survey to split questions across participants, etc. 
+
+---
+## Guiding Dashboard Design Principles
+
+- The town leaders are the focus audience; thus, the town itself should be the central focus of the app.
+- Facilitate comparisons with other towns in order to allow the user to explore other potential solutions to offering services that enhance resident quality of life.
+- Present the user with peer comparisons in order to widen the scope of exploration beyond the initial set of obvious peers in the local region.
+- Allow for more detailed data and feature requests to improve the dashboard design over time.
+
+--
+
+We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. This framework leverages hints, feedback, and other helpful information to guide users in interactive exploration
+
+
+---
+## Statistical Analysis
+
+- Compile a single data set
+    - rows: Each town
+    - columns: Each variable with appropriate spatial aggregation    
+    e.g. distance to service instead of lat/long
+
+- Unsupervised analysis
+    - Which towns are most similar based only on the public data?
+    
+- Supervised analysis
+    - Which variables are most associated with subjectively reported quality of life (in the 99 towns in the ISTP)?
+    
+---
+## Visualization
+
+- Create a town-focused dashboard that lets leaders see how their town compares to other similar towns (geographically and as measured by the unsupervised statistical analysis)
+
+- Goal is to help towns see what strategies for maintaining QOL work and don't
+
+- Emphasis on things towns are empowered to change
+    - Can't focus on e.g. agricultural policy
+    - City budgets, partnerships with outside entities, services that matter and don't
+    
+- How do we best design charts/graphs/UI to make people feel empowered and help them explore the data with an open mind?
+    - How do we incorporate statistical analyses into this? Much of the data will provide qualitative differences but not statistically significant differences.
+    
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

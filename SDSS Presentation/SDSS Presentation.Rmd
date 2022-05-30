@@ -1,0 +1,133 @@
+---
+title: "Exploring Rural Shrink Smart Through Guided Discovery Dashboards"
+author: "Denise R. Bradford and Susan R. Vanderplas, PhD"
+date: "June 8, 2022"
+output:
+  xaringan::moon_reader:
+    css: ["default", "unl.css"]
+    lib_dir: libs
+    includes:
+      in_header: header.html
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class:inverse
+## About Me
+
+- PhD student in Statistics at University of Nebraska - Lincoln
+- MS/BS in Applied Statistics from Purdue University
+
+- Research Areas
+  - Data Science - automation, data pipelines, tools
+  - Visualization - perception, design, and implementation
+  - Sports Analytics - deploying useful statistical methods for sports-related problems
+---
+
+## Rural Smart Shrinkage
+
+<!-- Insert the shrink smart Logo -->
+
+- Rural towns are losing population steadily
+
+  - Shrinking tax bases lead to fewer services
+  - Shrinking population may shrink social interaction opportunities
+  - Schools, businesses, etc. may move to nearby towns
+
+--
+
+- .red[Project Question:] How do some cities manage to maintain quality of life for residents amid shrinking populations?
+  - Can this be taught?
+
+---
+## Complications
+
+- Quality of Life is a subjective assessment
+  - Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
+  - Survey response rates keep decreasing over time
+
+- There are objective measures of things that contribute to QOL available in public datasets
+.small.emph[
+- School ratings
+- Town budgets for services
+- Access to medical care, shopping, etc.
+- Transportation trends
+- Demographic shifts
+- City level cooperative agreements with other government entities and NGOs
+]
+
+---
+## Complications
+
+- Quality of Life is a subjective assessment
+  - Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
+  - Survey response rates keep decreasing over time
+
+- There are objective measures of things that contribute to QOL available in public datasets
+
+- .red[Project Question:] How do we leverage .emph.cerulean[data science] and .emph.cerulean[survey design] to reduce the length of the survey and maintain reliability?
+    - Can objective measures of QOL contributors be incorporated into the survey design?
+    - Can we focus on estimating only things that objective measurements don't capture?
+  
+---
+## Basic Idea
+
+- Assemble publicly available data sets
+    - Available over lots of different geographic measurements    
+    Lat/Long, Zip code (5 or 9 digit, changes over time), Address, City, Census units, School District, County
+    - May not be complete for small towns    
+    (ACS estimates aren't useful in these areas - not enough people surveyed)
+
+- Assess correlation between public data and Iowa Small Town Poll QOL estimates on different dimensions
+
+- .emph.cerulean[Survey Stats problems]: 
+    - Incorporate this information into survey designs
+    - Change up design of the survey to split questions across participants, etc. 
+
+---
+## Guiding Dashboard Design Principles
+
+- The town leaders are the focus audience; thus, the town itself should be the central focus of the app.
+- Facilitate comparisons with other towns in order to allow the user to explore other potential solutions to offering services that enhance resident quality of life.
+- Present the user with peer comparisons in order to widen the scope of exploration beyond the initial set of obvious peers in the local region.
+- Allow for more detailed data and feature requests to improve the dashboard design over time.
+
+--
+
+We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. This framework leverages hints, feedback, and other helpful information to guide users in interactive exploration
+
+
+---
+## Statistical Analysis
+
+- Compile a single data set
+    - rows: Each town
+    - columns: Each variable with appropriate spatial aggregation    
+    e.g. distance to service instead of lat/long
+
+- Unsupervised analysis
+    - Which towns are most similar based only on the public data?
+    
+- Supervised analysis
+    - Which variables are most associated with subjectively reported quality of life (in the 99 towns in the ISTP)?
+    
+---
+## Visualization
+
+- Create a town-focused dashboard that lets leaders see how their town compares to other similar towns (geographically and as measured by the unsupervised statistical analysis)
+
+- Goal is to help towns see what strategies for maintaining QOL work and don't
+
+- Emphasis on things towns are empowered to change
+    - Can't focus on e.g. agricultural policy
+    - City budgets, partnerships with outside entities, services that matter and don't
+    
+- How do we best design charts/graphs/UI to make people feel empowered and help them explore the data with an open mind?
+    - How do we incorporate statistical analyses into this? Much of the data will provide qualitative differences but not statistically significant differences.
+    

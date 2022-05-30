@@ -123,7 +123,7 @@ In this paper, we present the results from testing this application with users, 
 
 Complex visualizations are difficult to assess in vivo: it is fairly easy to design an experiment to test a single graphic, but much harder to test the interactive dashboards which consist of systems of displays and user interactions. As a result, it is important to continuously assess which ``common knowledge'' design principles stemming from more controlled experiments hold up in real-world situations.
 
-
+<!-- Should we use the idea of the "sense making framework here or the NOvice model" to understand if the user is actually get what we want them to get from the app? This may not be GDL but this can help us use the data in a way that will be useful. -->
 
 
 # Code
