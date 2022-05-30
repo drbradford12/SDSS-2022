@@ -1,5 +1,3 @@
-
-   
 .remark-slide-content {
   background-image: url(N.svg);
   background-position: left 10px bottom 10px;
@@ -130,7 +128,7 @@ div.remark-slide {
 }
 
 .underline {
-  border-bottom:1px solid;display:inline-block;
+  border-bottom:1px solid black;display:inline-block;
 }
 
 .hidden{
@@ -171,12 +169,12 @@ div.remark-slide {
   width: auto;
 }
 
-.bottomleftfig{
+.topleftfig{
   position:absolute;
-  bottom:0;
+  top:0;
   left: 0;
   max-height: 100%;
-  max-width: 70%;
+  max-width: 50%;
   height:auto;
   width: auto;
 }

@@ -4,30 +4,131 @@ author: "Denise R. Bradford and Susan R. Vanderplas, PhD"
 date: "June 8, 2022"
 output:
   xaringan::moon_reader:
-    css: ["default", "unl.css"]
-    lib_dir: libs
+    seal: false
     includes:
-      in_header: header.html
+      after_body:
+        "js-addins.html"
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css: ["default", "metropolis-fonts", "metropolis" ,"css/modal.css", "css/sizeformat.css"]
+    lib_dir: libs
     nature:
       highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
+      highlightlines: true
+      countIncrementalSlides: true
 ---
+class:title-slide-custom
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
+```{r, child = "style.Rmd"}
 ```
 
-class:inverse
-## About Me
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
+# Packages
+library(emoji)
+library(purrr)
+library(tidyverse)
+library(gridExtra)
+library(nullabor)
+library(scales)
+library(knitr)
+library(kableExtra)
+library(RefManageR)
+library(iconr)
+library(fontawesome)
+# download_fontawesome()
 
-- PhD student in Statistics at University of Nebraska - Lincoln
-- MS/BS in Applied Statistics from Purdue University
+# References
+bib <- ReadBib("bib/references.bib", check = FALSE)
+ui <- "- "
 
-- Research Areas
-  - Data Science - automation, data pipelines, tools
-  - Visualization - perception, design, and implementation
-  - Sports Analytics - deploying useful statistical methods for sports-related problems
+# R markdown options
+knitr::opts_chunk$set(echo = FALSE, 
+                      message = FALSE, 
+                      warning = FALSE, 
+                      cache = FALSE,
+                      dpi = 300)
+options(htmltools.dir.version = FALSE)
+options(knitr.kable.NA = '')
+```
+
+```{r, include = F, eval = T, cache = F}
+clean_file_name <- function(x) {
+  basename(x) %>% str_remove("\\..*?$") %>% str_remove_all("[^[A-z0-9_]]")
+}
+img_modal <- function(src, alt = "", id = clean_file_name(src), other = "") {
+  
+  other_arg <- paste0("'", as.character(other), "'") %>%
+    paste(names(other), ., sep = "=") %>%
+    paste(collapse = " ")
+  
+  js <- glue::glue("<script>
+        /* Get the modal*/
+          var modal{id} = document.getElementById('modal{id}');
+        /* Get the image and insert it inside the modal - use its 'alt' text as a caption*/
+          var img{id} = document.getElementById('img{id}');
+          var modalImg{id} = document.getElementById('imgmodal{id}');
+          var captionText{id} = document.getElementById('caption{id}');
+          img{id}.onclick = function(){{
+            modal{id}.style.display = 'block';
+            modalImg{id}.src = this.src;
+            captionText{id}.innerHTML = this.alt;
+          }}
+          /* When the user clicks on the modalImg, close it*/
+          modalImg{id}.onclick = function() {{
+            modal{id}.style.display = 'none';
+          }}
+</script>")
+  
+  html <- glue::glue(
+     " <!-- Trigger the Modal -->
+<img id='img{id}' src='{src}' alt='{alt}' {other_arg}>
+<!-- The Modal -->
+<div id='modal{id}' class='modal'>
+  <!-- Modal Content (The Image) -->
+  <img class='modal-content' id='imgmodal{id}'>
+  <!-- Modal Caption (Image Text) -->
+  <div id='caption{id}' class='modal-caption'></div>
+</div>
+"
+  )
+  write(js, file = "js-addins.html", append = T)
+  return(html)
+}
+# Clean the file out at the start of the compilation
+write("", file = "js-addins.html")
+```
+
+<br><br>
+# Exploring Rural Shrink Smart Through Guided Discovery Dashboards
+## SDSS 2022
+### June 8, 2022
+#### Denise Bradford
+#### Department of Statistics, University of Nebraska - Lincoln 
+##### `r fa("envelope", fill = "black")` [denise.bradford@huskers.unl.edu](denise.bradford@huskers.unl.edu) 
+##### `r fa("home", fill = "black")` [www.deniserbradford.com](https://www.deniserbradford.com/) 
+##### `r fa("github", fill = "black")` [drbradford12](https://github.com/drbradford12)
+
+???
+Thank you for inviting me for a visit today and for attending my talk.
+
+---
+class:primary
+# Outline
+
++ Introduction to Rural Shrink Smart Project with Iowa State
+
++ Why Dashboards?
+
++ Dashboard Design and Guided Discovery Learning (GDL)
+
++ Parallel Coordinate Plots (PCPs) and the naive user
+
++ Data Collection and Feedback the loop
+
++ Future Work
+
+???
+In this talk today, I will provide a background of the Rural Shrink Smart Project. I will then provide a framework to way using a dashboard can be helpful to these population discovery of gaining insights from other towns. I will continue to discuss the usefulness of parallel coordinate plots on the naive user. I will conclude with future work.
+
 ---
 
 ## Rural Smart Shrinkage
@@ -53,7 +154,7 @@ class:inverse
   - Survey response rates keep decreasing over time
 
 - There are objective measures of things that contribute to QOL available in public datasets
-.small.emph[
+.medium.emph[
 - School ratings
 - Town budgets for services
 - Access to medical care, shopping, etc.
@@ -71,8 +172,8 @@ class:inverse
 
 - There are objective measures of things that contribute to QOL available in public datasets
 
-- .red[Project Question:] How do we leverage .emph.cerulean[data science] and .emph.cerulean[survey design] to reduce the length of the survey and maintain reliability?
-    - Can objective measures of QOL contributors be incorporated into the survey design?
+- .red[Project Question:] How do we leverage .emph.cerulean[data science] and .emph.cerulean[exploratory data methods] to inform town leaders to reduce the shrinkage and maintain reliability?
+    - Can traditional dashboard design of open source data be incorporated into overall decision-making?
     - Can we focus on estimating only things that objective measurements don't capture?
   
 ---
@@ -84,11 +185,11 @@ class:inverse
     - May not be complete for small towns    
     (ACS estimates aren't useful in these areas - not enough people surveyed)
 
-- Assess correlation between public data and Iowa Small Town Poll QOL estimates on different dimensions
+- Assess usability, intelligibility and adaptability to new statistical methodology. 
 
-- .emph.cerulean[Survey Stats problems]: 
-    - Incorporate this information into survey designs
-    - Change up design of the survey to split questions across participants, etc. 
+- .emph.cerulean[Exploratory Data Analysis (EDA)]: 
+    - Incorporate this information into an exploratory dashboard
+    - Change up design of the dashboard to manage the easy of adaptability across our rural towns
 
 ---
 ## Guiding Dashboard Design Principles
