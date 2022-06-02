@@ -280,7 +280,9 @@ Our initial set of dashboard design principles are:
     + What elements on the dashboard are useful, confusing, misleading or incorrect from town leaders?
     
 ---
-# Unsupervised Analysis
+# Dashboard Design Workflow
+
+## Unsupervised Analysis
 <br>
 
 - Unsupervised clustering methods were used to determine data quality 
@@ -300,9 +302,9 @@ Our initial set of dashboard design principles are:
 We found that in towns that the project leaders understood were off. For example, we found that many of the schools that were known to be in the towns were not in the dataset that we were using. Along with the fact that we have the leaflet feature, we could see that schools were in particular parts of towns that we did not see. 
 
 ---
+# Dashboard Design Workflow (Layout)
 
-
-# Dashboard Layout Iterations
+## Dashboard Layout Iterations
 
 .large.emph[
 + Version 1: An idea without limitations of the actual implementation pieces.
@@ -330,8 +332,9 @@ We found that in towns that the project leaders understood were off. For example
 ]
 
 ---
+# Dashboard Design Workflow (Layout)
 
-# Dashboard Components 
+## Dashboard Components 
 
 .large.emph[
 + Map (Town's closest services)
@@ -351,8 +354,9 @@ We found that in towns that the project leaders understood were off. For example
 ]
 
 ---
+# Dashboard Philosophy 
 
-# Reasoning behind using PCP
+## Reasoning behind using PCP
 
 <br>
 
@@ -369,7 +373,9 @@ We found that in towns that the project leaders understood were off. For example
 ---
 class:primary
 
-# PCPs Effectiveness & Novice Users
+# Dashboard Philosophy
+
+## PCPs Effectiveness & Novice Users
 
 **Who?** Sukwon Lee, et al. wrote How do People Make Sense of Unfamiliar Visualizations?: A Grounded Model of Novice’s Information Visualization Sensemaking
   
@@ -387,8 +393,10 @@ class:primary
 
 NOVIS Model has been used to compare other graphs such as PCP, Tree Maps and Chord diagrams, which helps with the understanding of why we could use the PCPs. We will use this model to ask questions of our town leaders to gain feedback on what they understand.
 ---
+# Dashboard Philosophy
 
-# PCP in Dashboard Develop Reasoning
+## PCP in Dashboard Develop Reasoning
+
 <br>
 + The large set of publicly available data we have assembled is useful, but we must be careful with how we present this data because it would be easy to overwhelm the user with small details that mask the bigger picture.
 
@@ -400,8 +408,9 @@ NOVIS Model has been used to compare other graphs such as PCP, Tree Maps and Cho
     
 ---
 class:primary
+# Dashboard Philosophy 
 
-# Background of Guided Discovery Learning
+## Background of Guided Discovery Learning
 
 **Who?** [Michael A. DeDonno](https://doi.org/10.1016/j.lindif.2016.05.023) wrote The influence of IQ on pure discovery and guided discovery learning of a complex real-world task.
   
@@ -416,8 +425,9 @@ class:primary
 
 
 ---
+# Dashboard Philosophy 
 
-# Guided Discovery Learning with Dashboard Design
+## Guided Discovery Learning with Dashboard Design
 <br>
 We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. By leveraging:
 
@@ -429,7 +439,9 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
     e.g. user ignoring the radio buttons to compare similar cities, etc.
 
 ---
-# User Testing in Beta
+# Dashboard Design WorkFlow (Feedback)
+
+## User Testing in Beta
 
 **Audience**
 
@@ -441,7 +453,9 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
     + Others (Member of doctoral community that has background in educational adaptivity)
 
 ---
-# Dashbaord Feedback
+# Dashboard Design WorkFlow (Feedback)
+
+## Dashbaord Feedback
 
 + Our feedback from users has two components:
 
