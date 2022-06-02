@@ -108,7 +108,7 @@ write("", file = "js-addins.html")
 <!-- ##### `r fa("home", fill = "black")` [www.deniserbradford.com](https://www.deniserbradford.com/)  -->
 ##### `r fa("github", fill = "black")` [drbradford12](https://github.com/drbradford12)
 
-<br><br><br>
+<br><br>
 .medium.emph[
 Theme designed by Emily A. Robinson [www.emilyarobinson.com](https://www.emilyarobinson.com/)
 ]
@@ -119,6 +119,8 @@ Thank you for inviting me for a visit today and for attending my talk.
 class:primary
 # Outline
 
+<br>
+.large.emph[
 + Introduction to Rural Shrink Smart Project with Iowa State University
 
 + Why Dashboards?
@@ -130,12 +132,12 @@ class:primary
 + Data Collection and Feedback the loop
 
 + Future Work
+]
 
 ???
 In this talk today, I will provide a background of the Rural Shrink Smart Project. I will then provide a framework to way using a dashboard can be helpful to these population discovery of gaining insights from other towns. I will continue to discuss the usefulness of parallel coordinate plots on the naive user. I will conclude with future work.
 
 ---
-
 # Rural Shrink Smart Project
 .center[
 ![](Shrink_Smart_logo.png)
@@ -144,144 +146,336 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
 (https://ruralshrinksmart.org/)
 ]
 
-- Rural towns are losing population steadily
-
-  - Shrinking tax bases lead to fewer services
-  - Shrinking population may shrink social interaction opportunities
-  - Schools, businesses, etc. may move to nearby towns
-
----
-# Rural Shrink Smart Project
-.center[
-![](Shrink_Smart_logo.png)
-]
-.center[
-(https://ruralshrinksmart.org/)
-]
-
-
-- .red[Project Question:] How do some cities manage to maintain quality of life for residents amid shrinking populations?
-  - Can this be taught?
++ <span style="color:darkred"> Project Question:</span> How do some cities manage to maintain quality of life for residents amid shrinking populations?
+  + Can this be taught? 
   
 .medium.emph[
 This material is based upon work supported by the National Science Foundation under Grant No. 1952007. We would also like to thank our collaborators at Iowa State, the Iowa League of Cities, and the various Iowa government organizations which publish their data at (https://data.iowa.gov).
 ]
 
 ---
-# Complications
+# Basic Idea
 
-- Quality of Life is a subjective assessment
-  - Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
-  - Survey response rates keep decreasing over time
++ Assemble publicly available data sets
+    + Available over lots of different geographic measurements    
+    Lat/Long, Zip code (5 or 9 digit, changes over time), Address, City, Census units, School District, County
+    + May not be complete for small towns    
+    (ACS estimates aren't useful in these areas - not enough people surveyed)
 
-- There are objective measures of things that contribute to QOL available in public datasets
++ Assess usability, interpretability and adaptability to new statistical methodology. 
+
++ .emph.cerulean[The Rural Shrink Smart EDA dashboard incorporates two major components]: 
+    + Data Visualization Interface component with Guided Discovery Learning (GDL) principles, which engages the town leaders. 
+    + Exploratory Data Analysis component utilizing statistical clustering methods, which allow town leaders the opportunity explore new elements to add or remove.
+
+
+---
+# Challenges
+
++ Quality of Life is a subjective assessment
+  + Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
+  + Survey response rates keep decreasing over time
+
++ There are objective measures of things that contribute to QOL available in public datasets
 .medium.emph[
-- School ratings
-- Town budgets for services
-- Access to medical care, shopping, etc.
-- Transportation trends
-- Demographic shifts
-- City level cooperative agreements with other government entities and NGOs
+  + School ratings
+  + Town budgets for services
+  + Access to medical care, shopping, etc.
+  + Transportation trends
+  + Demographic shifts
+  + City level cooperative agreements with other government entities and NGOs
 ]
 
 ---
-# Complications
+# Challenges
 
-- Quality of Life is a subjective assessment
-  - Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
-  - Survey response rates keep decreasing over time
++ Quality of Life is a subjective assessment
+  + Iowa Small Town poll has measured subjective QOL by decade for one small town in each of the 99 counties in Iowa (same town each year)
+  + Survey response rates keep decreasing over time
 
-- There are objective measures of things that contribute to QOL available in public datasets
++ There are objective measures of things that contribute to QOL available in public datasets
 
-- .red[Project Question:] How do we leverage .emph.cerulean[data science] and .emph.cerulean[exploratory data methods] to inform town leaders to reduce the shrinkage and maintain reliability?
-    - Can traditional dashboard design of open source data be incorporated into overall decision-making?
-    - Can we focus on estimating only things that objective measurements don't capture?
++ <span style="color:darkred">Project Question:</span> How do we leverage <span style="color:blue">data science</span>  and <span style="color:blue">exploratory data methods</span> to inform town leaders to reduce the shrinkage and maintain reliability?
+    + Can traditional dashboard design of open source data be incorporated into overall decision-making?
+    + Can we focus on estimating only things that objective measurements don't capture?
+
+---
   
+# Identifying Key Metrics
+
+<b>Audience</b>
+
+.medium.emph[
++ As small rural towns, traditionally, do not have access:
+     + Data scientists 
+     + Ability to easily leverage data collected locally to support decisions 
+
+Our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations 
+]
+--
+
+<b>Visualization Goals</b>
+
+.medium.emph[
++ Create a central place for the excess of data to be conveyed in a single comprehensive visual.
+    + We will utilize Parallel Coordinate Plot (PCPs)
++ Create a map feature that will allow for town leaders to understand the distance of essential QoL components (e.g. Fire Dept, Schools, etc.)
++ Add an overview of town general basics related to the seven QoL factors.
+]
+--
+
+<b>Engage People</b>
+
+.medium.emph[
++ We will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
+]
+
 ---
-# Basic Idea
+# Visualization
 
-- Assemble publicly available data sets
-    - Available over lots of different geographic measurements    
-    Lat/Long, Zip code (5 or 9 digit, changes over time), Address, City, Census units, School District, County
-    - May not be complete for small towns    
-    (ACS estimates aren't useful in these areas - not enough people surveyed)
++ Create a town-focused dashboard that lets leaders see how their town compares to other similar towns (geographically and as measured by the unsupervised statistical analysis)
 
-- Assess usability, interpretability and adaptability to new statistical methodology. 
++ Goal is to help towns see what strategies for maintaining QOL work and don't
 
-- .emph.cerulean[The Rural Shrink Smart EDA dashboard incorporates two major components]: 
-    - Data Visualization Interface component with Guided Discovery Learning (GDL) principles
-    - Exploratory Data Analysis component utilizing statistical clustering methods.
++ Emphasis on things towns are empowered to change
+    + Can't focus on e.g. agricultural policy
+    + City budgets, partnerships with outside entities, services that matter and don't
+--
 
----
-# 
-
++ How do we best design charts/graphs/UI to make people feel empowered and help them explore the data with an open mind?
+    + How do we incorporate statistical analyses into this? Much of the data will provide qualitative differences but not statistically significant differences.
+    
 ---
 # Guiding Design Principles
 
 Our initial set of dashboard design principles are: 
 
-- The town leaders are the focus audience (central focus of the app)
++ The town leaders are the focus audience (central focus of the app)
+    + Local Map (Local Essential Services)
+    + Vital Statistics
 
-- Facilitate comparisons with other towns in order to allow the user to explore other potential solutions
++ Facilitate comparisons with other towns in order to allow the user to explore other potential solutions
 
-- Present the user with peer comparisons in order to widen the scope of exploration beyond the initial set of obvious peers in the local region.
++ Present the user with peer comparisons in order to widen the scope of exploration beyond the initial set of obvious peers in the local region.
+    + PCP to compare the towns with varying similar features (e.g. economy, population, rurality or user input)  
 
-- Allow for more detailed data and feature requests to improve the dashboard design over time.
++ Allow for more detailed data and feature requests to improve the dashboard design over time.
 
 ---
-# Guided Discovery Learning with Dashboard Design
 
+# Dashboard Design Workflow
+
++ Compile a single data set
+    + rows: Each town
+    + columns: Each variable with appropriate spatial aggregation    
+    e.g. distance to service instead of lat/long
+
++ Unsupervised Analysis
+    + Which towns are most similar based only on the public data?
+ 
++ Dashboard Layout
+    + Which layout will allow the user to engage the most without overwhelming their curiosity?
+   
++ Dashboard Feedback
+    + What elements on the dashboard are useful, confusing, misleading or incorrect from town leaders?
+    
+---
+# Unsupervised Analysis
+<br>
+
+- Unsupervised clustering methods were used to determine data quality 
+
+--
+
+<br>
+-  During the process, we found that schools, fire departments, post offices and hospitals were missing
+
+--
+
+<br>
+-  Resulted in finding other open source datasets that were used for sanity checks along with adding information of missing data
+    
+???
+
+We found that in towns that the project leaders understood were off. For example, we found that many of the schools that were known to be in the towns were not in the dataset that we were using. Along with the fact that we have the leaflet feature, we could see that schools were in particular parts of towns that we did not see. 
+
+---
+
+
+# Dashboard Layout Iterations
+
+.large.emph[
++ Version 1: An idea without limitations of the actual implementation pieces.
+]
+
+--
+
+<br>
+.large.emph[
++ Version 2: After implementation has been completed and the team notes limitations, we change the interface.
+]
+
+--
+
+<br>
+.large.emph[
++ Version 3: Now incorporate more literature on dashboard design and user experience, which removes some of the "cool" implementations 
+]
+
+--
+
+<br>
+.large.emph[
++ Version 4: Finally incorporate a collective feedback from team-leaders that suggests lack of understanding of information
+]
+
+---
+
+# Dashboard Components 
+
+.large.emph[
++ Map (Town's closest services)
+]
+
+--
+ <br>
+ 
+.large.emph[
++ Vital Statistics (Town-centric and county level)
+]
+--
+ <br>
+ 
+.large.emph[
++ Paralllel Coordinate Plot with objective measures related to the QoL Survey
+]
+
+---
+
+# Reasoning behind using PCP
+
+<br>
+
+.large.emph[
++ We provide users with a town-centric approach: their town is at the center of our application, and comparisons to other, similar towns are secondary. 
+]
+
+--
+<br>
+
+.large.emph[
++ We allow users to modify a set of suggested comparison towns to indicate other towns of interest.
+]
+---
+class:primary
+
+# PCPs Effectiveness & Novice Users
+
+**Who?** Sukwon Lee, et al. wrote How do People Make Sense of Unfamiliar Visualizations?: A Grounded Model of Novice’s Information Visualization Sensemaking
+  
+**What?** Propose a grounded model of `NO`vice’s information `VI`sualization `S`ensemaking (`NOVIS` model)
++ Framework for assessing a person's ability to interpret a new graphical map
+    + Two Basic Components:
+      + Visual Object (textual objects and non-textual objects)
+      + Frame (frame of content and frame of visual encoding)
+
+**Why?** Advantages of using NOVIS model includes a reproducible framework of understanding graphics.
+<br><br>
+[Reference Journal](https://ieeexplore.ieee.org/document/7192668)`r Citep(bib[[c("lee et al")]])`
+
+???
+
+NOVIS Model has been used to compare other graphs such as PCP, Tree Maps and Chord diagrams, which helps with the understanding of why we could use the PCPs. We will use this model to ask questions of our town leaders to gain feedback on what they understand.
+---
+
+# PCP in Dashboard Develop Reasoning
+<br>
++ The large set of publicly available data we have assembled is useful, but we must be careful with how we present this data because it would be easy to overwhelm the user with small details that mask the bigger picture.
+
+  + A small subset of variables of interest to start with, and then 
+  
+  + Allow the user to increase the complexity of the display in accordance with their interest 
+
++ This avoids some of the pitfalls of dashboard design that can easily lead to user overload [Few](https://www.stephen-few.com/) `r Citep(bib[[c("few")]])`  
+    
+---
+class:primary
+
+# Background of Guided Discovery Learning
+
+**Who?** [Michael A. DeDonno](https://doi.org/10.1016/j.lindif.2016.05.023) wrote The influence of IQ on pure discovery and guided discovery learning of a complex real-world task.
+  
+**What?** To investigate the predictive ability of IQ on pure discovery and guided discovery learning of a complex real-world task.
+
+**How is this useful?** As mentioned previously, we not only want to present a complex graphic for novice users, we also want to empower the town-leader users to explore the dashboard, comprehensively. We would like to use the general principles by making sure that the users understands what is being presented to them. 
+
+**Experimentation** We will collect how the users are clicking on the app. This will help us understand if the users are getting better understanding of the app over time.
+
+
+???
+
+
+---
+
+# Guided Discovery Learning with Dashboard Design
+<br>
 We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. By leveraging:
 
-- hints
++ hints
 
-- feedback
++ feedback
 
-- other helpful information to guide users in interactive exploration
++ other helpful information to guide users in interactive exploration
     e.g. user ignoring the radio buttons to compare similar cities, etc.
 
 ---
-# Dashboard Design Workflow
+# User Testing in Beta
 
-- Compile a single data set
-    - rows: Each town
-    - columns: Each variable with appropriate spatial aggregation    
-    e.g. distance to service instead of lat/long
+**Audience**
 
-- Unsupervised analysis
-    - Which towns are most similar based only on the public data?
- 
-- Dashboard layout
-    - Which layout will allow the user to engage the most without overwhelming their curiosity?
++ Groups of Users:
+    + Graphics Group Members (Users know Statistical Graphics)
+    
+    + Rural Shrink Smart Project Members (Users know the project with little background in Statistical Graphics)
+    
+    + Others (Member of doctoral community that has background in educational adaptivity)
+
+---
+# Dashbaord Feedback
+
++ Our feedback from users has two components:
+
+   + User prompted (using a survey and screenshots)
    
-- Dashboard Feedback
-    - What elements on the dashboard are useful, confusing, misleading or incorrect from town leaders?
-    
+   + User behaviors being record in the background:
+   
+      + This will help validate issues that are being mentioned in the survey.
+      
+      + e.g. "I'm having a hard time understanding the PCP information", we will see that users are not spending any time on the PCP plot.
 ---
-# Visualization
+class:primary
 
-- Create a town-focused dashboard that lets leaders see how their town compares to other similar towns (geographically and as measured by the unsupervised statistical analysis)
+# Future Work
 
-- Goal is to help towns see what strategies for maintaining QOL work and don't
++ Allow the....???
 
-- Emphasis on things towns are empowered to change
-    - Can't focus on e.g. agricultural policy
-    - City budgets, partnerships with outside entities, services that matter and don't
-    
-- How do we best design charts/graphs/UI to make people feel empowered and help them explore the data with an open mind?
-    - How do we incorporate statistical analyses into this? Much of the data will provide qualitative differences but not statistically significant differences.
-    
----
-# Dashboard Visual Iterations
 
-- Version 1: An idea without limitations of the actual implementation pieces.
-
-- Version 2: After implementation has been completed and the team notes limitations, we change the interface.
-
-- Version 3: Now incorporate more literature on dashboard design and user experience, which removes some of the "cool" implementations 
-
-- Version 4: Finally incorporate a collective feedback from team-leaders that suggests lack of understanding of information
 
 ---
+class:inverse
+<br>
+<br>
+<br>
+.center[
+# Thank you! 
+### Acknowledgments: Dr. Susan VanderPlas and the ISU - Rural Shrink Smart Project Team
+<br>
+<br>
+`r fa("envelope", fill = "white")` **denise.bradford@huskers.unl.edu**
+<!-- ##### `r fa("home", fill = "black")` [www.deniserbradford.com](https://www.deniserbradford.com/)  -->
+`r fa("github", fill = "black")` **@drbradford12**
+]
 
-# 
+???
+
+Thank you for the support of my adviser Dr. Susan VanderPlas and the ISU Rural Shrink Smart
