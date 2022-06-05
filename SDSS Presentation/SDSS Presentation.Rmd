@@ -140,10 +140,7 @@ In this talk today, I will provide a background of the Rural Shrink Smart Projec
 ---
 # Rural Shrink Smart Project
 .center[
-![](Shrink_Smart_logo.png)
-]
-.center[
-(https://ruralshrinksmart.org/)
+<img src="images/Shrink_Smart_logo.png" width="35%"/>
 ]
 
 + <span style="color:darkred"> Project Question:</span> How do some cities manage to maintain quality of life for residents amid shrinking populations?
@@ -165,8 +162,8 @@ This material is based upon work supported by the National Science Foundation un
 + Assess usability, interpretability and adaptability to new statistical methodology. 
 
 + .emph.cerulean[The Rural Shrink Smart EDA dashboard incorporates two major components]: 
-    + Data Visualization Interface component with Guided Discovery Learning (GDL) principles, which engages the town leaders. 
-    + Exploratory Data Analysis component utilizing statistical clustering methods, which allow town leaders the opportunity explore new elements to add or remove.
+    + Data Visualization Interface component with Guided Discovery Learning (GDL) principles
+    + Exploratory Data Analysis component utilizing statistical graphical elements, such as maps and Parallel Coordinate Plots (PCPs)
 
 
 ---
@@ -196,7 +193,7 @@ This material is based upon work supported by the National Science Foundation un
 + There are objective measures of things that contribute to QOL available in public datasets
 
 + <span style="color:darkred">Project Question:</span> How do we leverage <span style="color:blue">data science</span>  and <span style="color:blue">exploratory data methods</span> to inform town leaders to reduce the shrinkage and maintain reliability?
-    + Can traditional dashboard design of open source data be incorporated into overall decision-making?
+    + How does an interactive dashboard of open-source data integrate into overall decision-making?
     + Can we focus on estimating only things that objective measurements don't capture?
 
 ---
@@ -310,25 +307,47 @@ We found that in towns that the project leaders understood were off. For example
 + Version 1: An idea without limitations of the actual implementation pieces.
 ]
 
---
+.center[
+<img src="images/version1.png" width="75%"/>
+]
 
-<br>
+---
+# Dashboard Design Workflow (Layout)
+
+## Dashboard Layout Iterations
+
 .large.emph[
 + Version 2: After implementation has been completed and the team notes limitations, we change the interface.
 ]
 
---
+.center[
+<img src="images/version2.png" width="75%"/>
+]
 
-<br>
+---
+# Dashboard Design Workflow (Layout)
+
+## Dashboard Layout Iterations
+
 .large.emph[
 + Version 3: Now incorporate more literature on dashboard design and user experience, which removes some of the "cool" implementations 
 ]
 
---
+.center[
+<img src="images/version3.png" width="50%"/>
+]
 
-<br>
+---
+# Dashboard Design Workflow (Layout)
+
+## Dashboard Layout Iterations
+
 .large.emph[
 + Version 4: Finally incorporate a collective feedback from team-leaders that suggests lack of understanding of information
+]
+
+.center[
+<img src="images/version4.png" width="75%"/>
 ]
 
 ---
@@ -350,7 +369,7 @@ We found that in towns that the project leaders understood were off. For example
  <br>
  
 .large.emph[
-+ Paralllel Coordinate Plot with objective measures related to the QoL Survey
++ Parallel Coordinate Plot with objective measures related to the QoL Survey
 ]
 
 ---
@@ -465,14 +484,21 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
    
       + This will help validate issues that are being mentioned in the survey.
       
-      + e.g. "I'm having a hard time understanding the PCP information", we will see that users are not spending any time on the PCP plot.
+      + e.g. "I'm having a hard time understanding the PCP information", we will see that users are not spending any time on the PCP.
+
+.center[
+<img src="images/feedback_question.png" width="35%"/>
+]
 ---
 class:primary
 
 # Future Work
 
-+ Allow the....???
-
++ Continue to incorporate feedback from town leaders.
+<br>
+.center[
+<img src="images/feedback_loop.png" width="50%"/>
+]
 
 
 ---
