@@ -108,10 +108,6 @@ write("", file = "js-addins.html")
 <!-- ##### `r fa("home", fill = "black")` [www.deniserbradford.com](https://www.deniserbradford.com/)  -->
 ##### `r fa("github", fill = "black")` [drbradford12](https://github.com/drbradford12)
 
-<br><br>
-.medium.emph[
-Theme designed by Emily A. Robinson [www.emilyarobinson.com](https://www.emilyarobinson.com/)
-]
 ???
 Thank you for inviting me for a visit today and for attending my talk.
 
@@ -121,15 +117,17 @@ class:primary
 
 <br>
 .large.emph[
-+ Introduction to Rural Shrink Smart Project with Iowa State University
++ Introduction to Rural Shrink Smart Project with Iowa State University and Open-Source Data Challenges
 
-+ Why Dashboards?
++ Motivation - Why Dashboards?
 
-+ Dashboard Design and Guided Discovery Learning (GDL)
++ Guiding Design Principles & Dashboard Design Workflow 
 
-+ Parallel Coordinate Plots (PCPs) and the naive user
++ Dashboard Philosophy - PCPs and the Novice User
+  + Using Guided Discovery Learning (GDL)
 
-+ Data Collection and Feedback the loop
++ Dashboard Design Workflow 
+  + Feedback Loop (Active and Passive Methodologies)
 
 + Future Work
 ]
@@ -138,13 +136,25 @@ class:primary
 In this talk today, I will provide a background of the Rural Shrink Smart Project. I will then provide a framework to way using a dashboard can be helpful to these population discovery of gaining insights from other towns. I will continue to discuss the usefulness of parallel coordinate plots on the naive user. I will conclude with future work.
 
 ---
+class:inverse
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+.center[
+# Project Introduction and Open-source Data Description
+]
+
+---
 # Rural Shrink Smart Project
 .center[
 <img src="images/Shrink_Smart_logo.png" width="35%"/>
 ]
 
 + <span style="color:darkred"> Project Question:</span> How do some cities manage to maintain quality of life for residents amid shrinking populations?
-  + Can this be taught? 
++ Can this be taught? 
   
 .medium.emph[
 This material is based upon work supported by the National Science Foundation under Grant No. 1952007. We would also like to thank our collaborators at Iowa State, the Iowa League of Cities, and the various Iowa government organizations which publish their data at (https://data.iowa.gov).
@@ -195,14 +205,24 @@ This material is based upon work supported by the National Science Foundation un
 + <span style="color:darkred">Project Question:</span> How do we leverage <span style="color:blue">data science</span>  and <span style="color:blue">exploratory data methods</span> to inform town leaders to reduce the shrinkage and maintain reliability?
     + How does an interactive dashboard of open-source data integrate into overall decision-making?
     + Can we focus on estimating only things that objective measurements don't capture?
+---
+class:inverse
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+.center[
+# Motivation - Why Use Dashboards?
+]
 ---
   
 # Identifying Key Metrics
+<b><u>Audience</u></b>
 
-<b>Audience</b>
-
-.small.emph[
+.medium.emph[
 + As small rural towns, traditionally, do not have access:
      + Data scientists 
      + Ability to easily leverage data collected locally to support decisions 
@@ -210,20 +230,18 @@ This material is based upon work supported by the National Science Foundation un
 Our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations 
 ]
 --
+<b><u>Visualization Goals</u></b>
 
-<b>Visualization Goals</b>
-
-.small.emph[
+.medium.emph[
 + Create a central place for the excess of data to be conveyed in a single comprehensive visual.
     + We will utilize Parallel Coordinate Plot (PCPs)
 + Create a map feature that will allow for town leaders to understand the distance of essential QoL components (e.g. Fire Dept, Schools, etc.)
 + Add an overview of town general basics related to the seven QoL factors.
 ]
 --
+<b><u>Engage People</u></b>
 
-<b>Engage People</b>
-
-.small.emph[
+.medium.emph[
 + We will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
 ]
 
@@ -241,7 +259,18 @@ Our research team will provide communities with data about services in small tow
 
 + How do we best design charts/graphs/UI to make people feel empowered and help them explore the data with an open mind?
     + How do we incorporate statistical analyses into this? Much of the data will provide qualitative differences but not statistically significant differences.
-    
+---
+class:inverse
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.center[
+# Guiding Design Principles and Dashboard Design Workflow
+]    
 ---
 # Guiding Design Principles
 
@@ -385,8 +414,21 @@ We found that in towns that the project leaders understood were off. For example
 <img src="images/pcp.png" width="75%"/>
 ]
 
-[Smart Connected Communities Dashbaord](https://shiny.srvanderplas.com/Smart-Connected-Communities/)
+[Smart Connected Communities Dashboard](https://shiny.srvanderplas.com/Smart-Connected-Communities/)
 ---
+class:inverse
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+.center[
+# Dashboard Philosophy - PCPs and the Novice User
+]  
+---
+exclude: true
+
 # Dashboard Philosophy 
 
 ## Reasoning behind using PCP
@@ -398,11 +440,13 @@ We found that in towns that the project leaders understood were off. For example
 ]
 
 --
+exclude: true
 <br>
 
 .large.emph[
 + We allow users to modify a set of suggested comparison towns to indicate other towns of interest.
 ]
+
 ---
 class:primary
 
@@ -410,7 +454,7 @@ class:primary
 
 ## PCPs Effectiveness & Novice Users
 
-**Who?** Sukwon Lee, et al. wrote How do People Make Sense of Unfamiliar Visualizations?: A Grounded Model of Novice’s Information Visualization Sensemaking
+**Who?** Sukwon Lee, et al. wrote "How do People Make Sense of Unfamiliar Visualizations?: A Grounded Model of Novice’s Information Visualization Sensemaking"
   
 **What?** Propose a grounded model of `NO`vice’s information `VI`sualization `S`ensemaking (`NOVIS` model)
 + Framework for assessing a person's ability to interpret a new graphical map
@@ -425,7 +469,9 @@ class:primary
 ???
 
 NOVIS Model has been used to compare other graphs such as PCP, Tree Maps and Chord diagrams, which helps with the understanding of why we could use the PCPs. We will use this model to ask questions of our town leaders to gain feedback on what they understand.
+
 ---
+
 # Dashboard Philosophy
 
 ## PCP in Dashboard Develop Reasoning
@@ -441,11 +487,12 @@ NOVIS Model has been used to compare other graphs such as PCP, Tree Maps and Cho
     
 ---
 class:primary
+
 # Dashboard Philosophy 
 
 ## Background of Guided Discovery Learning
 
-**Who?** [Michael A. DeDonno](https://doi.org/10.1016/j.lindif.2016.05.023) wrote The influence of IQ on pure discovery and guided discovery learning of a complex real-world task.
+**Who?** [Michael A. DeDonno](https://doi.org/10.1016/j.lindif.2016.05.023) wrote "The Influence of IQ on pure discovery and guided discovery learning of a complex real-world task."
   
 **What?** To investigate the predictive ability of IQ on pure discovery and guided discovery learning of a complex real-world task.
 
@@ -472,11 +519,22 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
     e.g. user ignoring the radio buttons to compare similar cities, etc.
 
 ---
+class:inverse
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+.center[
+# Dashboard Design Workflow - Feedback Loop 
+## Active & Passive Data Collection
+]
+
+---
 # Dashboard Design WorkFlow (Feedback)
 
 ## User Testing in Beta
-
-**Audience**
 
 + Groups of Users:
     + Graphics Group Members (Users know Statistical Graphics)
@@ -488,7 +546,7 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
 ---
 # Dashboard Design WorkFlow (Feedback)
 
-## Dashbaord Feedback
+## Dashboard Feedback
 
 + Our feedback from users has two components:
    + User prompted (using a survey and screenshots)
@@ -497,19 +555,22 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
       + e.g. "I'm having a hard time understanding the PCP information", we will see that users are not spending any time on the PCP.
 
 .center[
-<img src="images/feedback_question.png" width="44%"/>
+<img src="images/feedback_question.png" width="55%"/>
 ]
+
 ---
 class:primary
 
 # Future Work
 
-+ Continue to incorporate feedback from town leaders.
++ Continue to incorporate feedback from town leaders. 
 <br>
 .center[
 <img src="images/feedback_loop.png" width="50%"/>
 ]
 
+???
+With six rural town leaders, we will have enough information needed to understand the usefulness of the dashboard from 
 
 ---
 class:inverse
@@ -518,7 +579,7 @@ class:inverse
 <br>
 .center[
 # Thank you! 
-### Acknowledgments: Dr. Susan VanderPlas and the ISU - Rural Shrink Smart Project Team
+### Acknowledgments: Dr. Susan VanderPlas & the ISU - Rural Shrink Smart Project Team
 <br>
 <br>
 `r fa("envelope", fill = "white")` **denise.bradford@huskers.unl.edu**
@@ -526,6 +587,12 @@ class:inverse
 `r fa("github", fill = "black")` **@drbradford12**
 ]
 
+<br>
+
+.medium.emph[
+Special Thank You to Emily A. Robinson for creating our UNL theme, find her work at `r fa("github", fill = "black")` **@earobinson95**
+]
+
 ???
 
-Thank you for the support of my adviser Dr. Susan VanderPlas and the ISU Rural Shrink Smart
+Thank you for the support of my adviser Dr. Susan VanderPlas and the ISU Rural Shrink Smart Project Team for the hard work that they have done for not only me but also the rural town leaders.
