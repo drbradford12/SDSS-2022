@@ -367,10 +367,11 @@ We found that in towns that the project leaders understood were off. For example
 ## Dashboard Components 
  
 - Vital Statistics (Town-centric and county level)
-
+.center[
 .column[
-<img src="images/vital1.png" width="50%"/>
-<img src="images/vital2.png" width="50%"/>
+<img src="images/vital1.png" width="45%"/>
+<img src="images/vital2.png" width="45%"/>
+]
 ]
 
 ---
@@ -490,17 +491,13 @@ We leverage the framework of Guided Discovery Learning (GDL) to guide the town l
 ## Dashbaord Feedback
 
 + Our feedback from users has two components:
-
    + User prompted (using a survey and screenshots)
-   
    + User behaviors being record in the background:
-   
       + This will help validate issues that are being mentioned in the survey.
-      
       + e.g. "I'm having a hard time understanding the PCP information", we will see that users are not spending any time on the PCP.
 
 .center[
-<img src="images/feedback_question.png" width="35%"/>
+<img src="images/feedback_question.png" width="44%"/>
 ]
 ---
 class:primary
