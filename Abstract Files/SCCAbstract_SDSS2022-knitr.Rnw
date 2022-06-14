@@ -141,7 +141,7 @@ Complex visualizations are difficult to assess in vivo: it is fairly easy to des
 %\subsection{Future Work}
 
 \section{Acknowledgements}
-This material is based upon work supported by the National Science Foundation under Grant No. 1952007. We would also like to thank our collaborators at Iowa State, the Iowa League of Cities, and the various Iowa government organizations which publish their data at \url{data.iowa.gov}.
+ 
 
 
 \bibliographystyle{sdss2020} % Please do not change the bibliography style

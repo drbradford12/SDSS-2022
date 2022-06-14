@@ -150,7 +150,7 @@ class:inverse
 ---
 # Rural Shrink Smart Project
 .center[
-<img src="images/Shrink_Smart_logo.png" width="35%"/>
+<img src="images/Shrink_Smart_Logo.png" width="35%"/>
 ]
 
 + <span style="color:darkred"> Project Question:</span> How do some cities manage to maintain quality of life for residents amid shrinking populations?
@@ -337,7 +337,7 @@ We found that in towns that the project leaders understood were off. For example
 ]
 
 .center[
-<img src="images/version1.png" width="80%"/>
+<img src="images/Version1.png" width="80%"/>
 ]
 
 ---
@@ -350,7 +350,7 @@ We found that in towns that the project leaders understood were off. For example
 ]
 
 .center[
-<img src="images/version2.png" width="52%"/>
+<img src="images/Version2.png" width="52%"/>
 ]
 
 ---
@@ -363,7 +363,7 @@ We found that in towns that the project leaders understood were off. For example
 ]
 
 .center[
-<img src="images/version3.png" width="60%"/>
+<img src="images/Version3.png" width="60%"/>
 ]
 
 ---
@@ -376,7 +376,7 @@ We found that in towns that the project leaders understood were off. For example
 ]
 
 .center[
-<img src="images/version4.png" width="75%"/>
+<img src="images/Version4.png" width="75%"/>
 ]
 
 ---
