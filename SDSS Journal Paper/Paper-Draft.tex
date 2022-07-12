@@ -7,46 +7,6 @@
 \issue{xx}
 \doi{0000}
 
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 \usepackage[utf8]{inputenc}
 \providecommand{\tightlist}{%
@@ -92,11 +52,11 @@ Many small and rural places are shrinking. Interactive dashboards are the most c
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \cite{fisher}.
-A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making. An important area of dashboard design and usage is to vizualize
+With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \citet{fisher}.
+A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making. An important area of dashboard design and usage is to visualize many different attributes that are useful to display key performance metrics of importance for stakeholders.
 
 Some communities continue to thrive as they lose population because they adapt, maintaining quality of life and community services for residents while investing in the future.
-This process, \emph{smart shrinkage}, is important for rural areas who have experienced shrinking populations for decades. As small rural towns do not have access to data scientists or even the ability to easily leverage data collected locally to support decisions, our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations \cite{scc}. We hope to allow towns to discover their own data and compare to other similar towns, centering decision-making on data in the context of small-town Iowa life. In the process, we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
+This process, \emph{smart shrinkage}, is important for rural areas who have experienced shrinking populations for decades. As small rural towns do not have access to data scientists or even the ability to easily leverage data collected locally to support decisions, our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations \citet{scc}. We hope to allow towns to discover their own data and compare to other similar towns, centering decision-making on data in the context of small-town Iowa life. In the process, we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
 
 \section{Data Description}
 
@@ -104,7 +64,7 @@ Data collected from \url{data.iowa.gov} were used to create the SCC dashboard. M
 
 Data collected from ELSI from \url{https://nces.ed.gov} were used to show the distance to any private or public school. The National Center for Education Statistics (NCES) is the primary federal entity for collecting and analyzing data related to education. These data are used for details are a town level, that will provide information about the quality of life.
 
-Data collected from the \url{https://purr.purdue.edu/publications/2960/1} were used in the SCC dashboard to help classify the towns. The Index of Relative Rurality (IRR) is a continuous, threshold-free, and unit-free measure of rurality. It is an alternative to the traditional discrete threshold-based classifications.The IRR ranges between 0 (low level of rurality, i.e., urban) and 1 (most rural). Four steps are involved in its design:
+Data collected from the Index of Relative Rurality (IRR) \url{irr} were used in the SCC dashboard to help classify the towns. The Index of Relative Rurality (IRR) is a continuous, threshold-free, and unit-free measure of rurality. It is an alternative to the traditional discrete threshold-based classifications.The IRR ranges between 0 (low level of rurality, i.e., urban) and 1 (most rural). Four steps are involved in its design:
 
 \begin{enumerate}
 \item Identifying the dimensions of rurality: population size, density, remoteness, and built-up area.
@@ -119,10 +79,7 @@ Data collected from the \url{https://purr.purdue.edu/publications/2960/1} were u
 \item Selecting a link function: unweighted average of the four re-scaled variable.
 \end{enumerate}
 
-Data collected from Rural Urban Commuting Area Codes \cite{usda} were used to help identify towns with commuting behaviors in our rural areas. The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. This data is on a zipcode-level that will help identify those communites that commute to more urban areas. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006-10 American Community Survey. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.
-
-\hypertarget{we-need-to-add-words-for-the-data-that-we-will-include-from-the-census-that-will-tell-ise-the-age-of-towns-are-they-aging}{%
-\section{We need to add words for the data that we will include from the Census that will tell ise the age of towns (Are they aging?)}\label{we-need-to-add-words-for-the-data-that-we-will-include-from-the-census-that-will-tell-ise-the-age-of-towns-are-they-aging}}
+Data collected from Rural Urban Commuting Area Codes \citet{usda} were used to help identify towns with commuting behaviors in our rural areas. The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. This data is on a zipcode-level that will help identify those communities that commute to more urban areas. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006-10 American Community Survey. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.
 
 Using this data, we created a dashboard which allows communities to explore these data and compare and contrast their local community to other communities of similar size and location. In addition to manual comparisons created by the user, we will use statistical clustering methods to identify groups of towns which employ similar strategies to maintain resident quality of life.
 
@@ -132,9 +89,41 @@ Thus, in addition to the usual challenges of working with real-world data that i
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
 
+\subsection{Identifying Key Metrics}
+
+\textbf{Audience:}
+
+\begin{itemize}
+\item As small rural towns, traditionally, do not have access:
+\begin{itemize}
+     \item Data scientists 
+      \item Ability to easily leverage data collected locally to support decisions 
+\end{itemize}
+\end{itemize}
+
+Our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations.
+
+\textbf{Visualization Goals:}
+
+\begin{itemize}
+\item Create a central place for the excess of data to be conveyed in a single comprehensive visual.
+  \begin{itemize}
+    \item We will utilize Parallel Coordinate Plot (PCPs)
+    \end{itemize}
+\item Create a map feature that will allow for town leaders to understand the distance of essential QoL components (e.g. Fire Dept, Schools, etc.)
+\item Add an overview of town general basics related to the seven QoL factors.
+\end{itemize}
+
+\textbf{Engage People:}
+We will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
+
 \subsection{Guiding Dashboard Design Principles}
 
 An additional challenge is that research on dashboard creation and interactive visualization tends to be very task-specific and not generalizable. That is, it is relatively easy to create a dashboard that works for a particular task, but it is hard to generalize from that process what will work for the next dashboard. With this in mind, we have clearly documented our intentions at each stage of the design and evaluation process, with the goal of gathering some useful information about general dashboard design from the process of creating this specific dashboard.
+
+\hypertarget{to-do---make-sure-that-this-is-formatted-into-a-table-instead-of-the-list.-add-what}{%
+\section{To-Do - make sure that this is formatted into a table instead of the list. Add what???}\label{to-do---make-sure-that-this-is-formatted-into-a-table-instead-of-the-list.-add-what}}
+
 Thus, our initial set of dashboard design principles is as follows:
 
 \begin{itemize}
@@ -144,15 +133,29 @@ Thus, our initial set of dashboard design principles is as follows:
 \item Allow for more detailed data and feature requests to improve the dashboard design over time.
 \end{itemize}
 
-\subsection{Guided Discovery Learning (GDL)}
-
-We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. This framework leverages hints, feedback, and other helpful information to guide users in interactive exploration \cite{dedonno}.
+\subsection{Dashboard Design Workflow}
 
 We provide users with a town-centric approach: their town is at the center of our application, and comparisons to other, similar towns are secondary. As it can be extremely difficult to predict which towns are optimal for comparison purposes (similar may involve population, region, economic indicators, sports rivalries, and any number of other variables), we allow users to modify a set of suggested comparison towns to indicate other towns of interest. The suggested comparison towns are generated using unsupervised clustering methods on different sets of variables, but as we acknowledge that the problem of what towns should be used for comparisons is a tough one even for humans, we still want to allow for user input in this space.
 
-The large set of publicly available data (primarily from \url{data.iowa.gov}) we have assembled is useful, but we must be careful with how we present this data because it would be easy to overwhelm the user with small details that mask the bigger picture. We select a small subset of towns (out of the 999 towns in Iowa) and a small subset of variables of interest to start with, and then allow the user to increase the complexity of the display in accordance with their interest. This avoids some of the pitfalls of dashboard design that can easily lead to user overload \cite{few}.
+Secondly in our workflow, we will look into using Unsupervised Clustering Methods to help our towns make decisions that are informed in comparison to similar towns, for budget size, population size and location. We will take into account that towns will make sure to help towns not make comparisons to towns that may be a bit out of reach and not similar in make-up. We will discuss this more in detail in the discussion, our original goal at using the clustering methods to determine similiar towns actually led us to using the methods to determine the data quality of our open-source data.
 
-The Rural Shrink Smart EDA dashboard incorporates two major components: Data Visualization Interface component with GDL principles; and Exploratory Data Analysis component utilizing statistical clustering methods.
+In our final stages of the Dashboard Design Workflow, we will look at two important aspects including the Layout and feedback. Firstly, we will look at the dashboard layout that will allow the user to engage that most without overwhelming their curiosity and understanding of the delivered information. We will conclude with feedback on what elements on the dashboard are useful, confusing, misleading or incorrect based on two modes - clicks on the UI (Passive) and UI survey (Active).
+
+An aspect of our dashboard design, we will iterate over designs, allowing for the design of dashboards to be a spectrum from dream design of the design team to a more functional design from the town leaders feedback.
+
+\textit{Should we add the images of the dashboard design layout here???}
+
+\subsubsection{Dashboard Components}
+
+The large set of publicly available data (primarily from \url{data.iowa.gov}) we have assembled is useful, but we must be careful with how we present this data because it would be easy to overwhelm the user with small details that mask the bigger picture. We select a small subset of towns (out of the 999 towns in Iowa) and a small subset of variables of interest to start with, and then allow the user to increase the complexity of the display in accordance with their interest. This avoids some of the pitfalls of dashboard design that can easily lead to user overload \citet{few}.
+
+While our dashboard layout is vitally important into making sure that the town leaders are using the dashboards, we should discuss the dashboard components that we used along with the philosophy of those key components. Starting with our parallel coordinate plot, which will allow for objective measures related to the QoL Survey. As our primary objective is to provide users with a town-centric approach: their town is at the center of our application, and comparisons to other, similar towns are secondary. We believe that this will allow the town leaders the ability to see as much data as possible with relation to their towns and others. The framework mentioned in \citet{lee},``How do People Make Sense of Unfamiliar Visualizations?: A Grounded Model of Novice's Information Visualization Sensemaking,'\,' allowed our work to determine that a novice user seeing a PCP will be able to determine two basic components: Visual Object (textual objects and non-textual objects) and Frame (frame of content and frame of visual encoding). The PCP in this study were found to be promising for novice users, when comparing to the Treemap and Chord Diagram.
+
+Furthermore, the large set of publicly available data we have assembled is useful, but we must be careful with how we present this data because it would be easy to overwhelm the user with small details that mask the bigger picture.
+
+\subsection{Guided Discovery Learning (GDL)}
+
+We leverage the framework of Guided Discovery Learning (GDL) to guide the town leaders to make discoveries using our interactive visualization. This framework leverages hints, feedback, and other helpful information to guide users in interactive exploration \citet{dedonno}.
 
 The Data Visualization component with GDL principles is a single page which populates the information in maps related to necessary services, including directions and distance to the fire department, schools, post offices, and hospitals. Value Boxes populate vital statistics sections that have information about the town's QoL Metrics and financial metrics, followed by a parallel coordinate plot that allows the town to see five towns that are similarly based on the most common variables in the towns, such as similar economy or population size. The graphical representations including a parallel coordinate plot and geographic maps {[}Figure 1{]}. The Rural Smart EDA Dashboard map visuals were built using OSRM route functions in R to amplify the accuracy of the distances from necessary services in town-centric point.
 
@@ -166,74 +169,39 @@ In this paper, we present the results from testing this application with users, 
 
 Complex visualizations are difficult to assess in vivo: it is fairly easy to design an experiment to test a single graphic, but much harder to test the interactive dashboards which consist of systems of displays and user interactions. As a result, it is important to continuously assess which ``common knowledge'\,' design principles stemming from more controlled experiments hold up in real-world situations.
 
-\hypertarget{code}{%
-\section{Code}\label{code}}
-
-The document class \texttt{jds} provides several commands to decorate
+Using the framework from ``Creating design guidelines for building city dashboards from a user's perspectives,'' \citet{young}, we will help summarize a users concerns utilizing six main critiques, which are framed into questions. We will adapt these questions to better help the town leaders communicate clear feedback for our team to use. We will collect how the users are experiencing the app with these set questions:
 
 \begin{itemize}
-\item inline code, such as \code{print("Hello world!")};
-\item programming language, such as \proglang{R}, \proglang{Python}, and
-  \proglang{C++};
-\item software package, such as \pkg{stats}, \pkg{utils}.
+\item Is the information the dashboard presents clear? \textit{(Scope)}
+\item Is the dashboard easy to navigate? \textit{(Usability)}
+\item Is the dashboard used in a socially responsible manner? \textit{(Ethics)}
+\item Do you believe that you can trust the Rural Shrink Smart dashboard? \textit{(Validity)}
+\item Do you find value in the Rural Shrink Smart dashboard? \textit{(Utility)}
 \end{itemize}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\DocumentationTok{\#\# Dobson (1990) Page 93: Randomized Controlled Trial :}
-\NormalTok{counts }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{18}\NormalTok{, }\DecValTok{17}\NormalTok{, }\DecValTok{15}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{25}\NormalTok{, }\DecValTok{13}\NormalTok{, }\DecValTok{12}\NormalTok{)}
-\NormalTok{outcome }\OtherTok{\textless{}{-}} \FunctionTok{gl}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{9}\NormalTok{)}
-\NormalTok{treatment }\OtherTok{\textless{}{-}} \FunctionTok{gl}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{3}\NormalTok{)}
-\NormalTok{glm.D93 }\OtherTok{\textless{}{-}} \FunctionTok{glm}\NormalTok{(counts }\SpecialCharTok{\textasciitilde{}}\NormalTok{ outcome }\SpecialCharTok{+}\NormalTok{ treatment, }\AttributeTok{family =} \FunctionTok{poisson}\NormalTok{())}
-\FunctionTok{summary}\NormalTok{(glm.D93)}
-\end{Highlighting}
-\end{Shaded}
+\subsubsection{Beta Testing}
 
-\begin{verbatim}
-Call:
-glm(formula = counts ~ outcome + treatment, family = poisson())
+Our Beta testing of a design dashboard before deploying the product to our town leaders, we allowed users from the following groups:
 
-Deviance Residuals: 
-       1         2         3         4         5         6         7         8  
--0.67125   0.96272  -0.16965  -0.21999  -0.95552   1.04939   0.84715  -0.09167  
-       9  
--0.96656  
+\begin{itemize}
+    \item Graphics Group Members (Users know Statistical Graphics)
+    \item Rural Shrink Smart Project Members (Users know the project with little background in Statistical Graphics)
+    \item  Others (Member of doctoral community that has background in educational adaptivity)
+\end{itemize}
 
-Coefficients:
-              Estimate Std. Error z value Pr(>|z|)    
-(Intercept)  3.045e+00  1.709e-01  17.815   <2e-16 ***
-outcome2    -4.543e-01  2.022e-01  -2.247   0.0246 *  
-outcome3    -2.930e-01  1.927e-01  -1.520   0.1285    
-treatment2   1.338e-15  2.000e-01   0.000   1.0000    
-treatment3   1.421e-15  2.000e-01   0.000   1.0000    
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+While this may not be a large sample size, our range of testers helped with changing approaches in data collection and
 
-(Dispersion parameter for poisson family taken to be 1)
+\hypertarget{future-work}{%
+\section{Future Work}\label{future-work}}
 
-    Null deviance: 10.5814  on 8  degrees of freedom
-Residual deviance:  5.1291  on 4  degrees of freedom
-AIC: 56.761
-
-Number of Fisher Scoring iterations: 4
-\end{verbatim}
-
-\hypertarget{a-placeholder-section}{%
-\section{A Placeholder Section}\label{a-placeholder-section}}
-
-\lipsum[4-7]
+\begin{itemize}
+\tightlist
+\item
+  We need to add words for the data that we will include from the Census that will tell us the age of towns (Are they aging?)
+\end{itemize}
 
 \hypertarget{citing-references}{%
 \section{Citing References}\label{citing-references}}
-
-The citations are in the author-year format with the
-\texttt{jds} bibstyle.
-
-Citations can be in either text or parenthesis format style with
-\texttt{$\backslash$citet} or \texttt{$\backslash$citep},
-respectively. For example, \citet{KoenkerBassett1978} is a seminal
-work on quantile regression; The Laplace distribution has applications
-in many fields \citep{Kotz2001}.
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
