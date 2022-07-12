@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.7)  11 JUL 2022 23:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.7)  11 JUL 2022 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -402,8 +402,7 @@ tex)))
 Package: lipsum 2021-03-03 v2.3 150 paragraphs of Lorem Ipsum dummy text
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2021-03-03 v2.3 The Lorem ipsum dummy text
-))
-No file Paper-Draft.aux.
+)) (./Paper-Draft.aux)
 \openout1 = `Paper-Draft.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -497,6 +496,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
+(./Paper-Draft.out) (./Paper-Draft.out)
 \@outlinefile=\write3
 \openout3 = `Paper-Draft.out'.
 
@@ -515,14 +515,6 @@ Package hyperref Warning: Ignoring empty anchor on input line 33.
 
 \keybox=\box59
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\metadata@1@snm' on input line 45.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\metadata@2@snm' on input line 45.
-
-
 LaTeX Font Warning: Font shape `T1/cmr/m/scsl' undefined
 (Font)              using `T1/cmr/m/sl' instead on input line 45.
 
@@ -533,9 +525,6 @@ Package natbib Warning: Citation `fisher' on page 1 undefined on input line 55.
 
 
 Package natbib Warning: Citation `scc' on page 1 undefined on input line 59.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 60.
 
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -564,45 +553,28 @@ Package natbib Warning: Citation `dedonno' on page 5 undefined on input line 15
 Package natbib Warning: Citation `young' on page 5 undefined on input line 172.
 
 
-[5]
-No file Paper-Draft.bbl.
-
-Package lastpage Warning: Rerun to get the references right on input line 215.
-
-
+[5] 
 AED: lastpage setting LastPage
 [6] [7]
 
 Package natbib Warning: There were undefined citations.
 
 (./Paper-Draft.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Paper-Draft.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Paper-Draft.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  9E03FD8B4C84DC867BC94C163FA46F5E;2493.
+Package rerunfilecheck Info: File `Paper-Draft.out' has not changed.
+(rerunfilecheck)             Checksum: 9E03FD8B4C84DC867BC94C163FA46F5E;2493.
  ) 
 Here is how much of TeX's memory you used:
- 12415 strings out of 478994
- 178022 string characters out of 5858185
- 763836 words of memory out of 5000000
- 29638 multiletter control sequences out of 15000+600000
- 430070 words of font info for 91 fonts, out of 8000000 for 9000
+ 12433 strings out of 478994
+ 178284 string characters out of 5858185
+ 764540 words of memory out of 5000000
+ 29652 multiletter control sequences out of 15000+600000
+ 429294 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,102p,1198b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/l
 ocal/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/loc
 al/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local
@@ -615,10 +587,10 @@ ve/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive
 1/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2021/
 texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Paper-Draft.pdf (7 pages, 257061 bytes).
+Output written on Paper-Draft.pdf (7 pages, 254440 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
+ 186 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
  36 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

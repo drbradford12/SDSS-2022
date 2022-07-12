@@ -38,10 +38,9 @@ keywords:
   - Exploratory Data Analysis (EDA)
   - Parallel Coordinate Plots (PCP)
   - Guided Discovery Learning (GDL)
-bibliography: jdsart-sample.bib
+#bibliography: jdsart-sample.bib
 output: jds.rmd::pdf_article
 ---
-
 
 # Abstract
 
