@@ -93,9 +93,9 @@ Data collected from the Index of Relative Rurality (IRR) \svp{Create a bibtex en
 \item Selecting a link function: unweighted average of the four re-scaled variable.
 \end{enumerate}
 
-Data collected from Rural Urban Commuting Area Codes \texttt{usda} were used to help identify towns with commuting behaviors in our rural areas. The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. This data is on a zipcode-level that will help identify those communities that commute to more urban areas. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006-10 American Community Survey. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.
+Data collected from Rural Urban Commuting Area Codes \texttt{usda} were used to help identify towns with commuting behaviors in our rural areas. The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. This data is on a zip code-level that will help identify those communities that commute to more urban areas. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006-10 American Community Survey. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.
 
-One of the interesting features of this assembled dataset is that missing data can be missing for multiple reasons: not all state data is complete, but data about certain services may also be missing because towns do not offer that service.
+One of the interesting features of this assembled data set is that missing data can be missing for multiple reasons: not all state data is complete, but data about certain services may also be missing because towns do not offer that service.
 Thus, in addition to the usual challenges of working with real-world data that is "messy" in a variety of ways, we also have to contend with missing data that is missing due to the size of the community or the lack of services. This makes both visualization and statistical analysis more complicated.
 
 
@@ -111,14 +111,13 @@ Thus, in addition to the usual challenges of working with real-world data that i
 \includegraphics[width=.5\textwidth]{Key_Metrics}
 \end{center}
 
-Our audience being small rural towns, traditionally, do not have access:
-\begin{itemize}
-     \item Data scientists 
-      \item Ability to easily leverage data collected locally to support decisions 
-\end{itemize}
-Our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations.
+\svp{One problem we identified early in the process of assessing smart-shrinkage strategies in small towns is that these towns do not have the resources to make data-driven decisions. Typically, small towns in Iowa are managed by at most a few part-time employees or volunteers. In some cases, essential management functions of the town are paid, but the municipalities we are interested in do not have sufficient funding to hire professionals to gather and analyze data.}
 
-While data is important for data-driven decisions, we need to help minimize the amount of cognitive load for the town-leaders to digest the amount of data will be conveyed, as a result we will create a central place for the excess of data to be conveyed in a single comprehensive visual. We will utilize Parallel Coordinate Plot (PCPs). Create a map feature that will allow for town leaders to understand the distance of essential QoL components (e.g. Fire Dept, Schools, etc.). Lastly, we will add an overview of town general basics related to the seven QoL factors.
+\svp{As part of a wider project investigating the strategies towns use to maintain quality of life amid shrinking population, our research team provides communities with data about their own town, but also comparable towns across the state which may have a different approach to city services. In combination with other engagement strategies that are more qualitative, we hope to use this interactive dashboard approach to assist small Iowa cities with generalizing and developing strategies to improve or maintain quality of life amid shrinking populations.}
+
+\svp{One factor at the forefront of our visualization design is the importance of reducing the cognitive demands on viewers: we have assembled an incredible amount of data, and it is easy for even statisticians who deal with much larger datasets to get lost in the details of this data. At the same time, we want to invite viewers to engage with the data - to imagine, to draw comparisons, to generalize across towns, and to integrate outside information into the conclusions drawn based on the data we present.}
+\svp{Our initial strategy to accomplish this task is to utilize parallel coordinate plots (PCPs), a multivariate data visualization method that can accommodate both categorical and numerical data on in the same visualization. Supplementing the PCP that is the primary data display, we also provide some contextual information in the form of maps and "quick facts" that allow viewers to quickly assess a new town before comparing to a wider selection of towns.}
+<!-- While data is important for data-driven decisions, we need to help minimize the amount of cognitive load for the town-leaders to digest the amount of data will be conveyed, as a result we will create a central place for the excess of data to be conveyed in a single comprehensive visual. We will utilize Parallel Coordinate Plot (PCPs). Create a map feature that will allow for town leaders to understand the distance of essential QoL components (e.g. Fire Dept, Schools, etc.). Lastly, we will add an overview of town general basics related to the seven QoL factors. -->
 
 We will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
 
