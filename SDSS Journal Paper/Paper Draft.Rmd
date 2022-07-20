@@ -30,6 +30,9 @@ preamble: >
   \usepackage{amsfonts,amsmath,amssymb,amsthm}
   \usepackage{booktabs}
   \usepackage{lipsum}
+  \newcommand{\db}[1]{{\textcolor{blue}{#1}}}
+  \newcommand{\svp}[1]{{\textcolor{red}{#1}}}
+
 abstract: >
   Many small and rural places are shrinking. Interactive dashboards are the most common use cases for data visualization and context for exploratory data tools. In our paper, we will explore the specific scope of how dashboards are used in small and rural area to empower novice analysts to make data-driven decisions. Our framework will suggest a number of research directions to better support small and rural places from shrinking using an interactive dashboard design, implementation and use for the every day analyst.
 keywords:
@@ -39,7 +42,9 @@ keywords:
   - Parallel Coordinate Plots (PCP)
   - Guided Discovery Learning (GDL)
 bibliography: jdsart-sample.bib
-output: jds.rmd::pdf_article
+output: 
+  jds.rmd::pdf_article:
+    keep_tex: true
 ---
 
 # Abstract
@@ -47,12 +52,18 @@ output: jds.rmd::pdf_article
 Many small and rural places are shrinking. Interactive dashboards are the most common use cases for data visualization and context for exploratory data tools. In our paper, we will explore the specific scope of how dashboards are used in small and rural area to empower novice analysts to make data-driven decisions. Our framework will suggest a number of research directions to better support small and rural places from shrinking using an interactive dashboard design, implementation and use for the every day analyst. 
 
 # Introduction
-
-With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \texttt{fisher}. 
-A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making. An important area of dashboard design and usage is to visualize many different attributes that are useful to display key performance metrics of importance for stakeholders. 
+\svp{As the amount of data has increased in nearly every facet of life, the need to make sense of that data in an approachable, accessible form has become ever more important. 
+As a result, many companies and organizations use interactive dashboards to present these data in a more useful and visually appealing form \citep{fisher}.}
+<!-- With the amount of publicly open-source data, a proliferation of visualization dashboards has increased in nearly every industry \cite{fisher}.  -->
+\svp{In many cases, dashboards support viewers' information processing, helping to make sense of complex data, navigate through a dataset, and supporting decision making based on the data.}
+<!-- A dashboard in its fundamental form, a dashboard supports a way of presenting and making sense of complex data to better enable and support decision making.  -->
+\svp{Dashboards are often used, as with the car display of the same name, to provide summary information about many separate attributes of a common entity. One glance at a car's dashboard will tell you the speed, RPM, engine temperature, amount of gas in the tank; more importantly, however, the goal is not for the user to remember all of these characteristics, but to assess whether any of these quantities is outside of the expected range. 
+Similarly, interactive dashboards for data are often used to display many different attributes and performance metrics which are of importance for stakeholders.}
+<!-- An important area of dashboard design and usage is to visualize many different attributes that are useful to display key performance metrics of importance for stakeholders.  -->
+\svp{In this paper, we discuss the process of designing a dashboard to present publicly available government data to stakeholders in small Iowa towns to facilitate decision making and objective comparison with other similarly-situated towns.}
 
 Some communities continue to thrive as they lose population because they adapt, maintaining quality of life and community services for residents while investing in the future. 
-This process, \emph{smart shrinkage}, is important for rural areas who have experienced shrinking populations for decades. As small rural towns do not have access to data scientists or even the ability to easily leverage data collected locally to support decisions, our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations \texttt{scc}. We hope to allow towns to discover their own data and compare to other similar towns, centering decision-making on data in the context of small-town Iowa life. In the process, we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
+This process, \emph{smart shrinkage}, is important for rural areas who have experienced shrinking populations for decades. As small rural towns do not have access to data scientists or even the ability to easily leverage data collected locally to support decisions, our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations \cite{scc}. We hope to allow towns to discover their own data and compare to other similar towns, centering decision-making on data in the context of small-town Iowa life. In the process, we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
 
 
 \section{Data Description}
