@@ -63,16 +63,23 @@ Similarly, interactive dashboards for data are often used to display many differ
 \svp{In this paper, we discuss the process of designing a dashboard to present publicly available government data to stakeholders in small Iowa towns to facilitate decision making and objective comparison with other similarly-situated towns.}
 
 Some communities continue to thrive as they lose population because they adapt, maintaining quality of life and community services for residents while investing in the future. 
-This process, \emph{smart shrinkage}, is important for rural areas who have experienced shrinking populations for decades. As small rural towns do not have access to data scientists or even the ability to easily leverage data collected locally to support decisions, our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations \cite{scc}. We hope to allow towns to discover their own data and compare to other similar towns, centering decision-making on data in the context of small-town Iowa life. In the process, we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
+This process, \emph{smart shrinkage}, is important for rural areas who have experienced shrinking populations for decades. 
+As small rural towns do not have access to data scientists or even the ability to easily leverage data collected locally to support decisions, our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations \citep{scc}. 
+We hope to allow towns to discover their own data and compare to other similar towns, centering decision-making on data in the context of small-town Iowa life. 
+In the process, we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
+\svp{This paragraph is pretty good, but see if you can tweak it to blend in a bit better with the edits I made above.}
 
 
 \section{Data Description}
 
-Data collected from \url{data.iowa.gov} were used to create the SCC dashboard. Most of these datasets are collected on a town/city or county level, requiring us to carefully join data accounting for differences in spatial resolution. \url{data.iowa.gov} contains unique information about residents, including local liquor sales, school building locations, town budgets and expenditures, hospital beds, Medicaid reimbursements, and other details that may provide information about local quality of life.
+Data collected from \url{data.iowa.gov} were used to create the SCC dashboard. Most of these data sets are collected at a town/city or county \svp{spatial resolution, requiring us to carefully join data to ensure that these differences are respected while collating relevant information at the city level}. \svp{In addition to the more commonly available statistics derived from e.g. the census and American Community Survey,} \url{data.iowa.gov} contains \svp{several} unique \svp{data sets}, including local liquor sales, school building locations, town budgets and expenditures, hospital beds, Medicaid reimbursements, and other details that may provide information about local quality of life.
 
-Data collected from ELSI from \url{https://nces.ed.gov} were used to show the distance to any private or public school. The National Center for Education Statistics (NCES) is the primary federal entity for collecting and analyzing data related to education. These data are used for details are a town level, that will provide information about the quality of life. 
+\svp{Data available on Iowa's data portal were augmented in some cases with higher-quality data sets in cases where the Iowa data were out of date or insufficiently accurate.}
+Data collected from ELSI from \url{https://nces.ed.gov} were used to show the distance to any private or public school. The National Center for Education Statistics (NCES) is the primary federal entity for collecting and analyzing data related to education.
+\svp{Cite Dave's papers about the ISTP QOL metrics, including education}
+<!-- These data are used for details are a town level, that will provide information about the quality of life. -->
 
-Data collected from the Index of Relative Rurality (IRR) \url{https://www.ers.usda.gov/topics/rural-economy-population/rural-classifications/} were used in the SCC dashboard to help classify the towns. The Index of Relative Rurality (IRR) is a continuous, threshold-free, and unit-free measure of rurality. It is an alternative to the traditional discrete threshold-based classifications.The IRR ranges between 0 (low level of rurality, i.e., urban) and 1 (most rural). Four steps are involved in its design:
+Data collected from the Index of Relative Rurality (IRR) \svp{Create a bibtex entry for this and cite it properly, please. Same goes for most of the other URLs.} \url{https://www.ers.usda.gov/topics/rural-economy-population/rural-classifications/} were used in the SCC dashboard to help classify the towns. The Index of Relative Rurality (IRR) is a continuous, threshold-free, and unit-free measure of rurality. It is an alternative to the traditional discrete threshold-based classifications.The IRR ranges between 0 (low level of rurality, i.e., urban) and 1 (most rural). Four steps are involved in its design:
 \begin{enumerate}
 \item Identifying the dimensions of rurality: population size, density, remoteness, and built-up area.
 \item Selecting measureable variables to adequately represent each dimension:
@@ -88,10 +95,13 @@ Data collected from the Index of Relative Rurality (IRR) \url{https://www.ers.us
 
 Data collected from Rural Urban Commuting Area Codes \texttt{usda} were used to help identify towns with commuting behaviors in our rural areas. The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. This data is on a zipcode-level that will help identify those communities that commute to more urban areas. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006-10 American Community Survey. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.
 
-Using this data, we created a dashboard which allows communities to explore these data and compare and contrast their local community to other communities of similar size and location. In addition to manual comparisons created by the user, we will use statistical clustering methods to identify groups of towns which employ similar strategies to maintain resident quality of life.
-
 One of the interesting features of this assembled dataset is that missing data can be missing for multiple reasons: not all state data is complete, but data about certain services may also be missing because towns do not offer that service.
 Thus, in addition to the usual challenges of working with real-world data that is "messy" in a variety of ways, we also have to contend with missing data that is missing due to the size of the community or the lack of services. This makes both visualization and statistical analysis more complicated.
+
+
+<!-- Not sure this paragraph is in the right place and/or necessary -->
+<!-- Using this data, we created a dashboard which allows communities to explore these data and compare and contrast their local community to other communities of similar size and location. In addition to manual comparisons created by the user, we will use statistical clustering methods to identify groups of towns which employ similar strategies to maintain resident quality of life. -->
+
 
 # Methods
 
