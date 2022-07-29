@@ -177,7 +177,7 @@ In this paper, we present the results from testing this application with users, 
 
 Complex visualizations are difficult to assess in vivo: it is fairly easy to design an experiment to test a single graphic, but much harder to test the interactive dashboards which consist of systems of displays and user interactions. As a result, it is important to continuously assess which ``common knowledge'' design principles stemming from more controlled experiments hold up in real-world situations.
 
-Using the framework from "Creating design guidelines for building city dashboards from a user's perspectives" [@young], we will help summarize a users concerns utilizing six main critiques, which are framed into questions. We will adapt these questions to better help the town leaders communicate clear feedback for our team to use. We will collect how the users are experiencing the app with these set questions:
+Using the framework from "Creating design guidelines for building city dashboards from a user's perspectives" [@lee], we will help summarize a users concerns utilizing six main critiques, which are framed into questions. We will adapt these questions to better help the town leaders communicate clear feedback for our team to use. We will collect how the users are experiencing the app with these set questions:
 \begin{itemize}
 \item Is the information the dashboard presents clear? \textit{(Scope)}
 \item Is the dashboard easy to navigate? \textit{(Usability)}
