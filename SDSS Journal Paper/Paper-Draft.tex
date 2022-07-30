@@ -24,11 +24,11 @@
 \author[1]{
   \inits{D.}
   \fnms{Denise}
-  \snm{Bradford}  \thanksref{1}  \ead{denise.bradford@huskers.unl.edu}}
+  \snm{Bradford}}
 \author[1]{
   \inits{S.}
   \fnms{Susan}
-  \snm{VanderPlas}  \thanksref{1}}
+  \snm{VanderPlas}  \thanksref{1}  \ead{svanderplas@unl.edu}}
 
 \thankstext[type=corresp,id=1]{Corresponding author}
 \address[1]{Department of Statistics, 
@@ -52,33 +52,23 @@ Many small and rural places are shrinking. Interactive dashboards are the most c
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-{\textcolor{red}{As the amount of data has increased in nearly every facet of life, the need to make sense of that data in an approachable, accessible form has become ever more important. 
-As a result, many companies and organizations use interactive dashboards to present these data in a more useful and visually appealing form \citep{fisher}.}}
+As the amount of data has increased in nearly every facet of life, the need to make sense of that data in an approachable, accessible form has become ever more important.
+As a result, many companies and organizations use interactive dashboards to present these data in a more useful and visually appealing form \citep{fisher}.
+In many cases, dashboards support viewers' information processing, helping to make sense of complex data, navigate through a dataset, and supporting decision making based on the data.
+Dashboards are often used, as with the car display of the same name, to provide summary information about many separate attributes of a common entity. One glance at a car's dashboard will tell you the speed, RPM, engine temperature, amount of gas in the tank; more importantly, however, the goal is not for the user to remember all of these characteristics, but to assess whether any of these quantities is outside of the expected range.
+Similarly, interactive dashboards for data are often used to display many different attributes and performance metrics which are of importance for stakeholders.
+In this paper, we discuss the process of designing a dashboard to present publicly available government data to stakeholders in small Iowa towns to facilitate decision making and objective comparison with other similarly-situated towns.
 
-{\textcolor{red}{In many cases, dashboards support viewers' information processing, helping to make sense of complex data, navigate through a dataset, and supporting decision making based on the data.}}
-
-{\textcolor{red}{Dashboards are often used, as with the car display of the same name, to provide summary information about many separate attributes of a common entity. One glance at a car's dashboard will tell you the speed, RPM, engine temperature, amount of gas in the tank; more importantly, however, the goal is not for the user to remember all of these characteristics, but to assess whether any of these quantities is outside of the expected range. 
-Similarly, interactive dashboards for data are often used to display many different attributes and performance metrics which are of importance for stakeholders.}}
-
-{\textcolor{red}{In this paper, we discuss the process of designing a dashboard to present publicly available government data to stakeholders in small Iowa towns to facilitate decision making and objective comparison with other similarly-situated towns.}}
-
-Some communities continue to thrive as they lose population because they adapt, maintaining quality of life and community services for residents while investing in the future.
-This process, \emph{smart shrinkage}, is important for rural areas who have experienced shrinking populations for decades.
-As small rural towns do not have access to data scientists or even the ability to easily leverage data collected locally to support decisions, our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations \citep{scc}.
-We hope to allow towns to discover their own data and compare to other similar towns, centering decision-making on data in the context of small-town Iowa life.
-In the process, we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
-{\textcolor{red}{This paragraph is pretty good, but see if you can tweak it to blend in a bit better with the edits I made above.}}
+Some communities continue to thrive as they lose population because they adapt, maintaining quality of life and community services for residents while investing in the future. This process, \emph{smart shrinkage}, is important for rural areas who have experienced shrinking populations for decades. As small rural towns do not have access to data scientists or even the ability to easily leverage data collected locally to support decisions, our research team will provide communities with data about services in small town Iowa in order to assist with developing strategies to improve quality of life for their residents amid shrinking populations \citep{scc}. We hope to allow towns to explore their own data and compare to other similar towns, centering decision-making on data in the context of small-town Iowa life.
 
 \section{Data Description}
 
-{\textcolor{red}{The Smart and Connected Community (SCC) dashaboard data are primarily assembled from  \url{data.iowa.gov}, with some additional datasets assembled from federal and private sources.}} Most of these data sets are collected at a town/city or county {\textcolor{red}{spatial resolution, requiring us to carefully join data to ensure that these differences are respected while collating relevant information at the city level}}. {\textcolor{red}{In addition to the more commonly available statistics derived from e.g. the census and American Community Survey,}} \url{data.iowa.gov} contains {\textcolor{red}{several}} unique {\textcolor{red}{data sets}}, including local liquor sales, school building locations, town budgets and expenditures, hospital beds, Medicaid reimbursements, and other details that may provide information about local quality of life.
+The Smart and Connected Community (SCC) dashaboard data are primarily assembled from \url{data.iowa.gov}, with some additional datasets assembled from federal and private sources. Most of these data sets are collected at a town/city or county spatial resolution, requiring us to carefully join data to ensure that these differences are respected while collating relevant information at the city level. In addition to the more commonly available statistics derived from e.g.~the census and American Community Survey, \url{data.iowa.gov} contains several unique data sets, including local liquor sales, school building locations, town budgets and expenditures, hospital beds, Medicaid reimbursements, and other details that may provide information about local quality of life.
 
-{\textcolor{red}{Data available on Iowa's data portal were augmented in some cases with higher-quality data sets in cases where the Iowa data were out of date or insufficiently accurate.}}
+Data available on Iowa's data portal were augmented in some cases with higher-quality data sets in cases where the Iowa data were out of date or insufficiently accurate.
+Data collected from ELSI from \url{https://nces.ed.gov} were used to show the distance to any private or public school. The National Center for Education Statistics (NCES) is the primary federal entity for collecting and analyzing data related to education. {\textcolor{blue}{[@petersCommunityResiliencyDeclining2019] -- Change the reference}}
 
-Data collected from ELSI from \url{https://nces.ed.gov} were used to show the distance to any private or public school. The National Center for Education Statistics (NCES) is the primary federal entity for collecting and analyzing data related to education.
-{\textcolor{red}{Cite Dave's papers about the ISTP QOL metrics, including education}}
-
-Data collected from the Index of Relative Rurality (IRR) {\textcolor{red}{Create a bibtex entry for this and cite it properly, please. Same goes for most of the other URLs.}} \url{https://www.ers.usda.gov/topics/rural-economy-population/rural-classifications/} were used in the SCC dashboard to help classify the towns. The Index of Relative Rurality (IRR) is a continuous, threshold-free, and unit-free measure of rurality. It is an alternative to the traditional discrete threshold-based classifications.The IRR ranges between 0 (low level of rurality, i.e., urban) and 1 (most rural). Four steps are involved in its design:
+Data collected from the Index of Relative Rurality (IRR) \citep{Rural_classification} were used in the SCC dashboard to help classify the towns. The Index of Relative Rurality (IRR) is a continuous, threshold-free, and unit-free measure of rurality. It is an alternative to the traditional discrete threshold-based classifications.The IRR ranges between 0 (low level of rurality, i.e., urban) and 1 (most rural). Four steps are involved in its design:
 
 \begin{enumerate}
 \item Identifying the dimensions of rurality: population size, density, remoteness, and built-up area.
@@ -93,76 +83,71 @@ Data collected from the Index of Relative Rurality (IRR) {\textcolor{red}{Create
 \item Selecting a link function: unweighted average of the four re-scaled variable.
 \end{enumerate}
 
-Data collected from Rural Urban Commuting Area Codes \texttt{usda} were used to help identify towns with commuting behaviors in our rural areas. The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. This data is on a zip code-level that will help identify those communities that commute to more urban areas. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006-10 American Community Survey. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.
+Data collected from Rural Urban Commuting Area Codes \citep{usda} were used to help identify towns with commuting behaviors in our rural areas. The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. This data is on a zip code-level that will help identify those communities that commute to more urban areas. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006-10 American Community Survey. The classification contains two levels. Whole numbers (1-10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows.
 
 One of the interesting features of this assembled data set is that missing data can be missing for multiple reasons: not all state data is complete, but data about certain services may also be missing because towns do not offer that service.
-Thus, in addition to the usual challenges of working with real-world data that is ``messy'' in a variety of ways, we also have to contend with missing data that is missing due to the size of the community or the lack of services. This makes both visualization and statistical analysis more complicated {\textcolor{red}{(and more interesting)}}.
+Thus, in addition to the usual challenges of working with real-world data that is ``messy'' in a variety of ways, we also have to contend with missing data that is missing due to the size of the community or the lack of services. This makes both visualization and statistical analysis more complicated (and more interesting).
 
 \hypertarget{dashboard-design-considerations}{%
 \section{Dashboard Design Considerations}\label{dashboard-design-considerations}}
 
 \begin{figure}
-\includegraphics[width=.5\textwidth]{Key_Metrics}
+\includegraphics[width=.8\textwidth]{Key_Metrics}
 \caption{Diagram of considerations for our dashboard design process.}\label{fig:metrics}
 \end{figure}
 
-{\textcolor{red}{One problem we identified early in the process of assessing smart-shrinkage strategies in small towns is that these towns do not have the resources to make data-driven decisions. Typically, small towns in Iowa are managed by at most a few part-time employees or volunteers. In some cases, essential management functions of the town are paid, but the municipalities we are interested in do not have sufficient funding to hire professionals to gather and analyze data.}}
+One problem we identified early in the process of assessing smart-shrinkage strategies in small towns is that these towns do not have the resources to make data-driven decisions. Typically, small towns in Iowa are managed by at most a few part-time employees or volunteers. In some cases, essential management functions of the town are paid, but the municipalities we are interested in do not have sufficient funding to hire professionals to gather and analyze data.
 
-{\textcolor{red}{As part of a wider project investigating the strategies towns use to maintain quality of life amid shrinking population, our research team provides communities with data about their own town, but also comparable towns across the state which may have a different approach to city services. In combination with other engagement strategies that are more qualitative, we hope to use this interactive dashboard approach to assist small Iowa cities with generalizing and developing strategies to improve or maintain quality of life amid shrinking populations.}}
+As part of a wider project investigating the strategies towns use to maintain quality of life amid shrinking population, our research team provides communities with data about their own town, but also comparable towns across the state which may have a different approach to city services. In combination with other engagement strategies that are more qualitative, we hope to use this interactive dashboard approach to assist small Iowa cities with generalizing and developing strategies to improve or maintain quality of life amid shrinking populations.
 
-{\textcolor{red}{One factor at the forefront of our visualization design is the importance of reducing the cognitive demands on viewers: we have assembled an incredible amount of data, and it is easy for even statisticians who deal with much larger datasets to get lost in the details of this data. At the same time, we want to invite viewers to engage with the data - to imagine, to draw comparisons, to generalize across towns, and to integrate outside information into the conclusions drawn based on the data we present.}}
+One factor at the forefront of our visualization design is the importance of reducing the cognitive demands on viewers: we have assembled an incredible amount of data, and it is easy for even statisticians who deal with much larger datasets to get lost in the details of this data. At the same time, we want to invite viewers to engage with the data - to imagine, to draw comparisons, to generalize across towns, and to integrate outside information into the conclusions drawn based on the data we present.
+This invitation to engage with the data is similar to the approach advocated in Guided Discovery Learning, a framework leverages hints, feedback, and other helpful information to guide users in interactive exploration \citep{dedonno}.
 
-{\textcolor{red}{This invitation to engage with the data is similar to the approach advocated in Guided Discovery Learning, a}} framework leverages hints, feedback, and other helpful information to guide users in interactive exploration \citep{dedonno}.
+We expect that users will be interested in ``sets'' of variables from the wider dataset, which we assembled based on quality of life factors in the Iowa Small Town Poll \citep{petersCommunityResiliencyDeclining2019}. For instance, users might be interested in medical and social services available to residents, such as a local primary care clinic, nursing homes which are within driving distance, and the distance to the nearest emergency room; these factors might be explored separately from variables describing the services provided directly by city government, such as parks and recreation expenditures, snow removal services, and the distance to the closest fire station.
 
-{\textcolor{red}{We expect that users will be interested in "sets" of variables from the wider dataset, which we assembled based on quality of life factors in the Iowa Small Town Poll [@petersCommunityResiliencyDeclining2019]. For instance, users might be interested in medical and social services available to residents, such as a local primary care clinic, nursing homes which are within driving distance, and the distance to the nearest emergency room; these factors might be explored separately from variables describing the services provided directly by city government, such as parks and recreation expenditures, snow removal services, and the distance to the closest fire station.}}
+As a consequence of this massively multivariate structure, we very quickly focused on the use of parallel coordinate plots; other alternatives, such as tours \citep{tourr}, require much more sustained attention to interactive plots as well as a deeper understanding of projections in multidimensional space which we cannot assume our users will have. Introduced in the 1880s \citep{dOcagne:1885}, parallel coordinate or parallel set plots feature a series of vertical axes representing different variables arranged horizontally, with lines connecting each observation. When representing categorical data, parallel set plots may show ``blocks'' of data instead of individual lines, and are useful for representing conditional relationships between adjacent variables \citep{Bendix:2005}; modifications of this design, such as common-angle plots \citep{Hofmann:2013}, address the issues which arise due to line-width illusions \citep[\citet{sineillusion}]{sine}. Parallel coordinate plots have been generalized to allow for continuous data and additional summaries beyond individual data points, such as densities \citep{density-pcp}. In this paper, we use the \texttt{ggpcp} package, which leverages the grammar-of-graphics framework introduced in \citet{ggplot2}, allowing us to use not only parallel coordinate plots, but also to overlay other statistical summaries, such as boxplots or violin plots, to provide additional context about the marginal distributions of each variable in addition to allowing for exploration of the multivariate space.
 
-{\textcolor{red}{As a consequence of this massively multivariate structure, we very quickly focused on the use of parallel coordinate plots; other alternatives, such as tours [@tourr], require much more sustained attention to interactive plots as well as a deeper understanding of projections in multidimensional space which we cannot assume our users will have. Introduced in the 1880s [@dOcagne:1885], parallel coordinate or parallel set plots feature a series of vertical axes representing different variables arranged horizontally, with lines connecting each observation. When representing categorical data, parallel set plots may show "blocks" of data instead of individual lines, and are useful for representing conditional relationships between adjacent variables [@Bendix:2005]; modifications of this design, such as common-angle plots [@Hofmann:2013], address the issues which arise due to line-width illusions [@sine, @sineillusion]. Parallel coordinate plots have been generalized to allow for continuous data and additional summaries beyond individual data points, such as densities [@density-pcp]. In this paper, we use the \texttt{ggpcp} package, which leverages the grammar-of-graphics framework introduced in @ggplot2, allowing us to use not only parallel coordinate plots, but also to overlay other statistical summaries, such as boxplots or violin plots, to provide additional context about the marginal distributions of each variable in addition to allowing for exploration of the multivariate space. }}
+We also anticipate that users will be interested in comparing their town to other, similar towns. We will discuss the different ways that this comparison strategy was implemented in each dashboard in the next section, which describes the evolution of the dashboard over time and accounting for feedback from users and other researchers on the wider project.
 
-{\textcolor{red}{We also anticipate that users will be interested in comparing their town to other, similar towns. We will discuss the different ways that this comparison strategy was implemented in each dashboard in the next section, which describes the evolution of the dashboard over time and accounting for feedback from users and other researchers on the wider project.}}
+One final component of this project is that our dashboard is part of a wider effort to work with towns to understand the different strategies used to maintain resident quality of life amid shrinking populations. Thus, while the town leaders are our primary audience, we also are creating this applet for use in parallel with a team of other researchers: sociologists, economists, city planning specialists, and artists. These researchers opinions and feedback about the dashboard are also useful and important, as they regularly work with town leaders in different capacities and have an understanding of what factors are most important to them and what types of questions these leaders may have when faced with data and unfamiliar statistical visualizations.
 
-{\textcolor{red}{One final component of this project is that our dashboard is part of a wider effort to work with towns to understand the different strategies used to maintain resident quality of life amid shrinking populations. Thus, while the town leaders are our primary audience, we also are creating this applet for use in parallel with a team of other researchers: sociologists, economists, city planning specialists, and artists. These researchers opinions and feedback about the dashboard are also useful and important, as they regularly work with town leaders in different capacities and have an understanding of what factors are most important to them and what types of questions these leaders may have when faced with data and unfamiliar statistical visualizations.}}
-
-{\textcolor{red}{Throughout the design process,}} we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
+Throughout the design process, we will assess our visualizations to determine which strategies for user interface and interactive graphics design are most useful to empower town leaders to make discoveries in publicly available data assembled with a focus on items that impact rural quality of life.
 
 \hypertarget{guiding-design-principles}{%
 \subsection{Guiding Design Principles}\label{guiding-design-principles}}
 
-Research on dashboard creation and interactive visualization tends to be very task-specific and {\textcolor{red}{hard to apply to more generalized settings}}. That is, it is relatively easy to create a dashboard that works for a particular task, but it is hard to generalize from that process what will work for the next dashboard. With this in mind, we {\textcolor{red}{set out to clearly document our}} intentions at each stage of the design and evaluation process, with the goal of gathering some useful information about general dashboard design from the process of creating this specific dashboard.
+Research on dashboard creation and interactive visualization tends to be very task-specific and hard to apply to more generalized settings. That is, it is relatively easy to create a dashboard that works for a particular task, but it is hard to generalize from that process what will work for the next dashboard. With this in mind, we set out to clearly document our intentions at each stage of the design and evaluation process, with the goal of gathering some useful information about general dashboard design from the process of creating this specific dashboard.
 
 Thus, our initial set of dashboard design principles is as follows:
 
 \begin{itemize}
 \item The town leaders are the focus audience; thus, the town itself should be the central focus of the app.
-\item {\textcolor{red}{We should facilitate}} comparisons with other towns in order to allow the user to explore other potential solutions to offering services that enhance resident quality of life.
-\item {\textcolor{red}{We will present}} the user with peer comparisons in order to widen the scope of exploration beyond the initial set of obvious peers in the local region.
-\item {\textcolor{red}{We will implement feedback mechanisms that allow us to provide}} more detailed data and {\textcolor{red}{respond to}} feature requests to improve the dashboard design over time.
+\item We should facilitate comparisons with other towns in order to allow the user to explore other potential solutions to offering services that enhance resident quality of life.
+\item We will present the user with peer comparisons in order to widen the scope of exploration beyond the initial set of obvious peers in the local region.
+\item We will implement feedback mechanisms that allow us to provide more detailed data and respond to feature requests to improve the dashboard design over time.
 \end{itemize}
 
-{\textcolor{red}{As with many dashboards, this project is under continuous development; while it makes for an unsatisfactory conclusion, we do not have a "final" dashboard design because the application will continue to evolve. However, we have some useful insights into the process of creating an application designed to invite users to explore a large and complex dataset that we believe to be a useful contribution to work in this area.}}
+As with many dashboards, this project is under continuous development; while it makes for an unsatisfactory conclusion, we do not have a ``final'' dashboard design because the application will continue to evolve. However, we have some useful insights into the process of creating an application designed to invite users to explore a large and complex dataset that we believe to be a useful contribution to work in this area.
 
-\hypertarget{dashboard-design-process}{%
-\section{Dashboard Design Process}\label{dashboard-design-process}}
+\section{ Dashboard Design Process}
 
-\hypertarget{dashboard-components}{%
-\subsection{Dashboard Components}\label{dashboard-components}}
+\subsection{Dashboard Components }
 
-{\textcolor{red}{In this section, we discuss the philosophy behind the basic "building blocks" of the dashboard. This philosophy is present in all of the iterations of the dashboard that we present in this discussion, and we will evaluate the overall philosophy's effectiveness in the conclusion.}}
+In this section, we discuss the philosophy behind the basic ``building blocks'' of the dashboard. This philosophy is present in all of the iterations of the dashboard that we present in this discussion, and we will evaluate the overall philosophy's effectiveness in the conclusion.
 
-The large set of publicly available data (primarily from \url{data.iowa.gov}) we have assembled is useful, but we must be careful with how we present this data because it would be easy to overwhelm the user with small details that mask the bigger picture. We select a small subset of towns (out of the 999 towns in Iowa) and a small subset of variables of interest to start with, and then allow the user to increase the complexity of the display in accordance with their interest. This avoids some of the pitfalls of dashboard design that can easily lead to user overload \texttt{few}.
+The large set of publicly available data (primarily from \url{data.iowa.gov}) we have assembled is useful, but we must be careful with how we present this data because it would be easy to overwhelm the user with small details that mask the bigger picture. We select a small subset of towns (out of the 999 towns in Iowa) and a small subset of variables of interest to start with, and then allow the user to increase the complexity of the display in accordance with their interest. This avoids some of the pitfalls of dashboard design that can easily lead to user overload \citep{few}.
 
-Our primary objective is to provide users with a town-centric approach: their town is at the center of our application, and comparisons to other, similar towns are secondary. {\textcolor{red}{As a result, the next component of the dashboard is intended to provide a brief overview of the information we have about a specific town of interest.}} {\textcolor{red}{This design is based on research into visualization sensemaking}}\citep{lee}, {\textcolor{red}{in that we allow users to explore outward from the familiar to the unknown}}. The map visuals were built using OSRM route functions in R to amplify the accuracy of the distances from necessary services in town-centric point.
-{\textcolor{red}{XXX cite R, use consistent name for the app, cite OSRM and expand the acronym, and exaplain that in some communities, "as the crow flies" distance isn't a good metric... road distance is. XXX}}
+Our primary objective is to provide users with a town-centric approach: their town is at the center of our application, and comparisons to other, similar towns are secondary. As a result, the next component of the dashboard is intended to provide a brief overview of the information we have about a specific town of interest. This design is based on research into visualization sensemaking \citep{lee}, in that we allow users to explore outward from the familiar to the unknown. {\textcolor{blue}{The map visuals were built using Open Source Routing Machine (OSRM) route functions [@luxen-vetter-2011] in R [@r] to amplify the accuracy of the distances from necessary services in town-centric point. OSRM allows for finding the "As the Crow Flies" distance and time on the road for our vital services map, since OSRM technology is similar to Google maps.}}
 
-{\textcolor{red}{When faced with the next component, a parallel coordinate plot (PCP), a novice user}} will be able to determine two basic components: Visual Object (textual objects and non-textual objects) and Frame (frame of content and frame of visual encoding).
+When faced with the next component, a parallel coordinate plot (PCP), a novice user will be able to determine two basic components: Visual Object (textual objects and non-textual objects) and Frame (frame of content and frame of visual encoding).
 
-Taken together, the app is a single page; the initial ``solid ground'' which the user explores from consists of maps showing the route from the center of town to necessary services, including the fire department, schools, post offices, and hospitals. {\textcolor{red}{In version 2, as shown in}} \autoref{fig:v2}, the map portion is condensed, and more space is given to value boxes that show vital statistics about the town's QoL and financial metrics.\} {\textcolor{red}{This relatively straightforward display is}} followed by a parallel coordinate plot that allows the {\textcolor{red}{user}} to see {\textcolor{red}{similar}} towns along dimensions such as economic indicators or population size.
+Taken together, the app is a single page; the initial ``solid ground'' which the user explores from consists of maps showing the route from the center of town to necessary services, including the fire department, schools, post offices, and hospitals. In version 2, as shown in \autoref{fig:v2}, the map portion is condensed, and more space is given to value boxes that show vital statistics about the town's QoL and financial metrics. This relatively straightforward display is followed by a parallel coordinate plot that allows the user to see similar towns along dimensions such as economic indicators or population size.
 
-\hypertarget{initial-draft}{%
-\subsection{Initial Draft}\label{initial-draft}}
+\subsection{Initial Draft}
 
-{\textcolor{red}{The initial design sketch and implementation are shown in}} \autoref{fig:v1}.
+The initial design sketch and implementation are shown in \autoref{fig:v1}.
 
-{\textcolor{red}{Users' towns}} are at the center of our application, and comparisons to other, similar towns are secondary. As it can be extremely difficult to predict which towns are optimal for comparison purposes (similar may involve population, region, economic indicators, sports rivalries, and any number of other variables), we allow users to modify a set of suggested comparison towns to indicate other towns of interest.
+{\textcolor{red}{Users' towns}} {\textcolor{blue}{Town Users' ??}} are at the center of our application, and comparisons to other, similar towns are secondary. As it can be extremely difficult to predict which towns are optimal for comparison purposes (similar may involve population, region, economic indicators, sports rivalries, and any number of other variables), we allow users to modify a set of suggested comparison towns to indicate other towns of interest.
 
 \begin{figure}
 \centering
@@ -172,9 +157,9 @@ Taken together, the app is a single page; the initial ``solid ground'' which the
 \caption{Initial dashboard design sketch (top) and implementation (bottom).}\label{fig:v1}
 \end{figure}
 
-We {\textcolor{red}{implemented some suggested town comparisons using}} unsupervised clustering methods to help our towns make decisions that are informed in comparison to similar towns, for budget size, population size and location. {\textcolor{red}{We initially focused on}} determining the next five to ten similar towns, based on distances to services. {\textcolor{red}{This feature became an important diagnostic for our data quality, as it became clear that towns which were grouped with big cities but which did not have a large population were so grouped because of missing data.}}{\textcolor{red}{Unfortunately, this clustering feature was not as useful to the application users, as they came to the dashboard with a pre-existing set of towns to compare to; our suggested comparisons were in the way.}}
+We implemented some suggested town comparisons using unsupervised clustering methods to help our towns make decisions that are informed in comparison to similar towns, for budget size, population size and location. We initially focused on determining the next five to ten similar towns, based on distances to services. This feature became an important diagnostic for our data quality, as it became clear that towns which were grouped with big cities but which did not have a large population were so grouped because of missing data. Unfortunately, this clustering feature was not as useful to the application users, as they came to the dashboard with a pre-existing set of towns to compare to; our suggested comparisons were in the way.
 
-{\textcolor{red}{The initial dashboard design featured several responsive maps showing the distance to the nearest hospital, fire department, post office, and school. These maps were ineffective for several reasons: }}
+The initial dashboard design featured several responsive maps showing the distance to the nearest hospital, fire department, post office, and school. These maps were ineffective for several reasons:
 
 \begin{itemize}
 \tightlist
@@ -186,12 +171,11 @@ We {\textcolor{red}{implemented some suggested town comparisons using}} unsuperv
   It became clear that it might be more useful to show the comparison towns on a map (relative to the town of interest) so that users could compare geographical ratings for unfamiliar data to familiar data.
 \end{itemize}
 
-{\textcolor{red}{In addition, we received feedback on the parallel coordinate plot at the bottom of the app which was surprising: the viewers (in this case, other researchers on the team) were not as intimidated by the parallel coordinate plot as we had expected. They did need some explanation of how to read the plot, and these hints need to be included in the dashboard, but they grasped the fundamental idea of the plot very quickly.}}
+In addition, we received feedback on the parallel coordinate plot at the bottom of the app which was surprising: the viewers (in this case, other researchers on the team) were not as intimidated by the parallel coordinate plot as we had expected. They did need some explanation of how to read the plot, and these hints need to be included in the dashboard, but they grasped the fundamental idea of the plot very quickly.
 
-{\textcolor{red}{Our conclusion, based on this initial dashboard draft, was that we needed to restructure the application. Our attempt to show familiar information first to "build up" to the more unfamiliar structure of a parallel coordinate plot was not effective; there was too much clutter and not enough new information to draw users in.}}
+Our conclusion, based on this initial dashboard draft, was that we needed to restructure the application. Our attempt to show familiar information first to ``build up'' to the more unfamiliar structure of a parallel coordinate plot was not effective; there was too much clutter and not enough new information to draw users in.
 
-\hypertarget{redesign}{%
-\subsection{Redesign}\label{redesign}}
+\subsection{ Redesign }
 
 \begin{figure}
 \includegraphics[width=.8\textwidth]{Version3}
@@ -202,17 +186,22 @@ We {\textcolor{red}{implemented some suggested town comparisons using}} unsuperv
 
 {\textcolor{red}{XXX Denise, can you follow up with the initial design section and explain the 2nd design and approach? Why did we change things? How did those changes impact feedback from users? E.g. wanting to show the whole range of values in the PCP vs. being visually overwhelmed. Incorporate the user feedback into the narrative. XXX}}
 
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
+{\textcolor{blue}{In the initial design, we included a map for each vital service, this initially created a lag for the users' experience. As a result, we cached map directions from OSRM for each service in our database, which drastically changed the response time for the user. Our initial design lack proper dashboard design, which would allow the user's eye to focus on the most important parts of the dashboard. The redesign allowed for a cleaner box from the top to the bottom. }}
 
-\hypertarget{future-work}{%
-\section{Future Work}\label{future-work}}
+{\textcolor{blue}{In addition to the timing due to the map loading slowly, we added the vital statistics at the county level to allow for a more robust understanding of the town and it's surroundings. The rurality index allowed for a better classification index, the USDA source also allowed for the town to understand how much or little the closest major city is impacting their towns. Town members are commuting into the next town for work or resources, this could be helpful to know which services and resources to add into their own town.}}
+
+{\textcolor{blue}{In regards to the Parallel Coordinate Plots, we wanted to declutter the aspects of the x- and y-axis that will allow for a less overwhelming experience for our users. Our x-axis had a large number of variables that our team precevied to be the best variables. This sparked the need to make sure that only necessary variables are placed in the graph, along with the way they were placed along the x-axis. We decided to limit the variables to those open source variables that were related directly to QoL. The variables were then placed in a bulks based on QoL topic.}}
+
+\section{ Discussion}
+
+How did the philosophy work out? What worked and didn't (overall)? People didn't seem to like having their community facts to explore from - they already knew that information - so what should we replace it with? Collaborator suggestions included reporting capability and data stories (narratives from the communities), but neither one really inspires exploratory data analysis. What we need to do is provide enough interactivity to allow people to select interesting data sets and use that to compare. We also should provide much, much more user support for how to interact with and interpret the app and results.
+
+\section{ Future Work }
 
 Incorporating other dashboards which had slightly different focuses (99 vs 990 towns, general data display, etc.). Transition to a multi-tab dashboard which allows for more specific task-oriented exploration and evaluation, rather than broad EDA and discovery.
 Discussion of the difficulty of working with researchers from other disciplines, not because of convention but because they don't know what is possible with EDA and are unfamiliar with all but goal-directed data analysis.
 
-\hypertarget{conclusions}{%
-\section{Conclusions}\label{conclusions}}
+\section {Conclusions}
 
 Specific takeaways - visualization research (broad) vs.~dashboard design (very problem specific) is missing a critical set of research describing the specific and trying to make general suggestions as to how to proceed with the design process.
 Helpful hints - showing a collection of very different apps to train collaborators on what is possible works well to empower collaborators to help brainstorm.
