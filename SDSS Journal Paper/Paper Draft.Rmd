@@ -34,7 +34,7 @@ preamble: >
   \newcommand{\svp}[1]{{\textcolor{blue}{#1}}}
 
 abstract: >
-  Many small and rural places are shrinking. Interactive dashboards are the most common use cases for data visualization and context for exploratory data tools. In our paper, we will \db{use Iowa data to } explore the specific scope of how dashboards are used in small and rural area to empower novice analysts to make data-driven decisions. Our framework will suggest a number of research directions to better support small and rural places from shrinking using an interactive dashboard design, implementation and use for the every day analyst.
+  Many small and rural places are shrinking. Interactive dashboards are the most common use cases for data visualization and context for exploratory data tools. In our paper, we will use Iowa data to  explore the specific scope of how dashboards are used in small and rural area to empower novice analysts to make data-driven decisions. Our framework will suggest a number of research directions to better support small and rural places from shrinking using an interactive dashboard design, implementation and use for the every day analyst.
 keywords:
 # alphabetical; excluding anything in the title already; lower case
   - Interactive Dashboards
